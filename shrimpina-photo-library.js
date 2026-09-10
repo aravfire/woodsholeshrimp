@@ -1,4 +1,26 @@
 const SHRIMPINA_PHOTO_LIBRARY = [
+{
+  "animal": "Squatter Pea Crab",
+  "sample": "SSAJ84",
+  "photos": [
+    {
+      "src": "assets/shrimpina-photo-library/squatter-pea-crab/ssaj84/01-dorsal-labeled.png",
+      "label": "Dorsal (labeled)"
+    },
+    {
+      "src": "assets/shrimpina-photo-library/squatter-pea-crab/ssaj84/02-ventral-labeled.png",
+      "label": "Ventral (labeled)"
+    },
+    {
+      "src": "assets/shrimpina-photo-library/squatter-pea-crab/ssaj84/03-dorsal-scale.png",
+      "label": "Dorsal (scale)"
+    },
+    {
+      "src": "assets/shrimpina-photo-library/squatter-pea-crab/ssaj84/04-ventral-scale.png",
+      "label": "Ventral (scale)"
+    }
+  ]
+},
   {
     "animal": "Asian Shore Crab",
     "sample": "SSAJ27",

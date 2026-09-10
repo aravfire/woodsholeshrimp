@@ -53,11 +53,20 @@ const expectedDna = {
   SSAJ66:['Littorina littorea',81,82], SSAJ67:['Leptuca pugilator',83,85]
 };
 
-check(register.length === 83, `Expected 83 register records, found ${register.length}`);
+check(register.length === 84, `Expected 84 register records, found ${register.length}`);
+const peaCrab84 = register.find(item => item.code === 'SSAJ84');
+check(peaCrab84?.record === 'https://www.inaturalist.org/observations/396972736', 'SSAJ84 must link to its supplied observation');
+check(observationLocations.SSAJ84?.observation === 396972736, 'SSAJ84 must use its matching public location');
+check(peaCrab84?.sci === 'Tumidotheres maculatus', 'SSAJ84 must be Squatter Pea Crab');
+check(register.find(item => item.code === 'SSAJ77')?.collectionHidden === true, 'The former unknown-crab card must be hidden');
+check(register.filter(item => !item.collectionHidden).length === 83, 'Expected 83 specimens in the visible collection');
+const peaCrabPhotos = photoLibrary.find(entry => entry.sample === 'SSAJ84');
+check(peaCrabPhotos?.photos.length === 4, 'SSAJ84 must have four supplied photographs');
+check(peaCrabPhotos?.photos.map(photo => photo.label).join('|') === 'Dorsal (labeled)|Ventral (labeled)|Dorsal (scale)|Ventral (scale)', 'SSAJ84 photograph views must match the supplied plates');
 check(Object.keys(research.dnaBySample).length === 14, `Expected 14 DNA entries, found ${Object.keys(research.dnaBySample).length}`);
 check(research.researchQuestion === 'How are the morphological characteristics among crab species in Little Sippewissett Marsh and Woodneck Beach results of their role and place within the community?', 'Official research question does not match the supplied wording');
 
-check(Object.keys(observationLocations).length === 47, `Expected 47 public iNaturalist locations, found ${Object.keys(observationLocations).length}`);
+check(Object.keys(observationLocations).length === 48, `Expected 48 public iNaturalist locations, found ${Object.keys(observationLocations).length}`);
 for (const [code, location] of Object.entries(observationLocations)) {
   const specimen = register.find(item => item.code === code);
   const linkedObservation = Number(specimen?.record?.match(/observations\/(\d+)/)?.[1]);

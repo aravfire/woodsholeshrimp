@@ -570,4 +570,108 @@ Object.entries(SHRIMPINA_SUPPLEMENTAL_TAXA).forEach(([key, taxon]) => {
   SHRIMPINA_SPECIES.push(taxon);
 });
 
+// Specimen and original photo views supplied by the project team.
+SHRIMPINA_SPECIES.push({
+  "id": "ssaj84",
+  "code": "SSAJ84",
+  "sampleNumbers": [
+    84
+  ],
+  "group": "crab",
+  "phylumKey": "arthropoda-crustacea",
+  "groupProject": "shrimpina",
+  "common": "Squatter Pea Crab",
+  "sci": "Tumidotheres maculatus",
+  "phylum": "Arthropoda",
+  "cls": "Malacostraca",
+  "order": "Decapoda",
+  "family": "Pinnotheridae",
+  "status": "Not assessed",
+  "lat": null,
+  "lng": null,
+  "morph": "Carapace (Shell): Has a very small, rounded/slightly oval carapace noticeably wider than it is long. Its body has a swollen or almost pea-like appearance, which helps explain the name “pea crab.” The central regions of the carapace are somewhat raised or inflated rather than flat, giving the animal a smooth, bulbous appearance. Adult females have a relatively soft and smooth carapace because they spend much of their lives protected inside a host. The body is generally pale cream, yellowish-white, or translucent, sometimes with faint reddish or brown markings. Adult females can reach roughly 16 mm across, while males are typically less than 6 mm wide.",
+  "eco": "Found inside an empty bivalve/blue mussel on the marsh floor near the rocky area.",
+  "ecologyReport": [
+    "Found inside an empty bivalve/blue mussel on the marsh floor near the rocky area.",
+    "The squatter pea crab doesn’t normally “squat” underneath rocks or burrow in the marsh mud, making the common name a little misleading."
+  ],
+  "photos": [
+    "assets/shrimpina-photo-library/squatter-pea-crab/ssaj84/03-dorsal-scale.png",
+    "assets/shrimpina-photo-library/squatter-pea-crab/ssaj84/04-ventral-scale.png"
+  ],
+  "photoLabels": [
+    "Dorsal · 200-pixel scale bar",
+    "Ventral · 200-pixel scale bar"
+  ],
+  "heroPhoto": "assets/shrimpina-photo-library/squatter-pea-crab/ssaj84/03-dorsal-scale.png",
+  "pop": [
+    [
+      "2026",
+      1
+    ]
+  ],
+  "refs": [
+    "Project team description, field notes, and four supplied photographs for SSAJ84, 10 September 2026."
+  ],
+  "speciesSource": {
+    "title": "Squatter Pea Crab = Tumidotheres maculatus = SSAJ84",
+    "order": [
+      "Description",
+      "Location",
+      "Notes"
+    ],
+    "sections": {
+      "Description": [
+        "AKA Mussel Crab / Pea Crab",
+        "Carapace (Shell): Has a very small, rounded/slightly oval carapace noticeably wider than it is long. Its body has a swollen or almost pea-like appearance, which helps explain the name “pea crab.” The central regions of the carapace are somewhat raised or inflated rather than flat, giving the animal a smooth, bulbous appearance. Adult females have a relatively soft and smooth carapace because they spend much of their lives protected inside a host. The body is generally pale cream, yellowish-white, or translucent, sometimes with faint reddish or brown markings. Adult females can reach roughly 16 mm across, while males are typically less than 6 mm wide.",
+        "Small Claws and Delicate Legs: The claws are small and are used primarily for handling food rather than capturing large prey. Its walking legs are thin and relatively delicate, allowing the crab to maneuver within the confined mantle cavity of a bivalve and cling to the host’s gills.",
+        "Life Inside a Host: Rather than living openly on the marsh surface, squatter pea crabs commonly live inside bivalves, including blue mussels, scallops, oysters, and clams.",
+        "Male vs. Female: There is a major difference between the sexes. Adult females become much larger and generally remain within a host, where their soft bodies are protected by the bivalve’s shell. Males remain smaller and more mobile and can leave one host to search for females living inside other bivalves.",
+        "Feeding: Instead of hunting, the squatter pea crab takes advantage of its host’s feeding system. While living among the bivalve’s gills, it can collect mucus and small food particles gathered by the host as the bivalve filter-feeds. The relationship is often described as commensal or parasitic. The crab receives shelter and access to food, while the degree of harm to the bivalve can vary. In some host species, pea crabs can interfere with feeding or damage gill tissue, so the association is not necessarily harmless.",
+        "Camouflage and Protection: Its pale, translucent coloration and soft body make sense for an animal that spends much of its life hidden inside another organism. Unlike a crab that relies on camouflage against sand or mud, the squatter pea crab’s primary protection is essentially the bivalve’s shell itself."
+      ],
+      "Location": [
+        "Found inside an empty bivalve/blue mussel on the marsh floor near the rocky area."
+      ],
+      "Notes": [
+        "The squatter pea crab doesn’t normally “squat” underneath rocks or burrow in the marsh mud, making the common name a little misleading."
+      ]
+    }
+  },
+  "morphologyViews": [
+    {
+      "label": "Dorsal (labeled)",
+      "src": "assets/shrimpina-photo-library/squatter-pea-crab/ssaj84/01-dorsal-labeled.png",
+      "alt": "Squatter Pea Crab SSAJ84 — dorsal (labeled) view",
+      "caption": "200-pixel reference bar; physical scale not calibrated.",
+      "sourceSample": "SSAJ84",
+      "callouts": []
+    },
+    {
+      "label": "Ventral (labeled)",
+      "src": "assets/shrimpina-photo-library/squatter-pea-crab/ssaj84/02-ventral-labeled.png",
+      "alt": "Squatter Pea Crab SSAJ84 — ventral (labeled) view",
+      "caption": "200-pixel reference bar; physical scale not calibrated.",
+      "sourceSample": "SSAJ84",
+      "callouts": []
+    },
+    {
+      "label": "Dorsal (scale)",
+      "src": "assets/shrimpina-photo-library/squatter-pea-crab/ssaj84/03-dorsal-scale.png",
+      "alt": "Squatter Pea Crab SSAJ84 — dorsal (scale) view",
+      "caption": "200-pixel reference bar; physical scale not calibrated.",
+      "sourceSample": "SSAJ84",
+      "callouts": []
+    },
+    {
+      "label": "Ventral (scale)",
+      "src": "assets/shrimpina-photo-library/squatter-pea-crab/ssaj84/04-ventral-scale.png",
+      "alt": "Squatter Pea Crab SSAJ84 — ventral (scale) view",
+      "caption": "200-pixel reference bar; physical scale not calibrated.",
+      "sourceSample": "SSAJ84",
+      "callouts": []
+    }
+  ]
+});
+
 const ALL_SPECIES = [...SPECIES.filter(base => !SHRIMPINA_SPECIES.some(species => species.id === base.id)), ...SHRIMPINA_SPECIES];

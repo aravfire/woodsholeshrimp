@@ -12,13 +12,13 @@
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha384-cxOPjt7s7Iz04uaHJceBmS+qpjv2JkIHNVcuOrM+YHwZOmJGBXI00mdUXEq65HTH" crossorigin="anonymous"></script>
 <script src="image-slot.js"></script>
 <script src="species-data.js?v=20260902-4"></script>
-<script src="shrimpina-sample-register.js?v=20260907-2"></script>
-<script src="shrimpina-observation-locations.js?v=20260909-2"></script>
-<script src="shrimpina-research-data.js?v=20260907-3"></script>
-<script src="shrimpina-inat-media.js?v=20260908-3"></script>
-<script src="shrimpina-photo-library.js?v=20260908-3"></script>
-<script src="shrimpina-species-data.js?v=20260908-5"></script>
-<script src="profile-render.js?v=20260909-1"></script>
+<script src="shrimpina-sample-register.js?v=20260910-3"></script>
+<script src="shrimpina-observation-locations.js?v=20260910-3"></script>
+<script src="shrimpina-research-data.js?v=20260910-2"></script>
+<script src="shrimpina-inat-media.js?v=20260910-3"></script>
+<script src="shrimpina-photo-library.js?v=20260910-2"></script>
+<script src="shrimpina-species-data.js?v=20260910-2"></script>
+<script src="profile-render.js?v=20260910-2"></script>
 <script src="inat.js"></script>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap');
@@ -182,7 +182,7 @@ if (!s) {
     document.body.classList.add('shrimpina-record-page');
     document.querySelector('site-index').dataset.brand = 'shrimpina';
   }
-  const shrimpinaRecords = requestedSample ? SHRIMPINA_SAMPLE_REGISTER : SHRIMPINA_SPECIES.filter(item => item.groupProject === 'shrimpina' && /^SSAJ\d+$/.test(item.code)).sort((a,b) => Number(a.code.slice(4)) - Number(b.code.slice(4)));
+  const shrimpinaRecords = requestedSample ? SHRIMPINA_SAMPLE_REGISTER.filter(item => !item.collectionHidden) : SHRIMPINA_SPECIES.filter(item => item.groupProject === 'shrimpina' && /^SSAJ\d+$/.test(item.code)).sort((a,b) => Number(a.code.slice(4)) - Number(b.code.slice(4)));
   const shrimpinaIndex = requestedSample ? shrimpinaRecords.findIndex(item => item.code === requestedSample.code) : shrimpinaRecords.findIndex(item => item.id === s.id);
   const previousRecord = shrimpinaIndex > 0 ? shrimpinaRecords[shrimpinaIndex - 1] : null;
   const nextRecord = shrimpinaIndex >= 0 && shrimpinaIndex < shrimpinaRecords.length - 1 ? shrimpinaRecords[shrimpinaIndex + 1] : null;

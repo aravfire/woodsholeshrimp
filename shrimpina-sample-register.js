@@ -690,7 +690,8 @@ const SHRIMPINA_SAMPLE_REGISTER = [
     "sci": "Identification pending",
     "date": "Date not entered",
     "site": "Little Sippewissett Marsh",
-    "record": ""
+    "record": "",
+    "collectionHidden": true
   },
   {
     "number": 78,
@@ -745,5 +746,14 @@ const SHRIMPINA_SAMPLE_REGISTER = [
     "date": "Date not entered",
     "site": "Woodneck Beach",
     "record": "https://www.inaturalist.org/observations/396426372"
+  },
+  {
+    "number": 84,
+    "code": "SSAJ84",
+    "common": "Squatter Pea Crab",
+    "sci": "Tumidotheres maculatus",
+    "date": "3 Sep 2026",
+    "site": "Little Sippewissett Marsh — inside an empty blue mussel, near the rocky area",
+    "record": "https://www.inaturalist.org/observations/396972736"
   }
 ];

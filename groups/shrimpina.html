@@ -13,14 +13,14 @@
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha384-cxOPjt7s7Iz04uaHJceBmS+qpjv2JkIHNVcuOrM+YHwZOmJGBXI00mdUXEq65HTH" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 <script src="../species-data.js?v=20260902-4"></script>
-<script src="../shrimpina-sample-register.js?v=20260907-2"></script>
-<script src="../shrimpina-research-data.js?v=20260909-4"></script>
-<script src="../shrimpina-observation-locations.js?v=20260909-2"></script>
-<script src="../shrimpina-inat-media.js?v=20260908-3"></script>
-<script src="../shrimpina-photo-library.js?v=20260902-1"></script>
-<script src="../shrimpina-species-data.js?v=20260908-5"></script>
-<script src="../profile-render.js?v=20260909-1"></script>
-<script src="../relationship-tree.js?v=20260909-7" data-root=".." defer></script>
+<script src="../shrimpina-sample-register.js?v=20260910-3"></script>
+<script src="../shrimpina-research-data.js?v=20260910-2"></script>
+<script src="../shrimpina-observation-locations.js?v=20260910-3"></script>
+<script src="../shrimpina-inat-media.js?v=20260910-3"></script>
+<script src="../shrimpina-photo-library.js?v=20260910-2"></script>
+<script src="../shrimpina-species-data.js?v=20260910-2"></script>
+<script src="../profile-render.js?v=20260910-2"></script>
+<script src="../relationship-tree.js?v=20260910-2" data-root=".." defer></script>
 <script src="../specimen-view.js?v=20260902-5" data-root=".." defer></script>
 <script src="../inat.js"></script>
 <style>
@@ -131,7 +131,7 @@
 <link rel="stylesheet" href="../site-index.css?v=20260908-14">
 <link rel="stylesheet" href="../shrimpina.css?v=20260908-6">
 <link rel="stylesheet" href="../shrimpina-research.css?v=20260909-3">
-<link rel="stylesheet" href="../relationship-tree.css?v=20260909-6">
+<link rel="stylesheet" href="../relationship-tree.css?v=20260910-1">
 <script src="../site-index.js?v=20260908-7" defer></script>
 <link rel="stylesheet" href="../specimen-view.css?v=20260902-5">
 </head>
@@ -176,7 +176,7 @@
       <div id="marshFilm"></div>
       <div class="collection-map-heading">
         <div><p class="map-kicker">The 2026 field register</p><h2>Shrimpina collection map</h2><p>Verified public locations from the iNaturalist observations linked in our specimen spreadsheet.</p></div>
-        <dl><div><dt id="gCatalogCount">83</dt><dd>catalogued</dd></div><div><dt id="gMappedCount">47</dt><dd>mapped</dd></div></dl>
+        <dl><div><dt id="gCatalogCount">83</dt><dd>catalogued</dd></div><div><dt id="gMappedCount">48</dt><dd>mapped</dd></div></dl>
       </div>
       <div class="shrimpina-map-shell">
         <div class="g-map" id="gMap" aria-label="Aerial map of Shrimpina iNaturalist observations"></div>
@@ -186,7 +186,7 @@
           <button type="button" data-map-site="Little Sippewissett Marsh">Marsh</button>
           <button type="button" data-map-site="Wood Neck Beach">Beach</button>
         </div>
-        <div class="shrimpina-map-summary"><strong id="gMapCount">47</strong><span>verified observations shown</span><a href="#g-species">Browse all 83 samples ↓</a></div>
+        <div class="shrimpina-map-summary"><strong id="gMapCount">48</strong><span>verified observations shown</span><a href="#g-species">Browse all 83 samples ↓</a></div>
       </div>
       <p class="shrimpina-map-source">Aerial imagery: USGS The National Map. All markers use public iNaturalist coordinates and accuracy values. One unavailable linked observation has no public location to plot.</p>
     </section>
@@ -194,7 +194,7 @@
     <section class="g-sec" id="g-species">
       <h2>Specimen archive</h2>
       <div class="specimen-intro">
-        <p>Eighty-three samples, labeled SSAJ1 through SSAJ83, collected at Little Sippewissett Marsh and Woodneck Beach.</p>
+        <p>Specimens collected at Little Sippewissett Marsh and Woodneck Beach, including Squatter Pea Crab SSAJ84.</p>
         <a href="../assets/shrimpina-resources/specimen-log-2026.pdf" target="_blank" rel="noopener">Open the current specimen log</a>
       </div>
       <section class="specimen-archive" aria-labelledby="sample-register-title">
@@ -253,7 +253,7 @@
 const mapRecordIds = new Set(['ssaj-hermit-series','ssaj14','crab-01','ssaj20','ssaj27','ssaj33','ssaj34','ssaj35','ssaj53','ssaj56','ssaj57','ssaj58']);
 const shrimpina = SHRIMPINA_SPECIES.filter(species => mapRecordIds.has(species.id));
 const shrimpinaColor = { crab: '#d94f68', shrimp: '#ef8791', fish: '#8d7893', horseshoe: '#b06f6c' };
-const sampleRegister = SHRIMPINA_SAMPLE_REGISTER;
+const sampleRegister = SHRIMPINA_SAMPLE_REGISTER.filter(sample => !sample.collectionHidden);
 document.getElementById('officialQuestion').textContent = SHRIMPINA_RESEARCH.researchQuestion;
 const marshFilm = SHRIMPINA_RESEARCH.researchMedia?.marshFilm;
 if (marshFilm) {

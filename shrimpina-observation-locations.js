@@ -48,4 +48,5 @@ const SHRIMPINA_OBSERVATION_LOCATIONS = {
   SSAJ81:{observation:396674861,lat:41.5763783333,lng:-70.6401966667,accuracy:13,place:"Saconesset Rd, Falmouth, MA, US"},
   SSAJ82:{observation:396912502,lat:41.5760939259,lng:-70.640121127,accuracy:12,place:"Falmouth, MA, US"},
   SSAJ83:{observation:396426372,lat:41.5752555556,lng:-70.6425388889,accuracy:2,place:"Falmouth, MA, USA"},
+  SSAJ84:{"observation": 396972736, "lat": 41.5765736469, "lng": -70.640193459, "accuracy": 7, "place": "Saconesset Rd, Falmouth, MA, US"},
 };

@@ -19,7 +19,7 @@ const SHRIMPINA_RESEARCH = (() => {
   const speciesNotes = {
     'Callinectes sapidus': { common:'Atlantic blue crab', pages:[8,9] },
     'Ovalipes ocellatus': { common:'Lady Crab', pages:[11] },
-    'Tumidotheres maculatus': { common:'Squatter Pea Crab', pages:[13], comparativeOnly:true },
+    'Tumidotheres maculatus': { common:'Squatter Pea Crab', pages:[13] },
     'Libinia dubia': { common:'Longnose spider crab (Big - Punk rock)', pages:[15] },
     'Minuca pugnax': { common:'Atlantic Mud Fiddler Crab', pages:[19] },
     'Leptuca pugilator': { common:'Atlantic Sand Fiddler Crab', pages:[21] },

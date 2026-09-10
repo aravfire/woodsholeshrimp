@@ -68,7 +68,7 @@ const broadRankGuides=broadRankRows.map((rank,index)=>{
 const taxonomy=SHRIMPINA_RESEARCH.taxonomyTree;
 const ecology=SHRIMPINA_RESEARCH.taxonomyEcology;
 const displayZone=zone=>zone;
-const speciesHref=scientific=>scientific==='Tumidotheres maculatus'?`${relationshipRoot}/research.html#species-${scientific.replace(/\W+/g,'-')}`:`${relationshipRoot}/groups/shrimpina.html?species=${encodeURIComponent(scientific)}#g-species`;
+const speciesHref=scientific=>`${relationshipRoot}/groups/shrimpina.html?species=${encodeURIComponent(scientific)}#g-species`;
 const detailRoot={rank:'Order',label:taxonomy.order,x:decapoda.x,y:decapoda.y,children:[{rank:'Suborder',label:taxonomy.suborder,children:taxonomy.branches.map(branch=>({
   rank:'Infraorder',label:branch.name,note:branch.note,children:branch.families.map(family=>({
     rank:'Family',label:family.name,children:family.genera.map(genus=>({

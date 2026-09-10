@@ -25,6 +25,7 @@ function escapeResearchText(value) {
 }
 
 function renderResearchSpeciesSource(s, section) {
+  if (s.speciesSource) return `<div class="research-text-block species-source">${renderParsedSpecies(s.speciesSource, section)}</div>`;
   const note = typeof SHRIMPINA_RESEARCH !== 'undefined' ? SHRIMPINA_RESEARCH.speciesNotes[s.sci] : null;
   if (!note) return '';
   return `<div class="research-text-block species-source" data-research-kind="species" data-research-section="${section}" data-research-pages="${note.pages.join(',')}"><p>Loading the verbatim species notes…</p></div>`;
@@ -92,7 +93,7 @@ function figuresForResearchPages(pages) {
 
 async function initResearchBlocks(root) {
   if (typeof SHRIMPINA_RESEARCH === 'undefined') return;
-  const blocks = [...root.querySelectorAll('.research-text-block')];
+  const blocks = [...root.querySelectorAll('.research-text-block[data-research-pages]')];
   await Promise.all(blocks.map(async block => {
     const pages = block.dataset.researchPages.split(',').map(Number);
     try {

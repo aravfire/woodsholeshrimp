@@ -1,4 +1,17 @@
 const SHRIMPINA_INAT_MEDIA = [
+{
+  "code": "SSAJ84",
+  "observation": 396972736,
+  "url": "https://www.inaturalist.org/observations/396972736",
+  "photo": "https://inaturalist-open-data.s3.amazonaws.com/photos/728034845/medium.jpg",
+  "photoCount": 7,
+  "taxon": "Tumidotheres maculatus",
+  "common": "Squatter Pea Crab",
+  "observer": "sofia0304",
+  "observed": "2026-09-03",
+  "license": "cc-by-nc",
+  "attribution": "(c) sofia0304, some rights reserved (CC BY-NC)"
+},
   {
     "code": "SSAJ1",
     "observation": 395307396,
