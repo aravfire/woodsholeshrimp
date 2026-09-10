@@ -98,8 +98,9 @@ const buildDetailNodes=node=>{
   if(node.rank!=='Order'){
     if(node.rank==='Species'){
       const lines=wrapLabel(node.label),zone=esc(displayZone(node.ecology.zone)),invasive=node.ecology.invasive;
+      const labelY=node.y+(node.scientific==='Libinia dubia'?8:0);
       const common=lines.map((line,index)=>`<tspan x="0" dy="${index?18:0}">${esc(line)}</tspan>`).join('');
-      detailNodes.push(`<a class="relationship-node relationship-species habitat-${slug(zone)}${invasive?' is-invasive':''}" data-scientific="${esc(node.scientific)}" data-habitat="${zone}" href="${node.href}" aria-label="${esc(node.label)}, ${esc(node.scientific)}, ${zone}${invasive?', invasive':''}" transform="translate(${node.x} ${node.y})">
+      detailNodes.push(`<a class="relationship-node relationship-species habitat-${slug(zone)}${invasive?' is-invasive':''}" data-scientific="${esc(node.scientific)}" data-habitat="${zone}" href="${node.href}" aria-label="${esc(node.label)}, ${esc(node.scientific)}, ${zone}${invasive?', invasive':''}" transform="translate(${node.x} ${labelY})">
         <title>${esc(node.label)} — ${zone}${invasive?' · Invasive':''}</title>
         <rect class="relationship-species-hit-area" x="-76" y="-32" width="152" height="76"/>
         <text class="relationship-common" text-anchor="middle" y="${lines.length>1?-16:-7}">${common}</text>
