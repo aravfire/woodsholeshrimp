@@ -16,7 +16,7 @@
       </defs>
       <g class="gecko-cursor-arm"><image href="${assetUrl}" width="564" height="354" clip-path="url(#gecko-arm-clip)"/></g>
       <image href="${assetUrl}" width="564" height="354" mask="url(#gecko-body-mask)"/>
-    </svg><span class="gecko-cursor-hotspot"></span>`;
+    </svg>`;
     document.body.append(cursor);
     let loaded = false;
     let pendingPointer = null;
@@ -118,7 +118,6 @@
           ])}`;
 
       this.classList.toggle('is-shrimpina', isShrimpinaRoute);
-      document.body.classList.toggle('shrimpina-cursor', isShrimpinaRoute);
       if (isShrimpinaRoute) initGeckoCursor(href('assets/gecko-cursor.png'));
       this.innerHTML = `<header class="site-masthead">
         <div class="site-masthead-inner">
