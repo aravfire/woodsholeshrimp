@@ -8,12 +8,12 @@
 <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
 <title>Research Guide: Shrimpina</title>
 <link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="site-index.css?v=20260908-14">
+<link rel="stylesheet" href="site-index.css?v=20260910-8">
 <link rel="stylesheet" href="shrimpina.css?v=20260907-6">
-<link rel="stylesheet" href="shrimpina-research.css?v=20260907-10">
-<script src="shrimpina-research-data.js?v=20260910-2"></script>
-<script src="profile-render.js?v=20260910-2"></script>
-<script src="site-index.js?v=20260908-7" defer></script>
+<link rel="stylesheet" href="shrimpina-research.css?v=20260910-7">
+<script src="shrimpina-research-data.js?v=20260910-7"></script>
+<script src="profile-render.js?v=20260910-5"></script>
+<script src="site-index.js?v=20260910-8" defer></script>
 </head>
 <body class="has-site-index shrimpina-site">
 <site-index data-root="." data-current="research" data-brand="shrimpina"></site-index>
@@ -44,7 +44,7 @@ document.getElementById('comparisonHermit').innerHTML = comparisonCard(SHRIMPINA
 document.getElementById('comparisonInvasive').innerHTML = comparisonCard(SHRIMPINA_RESEARCH.comparisons[2]);
 
 const speciesAnchor = scientific => `species-${scientific.replace(/\W+/g,'-')}`;
-document.getElementById('speciesGuide').innerHTML = Object.entries(SHRIMPINA_RESEARCH.speciesNotes).map(([scientific,note]) => `<details class="species-source-item" id="${speciesAnchor(scientific)}"><summary><span><b>${escapeResearchText(note.common)}</b><i>${escapeResearchText(scientific)}</i></span><em>${note.comparativeOnly ? 'Comparative guide only' : 'Open species notes'}</em></summary>${note.comparativeOnly ? '' : `<p class="species-source-actions"><a href="groups/shrimpina.html?species=${encodeURIComponent(scientific)}#g-species">Browse matching specimens ↗</a></p>`}<div class="research-text-block species-source" data-research-kind="species" data-research-section="description" data-research-pages="${note.pages.join(',')}"><p>Loading the verbatim species description…</p></div><div class="research-text-block species-source" data-research-kind="species" data-research-section="ecology" data-research-pages="${note.pages.join(',')}"><p>Loading the verbatim species notes…</p></div></details>`).join('');
+document.getElementById('speciesGuide').innerHTML = Object.entries(SHRIMPINA_RESEARCH.speciesNotes).map(([scientific,note]) => `<details class="species-source-item" id="${speciesAnchor(scientific)}"><summary><span><b>${escapeResearchText(note.common)}</b><i>${escapeResearchText(scientific)}</i></span><em>${note.comparativeOnly ? 'Comparative guide only' : 'Open species notes'}</em></summary>${note.comparativeOnly ? '' : `<p class="species-source-actions"><a href="groups/shrimpina.html?species=${encodeURIComponent(scientific)}#g-species">Browse matching specimens ↗</a></p>`}${renderResearchSpeciesSource({sci:scientific}, 'description')}${renderResearchSpeciesSource({sci:scientific}, 'ecology')}</details>`).join('');
 const revealLinkedSpecies = () => { const target = document.getElementById(decodeURIComponent(location.hash.slice(1))); if (target?.matches('details')) target.open = true; };
 window.addEventListener('hashchange', revealLinkedSpecies);
 revealLinkedSpecies();

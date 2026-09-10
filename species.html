@@ -12,13 +12,13 @@
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha384-cxOPjt7s7Iz04uaHJceBmS+qpjv2JkIHNVcuOrM+YHwZOmJGBXI00mdUXEq65HTH" crossorigin="anonymous"></script>
 <script src="image-slot.js"></script>
 <script src="species-data.js?v=20260902-4"></script>
-<script src="shrimpina-sample-register.js?v=20260910-3"></script>
-<script src="shrimpina-observation-locations.js?v=20260910-3"></script>
-<script src="shrimpina-research-data.js?v=20260910-2"></script>
-<script src="shrimpina-inat-media.js?v=20260910-3"></script>
+<script src="shrimpina-sample-register.js?v=20260910-7"></script>
+<script src="shrimpina-observation-locations.js?v=20260910-7"></script>
+<script src="shrimpina-research-data.js?v=20260910-7"></script>
+<script src="shrimpina-inat-media.js?v=20260910-7"></script>
 <script src="shrimpina-photo-library.js?v=20260910-4"></script>
 <script src="shrimpina-species-data.js?v=20260910-4"></script>
-<script src="profile-render.js?v=20260910-2"></script>
+<script src="profile-render.js?v=20260910-5"></script>
 <script src="inat.js"></script>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap');
@@ -108,11 +108,11 @@
 </style>
 <link rel="stylesheet" href="exhibit.css?v=20260902-2">
 <link rel="stylesheet" href="shrimpina-record.css?v=20260909-1">
-<link rel="stylesheet" href="shrimpina-research.css?v=20260907-10">
-<link rel="stylesheet" href="site-index.css?v=20260908-14">
+<link rel="stylesheet" href="shrimpina-research.css?v=20260910-7">
+<link rel="stylesheet" href="site-index.css?v=20260910-8">
 <script src="vendor/gsap/gsap.min.js"></script>
 <script src="vendor/gsap/ScrollTrigger.min.js"></script>
-<script src="site-index.js?v=20260908-7" defer></script>
+<script src="site-index.js?v=20260910-8" defer></script>
 </head>
 <body class="has-site-index cursor-catalog">
 
@@ -252,7 +252,7 @@ if (!s) {
   const grid = document.getElementById('obsGrid');
   const status = document.getElementById('obsStatus');
   if (isShrimpina) {
-    const linkedMedia = SHRIMPINA_INAT_MEDIA.filter(media => media.code === s.code);
+    const linkedMedia = SHRIMPINA_INAT_MEDIA.filter(media => media.code === s.code && media.observed);
     grid.innerHTML = linkedMedia.map(media => {
       const sample = SHRIMPINA_SAMPLE_REGISTER.find(item => item.code === media.code);
       return `<a class="obs-card" href="${media.url}" target="_blank" rel="noopener">
@@ -260,7 +260,7 @@ if (!s) {
         <div class="obs-meta"><span class="obs-code">${media.code}</span><b>${sample?.common || media.common}</b><span class="obs-sci">${sample?.sci || media.taxon}</span><span class="obs-sub">${sample?.date || media.observed} · ${escapeResearchText(requestedLocation?.place || 'iNaturalist public location')}</span></div>
       </a>`;
     }).join('');
-    status.textContent = linkedMedia.length ? `${linkedMedia.length} spreadsheet-linked record${linkedMedia.length === 1 ? '' : 's'}.` : 'No iNaturalist record is linked to this SSAJ sample.';
+    status.textContent = linkedMedia.length ? `${linkedMedia.length} linked iNaturalist record${linkedMedia.length === 1 ? '' : 's'}.` : requestedSample?.record ? `The linked iNaturalist record is currently unavailable. Field register: ${requestedSample.date} · ${requestedSample.site}.` : 'No iNaturalist record is linked to this SSAJ sample.';
   } else {
     fetchINatObservations({ taxon_name: s.sci, per_page: 12 }).then(data => {
       const results = data.results || [];

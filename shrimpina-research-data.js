@@ -1,7 +1,7 @@
 /*
  * Structured transcription map for “Crabies” (91 pages).
- * Student prose is loaded verbatim from assets/shrimpina-research/text; this
- * module only supplies structure, relationships, and source-page boundaries.
+ * Original student prose is loaded from assets/shrimpina-research/text.
+ * Explicit project-team revisions are stored as structured source notes here.
  */
 const SHRIMPINA_RESEARCH = (() => {
   const moduleBase = new URL('.', document.currentScript.src);
@@ -24,7 +24,35 @@ const SHRIMPINA_RESEARCH = (() => {
     'Minuca pugnax': { common:'Atlantic Mud Fiddler Crab', pages:[19] },
     'Leptuca pugilator': { common:'Atlantic Sand Fiddler Crab', pages:[21] },
     'Pagurus longicarpus': { common:'Long-Clawed Hermit Crab', pages:[23] },
-    'Pagurus pollicaris': { common:'Flat-Clawed Hermit Crab', pages:[25] },
+    'Pagurus pollicaris': { common:'Flat-Clawed Hermit Crab', pages:[25], updated:'2026-09-10', source:{
+  "title": "Flat-Clawed Hermit Crab = Pagurus pollicaris",
+  "order": [
+    "Description",
+    "Location",
+    "Notes"
+  ],
+  "sections": {
+    "Description": [
+      "AKA Flat-Clawed Hermit Crab / Gray Hermit Crab",
+      "Body and Shell Use: Like the long-clawed hermit crab, it protects its soft asymmetrical abdomen inside an abandoned gastropod shell. They often occupy noticeably heavier and more robust snail shells.",
+      "Broad Right Claw: The most useful identifying feature is the extremely large, broad, flattened claws. Rather than being long and narrow, the claw has a thick, almost shield-like appearance.",
+      "“Flat-Clawed” Appearance: The enlarged right claw is noticeably compressed and flattened, especially across the palm. When the crab retreats into its shell, these claws can fit across the opening and act like a protective cover.",
+      "Claw Comparison: This is the easiest distinction between the two species: Long-clawed hermit = long, narrow right claw. Flat-clawed hermit = broad, thick, flattened right claw.",
+      "Larger and Heavier Build: The flat-clawed hermit crab generally has a more robust body and heavier appendages than the long-clawed species. Adults can also become considerably larger, so the difference can be very noticeable when mature individuals are compared.",
+      "Coloration: The exposed portions of the body are typically gray, brown, tan, or reddish-brown. The large claw may appear grayish or pale with darker mottling, often giving the animal a rougher and more heavily armored appearance than P. longicarpus.",
+      "Habitat: Flat-clawed hermit crabs are commonly found in shallow coastal waters, sandy bottoms, rocky areas, eelgrass beds, and the lower portions of estuaries. They may overlap with long-clawed hermit crabs, particularly near the more marine edges of marsh systems.",
+      "Defense: The massive claw is particularly useful for defense. When threatened, the crab withdraws deeply into its borrowed shell and positions the flattened claw across the opening, making it much more difficult for a predator to reach the soft abdomen.",
+      "Diet: Like the long-clawed hermit, it is an opportunistic scavenger and omnivore, feeding on algae, detritus, carrion, and small organisms encountered while searching the bottom.",
+      "Shell Choice: Because P. pollicaris grows larger, it frequently requires larger gastropod shells. Shell availability can therefore place an important limit on where larger individuals can live and how successfully they can grow."
+    ],
+    "Location": [
+      "Located in beach waters during low tide. Much deeper into the beach but it was accessible because the water was only knee deep."
+    ],
+    "Notes": [
+      "Almost stepped on it, it looked like a rock. Nice rock. Pretty rock."
+    ]
+  }
+} },
     'Carcinus maenas': { common:'European Green Crab', pages:[27] },
     'Hemigrapsus sanguineus': { common:'Asian Shore Crab', pages:[29] }
   };
@@ -132,45 +160,167 @@ const SHRIMPINA_RESEARCH = (() => {
       'Pagurus longicarpus': { zone:'Transitional', invasive:false }
     },
     phylogenyTree: {
-      title:'Final Version of Phylogeny Tree',
-      outgroup:'Marsh Grass Shrimp',
-      root:{ x:82, children:[
-        { x:300, tone:'crab', children:[
-          { x:500, children:[
-            { x:620, children:[
-              { x:715, children:[
-                { code:'SSAJ51', common:'Long-Clawed Hermit Crab' },
-                { code:'SSAJ39', common:'Long-Clawed Hermit Crab' }
-              ]},
-              { code:'SSAJ36', common:'Long-Clawed Hermit Crab' },
-              { code:'SSAJ13', common:'Long-Clawed Hermit Crab' },
-              { code:'SSAJ48', common:'Long-Clawed Hermit Crab' }
-            ]},
-            { code:'SSAJ43', common:'Long-Clawed Hermit Crab' }
-          ]},
-          { x:500, children:[
-            { x:680, children:[
-              { code:'SSAJ52', common:'Longnose Spider Crab' },
-              { code:'SSAJ53', common:'Longnose Spider Crab' }
-            ]},
-            { code:'SSAJ27', common:'Asian Shore Crab' }
-          ]}
-        ]},
-        { x:300, tone:'fiddler', children:[
-          { x:560, children:[
-            { x:700, children:[
-              { code:'SSAJ55', common:'Sand Fiddler Crab' },
-              { code:'SSAJ54', common:'Sand Fiddler Crab' }
-            ]},
-            { code:'SSAJ67', common:'Sand Fiddler Crab' }
-          ]},
-          { x:530, children:[
-            { code:'SSAJ21', common:'Mud Fiddler Crab' },
-            { code:'SSAJ20', common:'Mud Fiddler Crab' }
-          ]}
-        ]},
-        { common:'Marsh Grass Shrimp', outgroup:true, tone:'outgroup' }
-      ]}
+      "title": "Final Phylogeny Tree",
+      "outgroup": "Marsh Grass Shrimp",
+      "root": {
+        "x": 56,
+        "children": [
+          {
+            "x": 223,
+            "children": [
+              {
+                "x": 336,
+                "children": [
+                  {
+                    "x": 493,
+                    "children": [
+                      {
+                        "x": 623,
+                        "children": [
+                          {
+                            "x": 694,
+                            "children": [
+                              {
+                                "code": "SSAJ52",
+                                "common": "Longnose Spider Crab",
+                                "sci": "Libinia dubia"
+                              },
+                              {
+                                "code": "SSAJ53",
+                                "common": "Longnose Spider Crab",
+                                "sci": "Libinia dubia"
+                              }
+                            ]
+                          },
+                          {
+                            "code": "SSAJ84",
+                            "common": "Squatter Pea Crab",
+                            "sci": "Tumidotheres maculatus"
+                          }
+                        ]
+                      },
+                      {
+                        "x": 627,
+                        "children": [
+                          {
+                            "code": "SSAJ33",
+                            "common": "Ocellate Lady Crab",
+                            "sci": "Ovalipes ocellatus"
+                          },
+                          {
+                            "code": "SSAJ74",
+                            "common": "Ocellate Lady Crab",
+                            "sci": "Ovalipes ocellatus"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "x": 527,
+                    "children": [
+                      {
+                        "x": 619,
+                        "children": [
+                          {
+                            "code": "SSAJ43",
+                            "common": "Long-Clawed Hermit Crab",
+                            "sci": "Pagurus longicarpus"
+                          },
+                          {
+                            "code": "SSAJ13",
+                            "common": "Long-Clawed Hermit Crab",
+                            "sci": "Pagurus longicarpus"
+                          },
+                          {
+                            "x": 702,
+                            "children": [
+                              {
+                                "code": "SSAJ51",
+                                "common": "Long-Clawed Hermit Crab",
+                                "sci": "Pagurus longicarpus"
+                              },
+                              {
+                                "code": "SSAJ39",
+                                "common": "Long-Clawed Hermit Crab",
+                                "sci": "Pagurus longicarpus"
+                              }
+                            ]
+                          },
+                          {
+                            "code": "SSAJ48",
+                            "common": "Long-Clawed Hermit Crab",
+                            "sci": "Pagurus longicarpus"
+                          }
+                        ]
+                      },
+                      {
+                        "code": "SSAJ36",
+                        "common": "Long-Clawed Hermit Crab",
+                        "sci": "Pagurus longicarpus"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "code": "SSAJ27",
+                "common": "Asian Shore Crab",
+                "sci": "Hemigrapsus sanguineus"
+              }
+            ]
+          },
+          {
+            "x": 433,
+            "children": [
+              {
+                "x": 571,
+                "children": [
+                  {
+                    "x": 644,
+                    "children": [
+                      {
+                        "code": "SSAJ55",
+                        "common": "Sand Fiddler Crab",
+                        "sci": "Leptuca pugilator"
+                      },
+                      {
+                        "code": "SSAJ54",
+                        "common": "Sand Fiddler Crab",
+                        "sci": "Leptuca pugilator"
+                      }
+                    ]
+                  },
+                  {
+                    "code": "SSAJ67",
+                    "common": "Sand Fiddler Crab",
+                    "sci": "Leptuca pugilator"
+                  }
+                ]
+              },
+              {
+                "x": 588,
+                "children": [
+                  {
+                    "code": "SSAJ21",
+                    "common": "Mud Fiddler Crab",
+                    "sci": "Minuca pugnax"
+                  },
+                  {
+                    "code": "SSAJ20",
+                    "common": "Mud Fiddler Crab",
+                    "sci": "Minuca pugnax"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "common": "Marsh Grass Shrimp",
+            "outgroup": true
+          }
+        ]
+      }
     },
     dnaBySample: {
       SSAJ13:dna('SSAJ13','Long-Clawed Hermit Crab',39,42),

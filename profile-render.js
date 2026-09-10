@@ -28,6 +28,7 @@ function renderResearchSpeciesSource(s, section) {
   if (s.speciesSource) return `<div class="research-text-block species-source">${renderParsedSpecies(s.speciesSource, section)}</div>`;
   const note = typeof SHRIMPINA_RESEARCH !== 'undefined' ? SHRIMPINA_RESEARCH.speciesNotes[s.sci] : null;
   if (!note) return '';
+  if (note.source) return `<div class="research-text-block species-source">${renderParsedSpecies(note.source, section)}</div>`;
   return `<div class="research-text-block species-source" data-research-kind="species" data-research-section="${section}" data-research-pages="${note.pages.join(',')}"><p>Loading the verbatim species notes…</p></div>`;
 }
 

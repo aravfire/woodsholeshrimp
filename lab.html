@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Laboratory: Shrimpina</title>
-<link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="site-index.css?v=20260908-14"><link rel="stylesheet" href="shrimpina.css?v=20260907-6"><link rel="stylesheet" href="shrimpina-research.css?v=20260908-13">
-<script src="shrimpina-research-data.js?v=20260910-2"></script><script src="profile-render.js?v=20260910-2"></script><script src="site-index.js?v=20260908-7" defer></script>
+<link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="site-index.css?v=20260910-8"><link rel="stylesheet" href="shrimpina.css?v=20260907-6"><link rel="stylesheet" href="shrimpina-research.css?v=20260910-7">
+<script src="shrimpina-research-data.js?v=20260910-7"></script><script src="profile-render.js?v=20260910-5"></script><script src="site-index.js?v=20260910-8" defer></script>
 </head>
 <body class="has-site-index shrimpina-site">
 <site-index data-root="." data-current="lab" data-brand="shrimpina"></site-index>
@@ -21,7 +21,7 @@
 </section>
 <section class="lab-tree-atlas lab-phylogeny-atlas" aria-labelledby="lab-tree-title">
   <header><h2 id="lab-tree-title">Final Phylogeny Tree</h2></header>
-  <p class="taxonomy-deck"><span>14 SSAJ specimens · Marsh Grass Shrimp outgroup</span></p>
+  <p class="taxonomy-deck"><span>17 SSAJ specimens · Marsh Grass Shrimp outgroup</span></p>
   <div class="phylogeny-tree" id="phylogenyTree"></div>
 </section>
 <main class="lab-research-layout"><nav class="dna-selector" id="dnaSelector" aria-label="Choose a specimen"><span>Analyzed specimens</span></nav><div class="lab-dna-list" id="dnaList"></div></main>
@@ -29,43 +29,49 @@
 <section class="lab-summary"><span class="research-eyebrow">Cross-species comparisons</span><h2>Alignments &amp; phylogenetic trees</h2><article class="specimen-dna-source"><div class="research-text-block" data-research-kind="dna" data-research-pages="89,90,91"><p>Loading the original comparison figures…</p></div></article></section>
 <footer class="site-footer"><div>Woods Hole Shrimpina Project: student field survey, 2026.</div><div><a href="groups/shrimpina.html">Shrimpina Home</a> · <a href="index.html">MBL Home</a></div></footer>
 <script>
-const phylogeny = SHRIMPINA_RESEARCH.phylogenyTree;
+const phylogeny = structuredClone(SHRIMPINA_RESEARCH.phylogenyTree);
 const phylogenyLeaves = [];
-const inheritPhylogenyTone = (node,tone='crab') => {
-  node.tone ||= tone;
-  if (node.children?.length) node.children.forEach(child => inheritPhylogenyTone(child,node.tone));
+const collectPhylogenyLeaves = node => {
+  if (node.children?.length) node.children.forEach(collectPhylogenyLeaves);
   else phylogenyLeaves.push(node);
 };
-inheritPhylogenyTone(phylogeny.root);
-phylogenyLeaves.forEach((leaf,index) => { leaf.y = 58 + index * 62; });
+collectPhylogenyLeaves(phylogeny.root);
+phylogenyLeaves.forEach((leaf,index) => { leaf.y = 44 + index * 56; });
 const positionPhylogeny = node => {
   node.children?.forEach(positionPhylogeny);
-  if (node.children?.length) node.y = node.children.reduce((sum,child) => sum + child.y,0) / node.children.length;
+  if (node.children?.length) node.y = (node.children[0].y + node.children.at(-1).y) / 2;
 };
 positionPhylogeny(phylogeny.root);
 const phylogenyLines = [];
-const leafX = 850;
+const leafX = 790;
 const drawPhylogeny = (node,parent=null) => {
-  if (parent) phylogenyLines.push(`<path class="phylogeny-branch phylogeny-${node.tone}" d="M ${parent.x} ${node.y} H ${node.children?.length ? node.x : leafX}"/>`);
+  if (parent) phylogenyLines.push(`<path class="phylogeny-branch" d="M ${parent.x} ${node.y} H ${node.children?.length ? node.x : leafX}"/>`);
   if (node.children?.length) {
-    phylogenyLines.push(`<path class="phylogeny-branch phylogeny-${node.tone}" d="M ${node.x} ${node.children[0].y} V ${node.children.at(-1).y}"/>`);
+    phylogenyLines.push(`<path class="phylogeny-branch" d="M ${node.x} ${node.children[0].y} V ${node.children.at(-1).y}"/>`);
     node.children.forEach(child => drawPhylogeny(child,node));
   }
 };
 drawPhylogeny(phylogeny.root);
-const phylogenyLabels = phylogenyLeaves.map(leaf => leaf.code
-  ? `<a class="phylogeny-leaf phylogeny-leaf-${leaf.tone}" href="species.html?sample=${leaf.code}" aria-label="Open ${escapeResearchText(leaf.common)}, ${leaf.code}"><text x="870" y="${leaf.y + 5}"><tspan>${escapeResearchText(leaf.common)}</tspan><tspan class="phylogeny-code"> (${leaf.code})</tspan></text></a>`
-  : `<g class="phylogeny-leaf phylogeny-leaf-${leaf.tone}"><text x="870" y="${leaf.y + 5}">${escapeResearchText(leaf.common)}</text></g>`).join('');
+const phylogenyLabels = phylogenyLeaves.map(leaf => {
+  const ecology = SHRIMPINA_RESEARCH.taxonomyEcology[leaf.sci];
+  const zone = ecology?.zone.toLowerCase() || 'outgroup';
+  const label = `<text class="phylogeny-common" x="810" y="${leaf.y - 2}">${escapeResearchText(leaf.common)}</text>
+    <text class="phylogeny-code" x="810" y="${leaf.y + 17}">${leaf.code || 'OUTGROUP'}</text>
+    ${ecology?.invasive ? `<text class="phylogeny-invasive" x="902" y="${leaf.y + 17}">● INVASIVE</text>` : ''}`;
+  return leaf.code
+    ? `<a class="phylogeny-leaf habitat-${zone}" href="species.html?sample=${leaf.code}" aria-label="Open ${escapeResearchText(leaf.common)}, ${leaf.code}, ${ecology.zone}${ecology.invasive ? ', invasive' : ''}">${label}</a>`
+    : `<g class="phylogeny-leaf habitat-outgroup">${label}</g>`;
+}).join('');
 document.getElementById('phylogenyTree').innerHTML = `<figure class="phylogeny-figure">
+  <div class="phylogeny-legend" aria-label="Habitat and invasive status key"><b>Key</b><span class="habitat-intertidal">Intertidal</span><span class="habitat-transitional">Transitional</span><span class="habitat-aquatic">Aquatic</span><span class="phylogeny-invasive">Invasive</span></div>
   <div class="phylogeny-scroll" tabindex="0" aria-label="Scrollable final specimen phylogeny">
-    <svg viewBox="0 0 1280 980" role="img" aria-labelledby="phylogeny-title phylogeny-desc">
+    <svg viewBox="0 0 1230 ${phylogenyLeaves.at(-1).y + 52}" role="img" aria-labelledby="phylogeny-title phylogeny-desc">
       <title id="phylogeny-title">${escapeResearchText(phylogeny.title)}</title>
-      <desc id="phylogeny-desc">Genetic relationship tree for fourteen SSAJ crab specimens with Marsh Grass Shrimp as the outgroup.</desc>
-      <path class="phylogeny-root" d="M 28 ${phylogeny.root.y} H ${phylogeny.root.x}"/>
+      <desc id="phylogeny-desc">Genetic relationship tree for seventeen SSAJ crab specimens with Marsh Grass Shrimp as the outgroup. Branching follows the supplied project tree. Green names are intertidal, amber transitional, and blue aquatic. A separate red label marks the invasive Asian Shore Crab.</desc>
       ${phylogenyLines.join('')}${phylogenyLabels}
     </svg>
   </div>
-  <figcaption><span>Final specimen phylogeny</span><span>Choose an SSAJ label to open its record</span></figcaption>
+  <figcaption><span>Project phylogeny · branch lengths not to scale</span><span>Choose an SSAJ label to open its record</span></figcaption>
 </figure>`;
 
 const entries=Object.values(SHRIMPINA_RESEARCH.dnaBySample);

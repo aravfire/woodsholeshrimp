@@ -91,3 +91,21 @@ body.shrimpina-site .theme-cursor,body.shrimpina-record-page .theme-cursor { --c
   .site-masthead-panel { top:49px; width:calc(100vw - 16px); }
 }
 @media(pointer:coarse),(prefers-reduced-motion:reduce) { .theme-cursor { display:none!important; } }
+
+/* The hotspot is the fingertip's landing point; the character stays beside it. */
+.gecko-cursor { position:fixed; left:0; top:0; width:0; height:0; z-index:2147483647; pointer-events:none; opacity:0; }
+.gecko-cursor.is-visible { opacity:1; }
+.gecko-cursor-art { position:absolute; left:-27.3px; top:-19.8px; width:84.6px; height:53.1px; max-width:none; overflow:visible; filter:drop-shadow(0 1px 1px #173e3b40); }
+.gecko-cursor-arm { transform-box:view-box; transform-origin:236px 190px; transform:scaleY(1); transition:transform 180ms cubic-bezier(.2,.8,.3,1); }
+.gecko-cursor.is-pressed .gecko-cursor-arm { transform:scaleY(-.65); transition-duration:100ms; }
+.gecko-cursor-hotspot { position:absolute; left:-2px; top:-2px; width:4px; height:4px; border-radius:50%; background:#254f46; box-shadow:0 0 0 1px #fff; }
+.gecko-cursor.is-active .gecko-cursor-hotspot { box-shadow:0 0 0 1px #fff,0 0 0 3px #254f4640; }
+@media (hover:hover) and (pointer:fine) {
+  body.gecko-cursor-ready, body.gecko-cursor-ready * { cursor:none!important; }
+}
+@media (pointer:coarse) { .gecko-cursor { display:none; } }
+@media (prefers-reduced-motion:reduce) {
+  .gecko-cursor-arm { transition:none; }
+  /* Keep the click pose visible without animating between poses. */
+  .gecko-cursor.is-pressed .gecko-cursor-arm { transition:none; }
+}

@@ -75,6 +75,10 @@ for (const [code, location] of Object.entries(observationLocations)) {
   check(Number.isFinite(location.lat) && Number.isFinite(location.lng), `${code}: invalid public iNaturalist coordinates`);
   check(Number.isFinite(location.accuracy) && location.accuracy >= 0, `${code}: invalid iNaturalist positional accuracy`);
   check(typeof location.place === 'string' && location.place.trim().length > 0, `${code}: missing iNaturalist place label`);
+  check(/^\d{4}-\d{2}-\d{2}$/.test(location.observed), `${code}: missing iNaturalist observation date`);
+  const observedDate = new Date(`${location.observed}T12:00:00Z`);
+  const displayDate = `${observedDate.getUTCDate()} ${observedDate.toLocaleDateString('en-US', {month:'short', timeZone:'UTC'})} ${observedDate.getUTCFullYear()}`;
+  check(specimen.date === displayDate, `${code}: displayed date differs from iNaturalist`);
 }
 check(!observationLocations.SSAJ74, 'SSAJ74 must remain unmapped while its linked iNaturalist observation is unavailable');
 
@@ -260,8 +264,13 @@ check(Object.entries(research.taxonomyEcology).filter(([,value]) => value.invasi
 const phylogenyLeaves = [];
 const collectPhylogenyLeaves = node => node.children?.length ? node.children.forEach(collectPhylogenyLeaves) : phylogenyLeaves.push(node);
 collectPhylogenyLeaves(research.phylogenyTree.root);
-const expectedPhylogenyCodes = ['SSAJ51','SSAJ39','SSAJ36','SSAJ13','SSAJ48','SSAJ43','SSAJ52','SSAJ53','SSAJ27','SSAJ55','SSAJ54','SSAJ67','SSAJ21','SSAJ20'];
+const expectedPhylogenyCodes = ['SSAJ52','SSAJ53','SSAJ84','SSAJ33','SSAJ74','SSAJ43','SSAJ13','SSAJ51','SSAJ39','SSAJ48','SSAJ36','SSAJ27','SSAJ55','SSAJ54','SSAJ67','SSAJ21','SSAJ20'];
 check(JSON.stringify(phylogenyLeaves.filter(leaf => leaf.code).map(leaf => leaf.code)) === JSON.stringify(expectedPhylogenyCodes), 'Final phylogeny terminals do not match the supplied tree');
+// Compare nested clades as well as leaf order against the supplied project tree.
+const topology = node => node.children?.map(topology) || node.code || 'outgroup';
+const expectedTopology = [[[[[['SSAJ52','SSAJ53'],'SSAJ84'],['SSAJ33','SSAJ74']],[['SSAJ43','SSAJ13',['SSAJ51','SSAJ39'],'SSAJ48'],'SSAJ36']],'SSAJ27'],[[['SSAJ55','SSAJ54'],'SSAJ67'],['SSAJ21','SSAJ20']],'outgroup'];
+check(JSON.stringify(topology(research.phylogenyTree.root)) === JSON.stringify(expectedTopology), 'Phylogeny branching differs from the supplied tree');
+for (const leaf of phylogenyLeaves.filter(leaf => leaf.code)) check(Boolean(research.taxonomyEcology[leaf.sci]), `${leaf.code}: phylogeny is missing its habitat color mapping`);
 check(phylogenyLeaves.at(-1)?.common === 'Marsh Grass Shrimp' && phylogenyLeaves.at(-1)?.outgroup, 'Final phylogeny is missing the Marsh Grass Shrimp outgroup');
 for (const code of expectedPhylogenyCodes) check(register.some(sample => sample.code === code), `Final phylogeny references missing register specimen ${code}`);
 

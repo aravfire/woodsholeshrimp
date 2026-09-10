@@ -1,4 +1,78 @@
 (() => {
+  function initGeckoCursor(assetUrl) {
+    const finePointer = matchMedia('(hover: hover) and (pointer: fine)');
+    if (document.querySelector('.gecko-cursor')) return;
+    const cursor = document.createElement('div');
+    cursor.className = 'gecko-cursor';
+    cursor.setAttribute('aria-hidden', 'true');
+    // Both layers use the original cutout. The raised arm hinges forward at the shoulder; the body stays fixed.
+    cursor.innerHTML = `<svg class="gecko-cursor-art" viewBox="0 0 564 354" focusable="false">
+      <defs>
+        <clipPath id="gecko-arm-clip"><path d="M145 110H224L227 168L250 177L248 211L211 212L175 192L145 173Z"/></clipPath>
+        <mask id="gecko-body-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="564" height="354">
+          <rect width="564" height="354" fill="white"/>
+          <path d="M145 110H224L225 173L225 179L225 207L211 212L175 192L145 173Z" fill="black"/>
+        </mask>
+      </defs>
+      <g class="gecko-cursor-arm"><image href="${assetUrl}" width="564" height="354" clip-path="url(#gecko-arm-clip)"/></g>
+      <image href="${assetUrl}" width="564" height="354" mask="url(#gecko-body-mask)"/>
+    </svg><span class="gecko-cursor-hotspot"></span>`;
+    document.body.append(cursor);
+    let loaded = false;
+    let pendingPointer = null;
+    let pressedAt = 0;
+    let releaseTimer;
+    const resetPress = () => {
+      clearTimeout(releaseTimer);
+      cursor.classList.remove('is-pressed');
+    };
+    const hide = () => {
+      pendingPointer = null;
+      resetPress();
+      cursor.classList.remove('is-visible');
+      document.body.classList.remove('gecko-cursor-ready');
+    };
+    const follow = event => {
+      const target = event.composedPath().find(node => node instanceof Element);
+      const editable = target?.closest('input, textarea, [contenteditable]:not([contenteditable="false"])');
+      if (!finePointer.matches || event.pointerType !== 'mouse' || editable) {
+        hide();
+        return false;
+      }
+      if (!loaded) { pendingPointer = event; return false; }
+      pendingPointer = null;
+      cursor.style.transform = `translate3d(${event.clientX}px, ${event.clientY}px, 0)`;
+      cursor.classList.toggle('is-active', Boolean(target?.closest('a, button, summary, select, [role="button"]')));
+      cursor.classList.add('is-visible');
+      document.body.classList.add('gecko-cursor-ready');
+      return true;
+    };
+    document.addEventListener('pointermove', follow, { passive:true, capture:true });
+    document.addEventListener('pointerdown', event => {
+      if (event.button !== 0 || !follow(event)) return;
+      clearTimeout(releaseTimer);
+      pressedAt = performance.now();
+      cursor.classList.add('is-pressed');
+    }, { passive:true, capture:true });
+    window.addEventListener('pointerup', event => {
+      if (event.button !== 0) return;
+      // Keep quick clicks visible, and keep the hand down for a held mouse button.
+      releaseTimer = setTimeout(resetPress, Math.max(0, 260 - (performance.now() - pressedAt)));
+    }, { passive:true, capture:true });
+    window.addEventListener('pointercancel', hide, { passive:true });
+    document.documentElement.addEventListener('pointerleave', hide, { passive:true });
+    window.addEventListener('blur', hide);
+    document.addEventListener('visibilitychange', () => { if (document.hidden) hide(); });
+    finePointer.addEventListener('change', hide);
+    const image = new Image();
+    image.onload = () => {
+      loaded = true;
+      if (pendingPointer) follow(pendingPointer);
+    };
+    image.onerror = hide;
+    image.src = assetUrl;
+  }
+
   class SiteIndex extends HTMLElement {
     connectedCallback() {
       const root = this.dataset.root || '.';
@@ -45,6 +119,7 @@
 
       this.classList.toggle('is-shrimpina', isShrimpinaRoute);
       document.body.classList.toggle('shrimpina-cursor', isShrimpinaRoute);
+      if (isShrimpinaRoute) initGeckoCursor(href('assets/gecko-cursor.png'));
       this.innerHTML = `<header class="site-masthead">
         <div class="site-masthead-inner">
           <a class="site-masthead-brand" href="${href('index.html')}" aria-label="Woods Hole Biodiversity Survey home">

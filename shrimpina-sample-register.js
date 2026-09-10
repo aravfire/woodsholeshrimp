@@ -139,36 +139,40 @@ const SHRIMPINA_SAMPLE_REGISTER = [
     "code": "SSAJ16",
     "common": "Eastern Grass Shrimp",
     "sci": "Palaemon paludosus",
-    "date": "25 Aug 2026",
+    "date": "27 Aug 2026",
     "site": "Little Sippewissett Marsh",
-    "record": "https://www.inaturalist.org/observations/396666787"
+    "record": "https://www.inaturalist.org/observations/396666787",
+    "fieldDate": "25 Aug 2026"
   },
   {
     "number": 17,
     "code": "SSAJ17",
     "common": "Eastern Grass Shrimp",
     "sci": "Palaemon paludosus",
-    "date": "25 Aug 2026",
+    "date": "27 Aug 2026",
     "site": "Little Sippewissett Marsh",
-    "record": "https://www.inaturalist.org/observations/396667263"
+    "record": "https://www.inaturalist.org/observations/396667263",
+    "fieldDate": "25 Aug 2026"
   },
   {
     "number": 18,
     "code": "SSAJ18",
     "common": "Eastern Grass Shrimp",
     "sci": "Palaemon paludosus",
-    "date": "25 Aug 2026",
+    "date": "27 Aug 2026",
     "site": "Little Sippewissett Marsh",
-    "record": "https://www.inaturalist.org/observations/396668052"
+    "record": "https://www.inaturalist.org/observations/396668052",
+    "fieldDate": "25 Aug 2026"
   },
   {
     "number": 19,
     "code": "SSAJ19",
     "common": "Eastern Grass Shrimp",
     "sci": "Palaemon paludosus",
-    "date": "25 Aug 2026",
+    "date": "27 Aug 2026",
     "site": "Little Sippewissett Marsh",
-    "record": "https://www.inaturalist.org/observations/396668645"
+    "record": "https://www.inaturalist.org/observations/396668645",
+    "fieldDate": "25 Aug 2026"
   },
   {
     "number": 20,
@@ -571,9 +575,10 @@ const SHRIMPINA_SAMPLE_REGISTER = [
     "code": "SSAJ64",
     "common": "Round Clam (Northern Quahog)",
     "sci": "Mercenaria mercenaria",
-    "date": "27 Aug 2026",
+    "date": "31 Aug 2026",
     "site": "Little Sippewissett Marsh",
-    "record": "https://www.inaturalist.org/observations/396685474"
+    "record": "https://www.inaturalist.org/observations/396685474",
+    "fieldDate": "27 Aug 2026"
   },
   {
     "number": 65,
@@ -598,9 +603,10 @@ const SHRIMPINA_SAMPLE_REGISTER = [
     "code": "SSAJ67",
     "common": "Atlantic Sand Fiddler Crab",
     "sci": "Leptuca pugilator",
-    "date": "31 Aug 2026",
+    "date": "27 Aug 2026",
     "site": "Little Sippewissett Marsh",
-    "record": "https://www.inaturalist.org/observations/396672137"
+    "record": "https://www.inaturalist.org/observations/396672137",
+    "fieldDate": "31 Aug 2026"
   },
   {
     "number": 68,
@@ -679,9 +685,10 @@ const SHRIMPINA_SAMPLE_REGISTER = [
     "code": "SSAJ76",
     "common": "Barnacles",
     "sci": "Identification pending",
-    "date": "31 Aug 2026",
+    "date": "1 Aug 2026",
     "site": "Woodneck Beach",
-    "record": "https://www.inaturalist.org/observations/396665376"
+    "record": "https://www.inaturalist.org/observations/396665376",
+    "fieldDate": "31 Aug 2026"
   },
   {
     "number": 77,
@@ -698,7 +705,7 @@ const SHRIMPINA_SAMPLE_REGISTER = [
     "code": "SSAJ78",
     "common": "Blue Mussel",
     "sci": "Mytilus edulis",
-    "date": "Date not entered",
+    "date": "2 Sep 2026",
     "site": "Little Sippewissett Marsh",
     "record": "https://www.inaturalist.org/observations/396912256"
   },
@@ -707,7 +714,7 @@ const SHRIMPINA_SAMPLE_REGISTER = [
     "code": "SSAJ79",
     "common": "Plumed Worm 1",
     "sci": "Diopatra cuprea",
-    "date": "Date not entered",
+    "date": "2 Sep 2026",
     "site": "Woodneck Beach",
     "record": "https://www.inaturalist.org/observations/396911907"
   },
@@ -716,7 +723,7 @@ const SHRIMPINA_SAMPLE_REGISTER = [
     "code": "SSAJ80",
     "common": "Plumed Worm 2",
     "sci": "Diopatra cuprea",
-    "date": "Date not entered",
+    "date": "2 Sep 2026",
     "site": "Woodneck Beach",
     "record": "https://www.inaturalist.org/observations/396911933"
   },
@@ -725,7 +732,7 @@ const SHRIMPINA_SAMPLE_REGISTER = [
     "code": "SSAJ81",
     "common": "Red Beard Sponge",
     "sci": "Clathria prolifera",
-    "date": "Date not entered",
+    "date": "31 Aug 2026",
     "site": "Little Sippewissett Marsh",
     "record": "https://www.inaturalist.org/observations/396674861"
   },
@@ -734,7 +741,7 @@ const SHRIMPINA_SAMPLE_REGISTER = [
     "code": "SSAJ82",
     "common": "Saltmarsh Cord Grass",
     "sci": "Sporobolus alterniflorus",
-    "date": "Date not entered",
+    "date": "2 Sep 2026",
     "site": "Little Sippewissett Marsh",
     "record": "https://www.inaturalist.org/observations/396912502"
   },
@@ -743,7 +750,7 @@ const SHRIMPINA_SAMPLE_REGISTER = [
     "code": "SSAJ83",
     "common": "Dead Flat-Clawed Hermit Crab",
     "sci": "Pagurus pollicaris",
-    "date": "Date not entered",
+    "date": "31 Aug 2026",
     "site": "Woodneck Beach",
     "record": "https://www.inaturalist.org/observations/396426372"
   },

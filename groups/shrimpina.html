@@ -13,13 +13,13 @@
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha384-cxOPjt7s7Iz04uaHJceBmS+qpjv2JkIHNVcuOrM+YHwZOmJGBXI00mdUXEq65HTH" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 <script src="../species-data.js?v=20260902-4"></script>
-<script src="../shrimpina-sample-register.js?v=20260910-3"></script>
-<script src="../shrimpina-research-data.js?v=20260910-2"></script>
-<script src="../shrimpina-observation-locations.js?v=20260910-3"></script>
-<script src="../shrimpina-inat-media.js?v=20260910-3"></script>
+<script src="../shrimpina-sample-register.js?v=20260910-7"></script>
+<script src="../shrimpina-research-data.js?v=20260910-7"></script>
+<script src="../shrimpina-observation-locations.js?v=20260910-7"></script>
+<script src="../shrimpina-inat-media.js?v=20260910-7"></script>
 <script src="../shrimpina-photo-library.js?v=20260910-4"></script>
 <script src="../shrimpina-species-data.js?v=20260910-4"></script>
-<script src="../profile-render.js?v=20260910-2"></script>
+<script src="../profile-render.js?v=20260910-5"></script>
 <script src="../relationship-tree.js?v=20260910-2" data-root=".." defer></script>
 <script src="../specimen-view.js?v=20260902-5" data-root=".." defer></script>
 <script src="../inat.js"></script>
@@ -128,11 +128,11 @@
     .species-grid, .obs-grid, .genes-grid { grid-template-columns: repeat(2,1fr); }
   }
 </style>
-<link rel="stylesheet" href="../site-index.css?v=20260908-14">
+<link rel="stylesheet" href="../site-index.css?v=20260910-8">
 <link rel="stylesheet" href="../shrimpina.css?v=20260908-6">
-<link rel="stylesheet" href="../shrimpina-research.css?v=20260909-3">
+<link rel="stylesheet" href="../shrimpina-research.css?v=20260910-7">
 <link rel="stylesheet" href="../relationship-tree.css?v=20260910-1">
-<script src="../site-index.js?v=20260908-7" defer></script>
+<script src="../site-index.js?v=20260910-8" defer></script>
 <link rel="stylesheet" href="../specimen-view.css?v=20260902-5">
 </head>
 <body class="has-site-index shrimpina-site">
@@ -229,7 +229,7 @@
       <div class="key-takeaways">
         <header><h2>Key Takeaways</h2></header>
         <ol>
-          <li><span>01</span><div><h3>Different strategies, similar goals</h3><p>Crabs may burrow, swim, hide, decorate themselves, or borrow shelter, but all of these behaviors help them survive and reproduce</p></div></li>
+          <li><span>01</span><div><h3>Different strategies, similar goals</h3><p>Crabs may burrow, swim, hide, decorate themselves, or borrow shelter, but all of these behaviors help them survive and reproduce.</p></div></li>
           <li><span>02</span><div><h3>Form follows habitat</h3><p>Different body shapes, claws, camouflage, and swimming structures reflect the environments each crab occupies.</p></div></li>
           <li><span>03</span><div><h3>No single strategy dominates</h3><p>The diversity of crabs across Woodneck Beach and Little Sippewissett Marsh shows that many very different adaptations can succeed within the same coastal ecosystem.</p></div></li>
         </ol>
@@ -414,6 +414,7 @@ const taxa = [...new Map([
 
 const cleanCommonName = name => name.replace(/ \((?:L|R|Female|Baby|tiny|big|dead)\)$/i, '').replace(/ - Baby$/i,'').replace(/ \d+$/,'');
 const specimenRow = sample => {
+  const location = SHRIMPINA_OBSERVATION_LOCATIONS[sample.code];
   const media = iNaturalistByCode.get(sample.code);
   const laboratory = photographedSamples.get(sample.number);
   const photo = media?.photo || laboratory?.photo;
@@ -422,7 +423,7 @@ const specimenRow = sample => {
     <a class="archive-specimen-main" href="../species.html?sample=${sample.code}">
       <span class="archive-thumb">${photo ? `<img src="${photo}" alt="${cleanCommonName(sample.common)}, ${sample.code}" loading="lazy">` : '<i aria-hidden="true"></i>'}</span>
       <span class="archive-code">${sample.code}</span>
-      <span class="archive-place">${sample.date}<small>${sample.site}</small></span>
+      <span class="archive-place">${escapeResearchText(sample.date)}${location ? `<small>${escapeResearchText(location.place)}</small><small>Field site · ${escapeResearchText(sample.site)}</small>` : `<small>Field register · ${escapeResearchText(sample.site)}</small><small>iNaturalist record unavailable</small>`}</span>
       <strong>Open specimen</strong>
     </a>
     <a class="archive-inat" href="${sample.record}" target="_blank" rel="noopener">iNaturalist <span>#${observationId}</span></a>
