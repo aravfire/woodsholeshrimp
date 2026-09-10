@@ -200,14 +200,14 @@ const SHRIMPINA_LADY_33 = SHRIMPINA_SPECIES.find(species => species.code === 'SS
 if (SHRIMPINA_LADY_33) {
   SHRIMPINA_LADY_33.morphologyViews = [
     {
-      label:'Dorsal',
+      label:'Dorsal labeled',
       src:'assets/shrimpina-morphology/ssaj33-lady-crab-dorsal-labeled.png',
       alt:'Student-labeled dorsal view of an ocellate lady crab',
       caption:'Student-labeled upper surface',
       callouts:[]
     },
     {
-      label:'Ventral',
+      label:'Ventral labeled',
       src:'assets/shrimpina-morphology/ssaj33-lady-crab-ventral-labeled.png',
       alt:'Student-labeled ventral view of an ocellate lady crab',
       caption:'Student-labeled underside',
@@ -220,14 +220,14 @@ const SHRIMPINA_ASIAN_SHORE_27 = SHRIMPINA_SPECIES.find(species => species.code 
 if (SHRIMPINA_ASIAN_SHORE_27) {
   SHRIMPINA_ASIAN_SHORE_27.morphologyViews = [
     {
-      label:'Dorsal',
+      label:'Dorsal labeled',
       src:'assets/shrimpina-morphology/ssaj27-asian-shore-crab-dorsal-labeled-v2.png',
       alt:'Student-labeled dorsal view of an Asian shore crab',
       caption:'Student-labeled upper surface',
       callouts:[]
     },
     {
-      label:'Ventral',
+      label:'Ventral labeled',
       src:'assets/shrimpina-morphology/ssaj27-asian-shore-crab-ventral-labeled-v2.png',
       alt:'Student-labeled ventral view of an Asian shore crab',
       caption:'Student-labeled underside',
@@ -241,14 +241,14 @@ const SHRIMPINA_GREEN_CRAB_34 = SHRIMPINA_SPECIES.find(species => species.code =
 if (SHRIMPINA_GREEN_CRAB_34) {
   SHRIMPINA_GREEN_CRAB_34.morphologyViews = [
     {
-      label:'Dorsal',
+      label:'Dorsal labeled',
       src:'assets/shrimpina-morphology/ssaj34-european-green-crab-dorsal-labeled.png',
       alt:'Student-labeled dorsal view of a European green crab',
       caption:'Student-labeled upper surface',
       callouts:[]
     },
     {
-      label:'Ventral',
+      label:'Ventral labeled',
       src:'assets/shrimpina-morphology/ssaj34-european-green-crab-ventral-labeled.png',
       alt:'Student-labeled ventral view of a European green crab',
       caption:'Student-labeled underside',
@@ -259,21 +259,21 @@ if (SHRIMPINA_GREEN_CRAB_34) {
 if (SHRIMPINA_BLUE_CRAB_35) {
   SHRIMPINA_BLUE_CRAB_35.morphologyViews = [
     {
-      label:'Ventral',
-      src:'assets/shrimpina-morphology/ssaj35-atlantic-blue-crab-ventral-labeled.png',
-      alt:'Student-labeled ventral view of Atlantic blue crab SSAJ35',
-      caption:'Student-labeled underside',
-      callouts:[]
-    },
-    {
-      label:'Dorsal',
+      label:'Dorsal labeled',
       src:'assets/shrimpina-morphology/ssaj35-atlantic-blue-crab-dorsal-labeled.png',
       alt:'Student-labeled dorsal view of Atlantic blue crab SSAJ35',
       caption:'Student-labeled upper surface',
       callouts:[]
     },
     {
-      label:'Ruler view',
+      label:'Ventral labeled',
+      src:'assets/shrimpina-morphology/ssaj35-atlantic-blue-crab-ventral-labeled.png',
+      alt:'Student-labeled ventral view of Atlantic blue crab SSAJ35',
+      caption:'Student-labeled underside',
+      callouts:[]
+    },
+    {
+      label:'Dorsal ruler',
       src:'assets/shrimpina-morphology/ssaj35-atlantic-blue-crab-ruler.png',
       alt:'Ruler photograph of Atlantic blue crab SSAJ35',
       caption:'Scale-reference photograph from the labeled morphology slide',
@@ -286,7 +286,7 @@ if (SHRIMPINA_BLUE_CRAB_35) {
 const SHRIMPINA_SAMPLE_MORPHOLOGY = {
   SSAJ1: [
     {
-      label:'Measured lateral',
+      label:'Lateral labeled',
       src:'assets/shrimpina-morphology/ssaj1-hermit-crab-measured-lateral-labeled.png',
       alt:'Student-labeled measured lateral view of long-clawed hermit crab SSAJ1',
       caption:'Student-labeled measured view',
@@ -294,7 +294,7 @@ const SHRIMPINA_SAMPLE_MORPHOLOGY = {
       callouts:[]
     },
     {
-      label:'Ventral',
+      label:'Ventral labeled',
       src:'assets/shrimpina-morphology/ssaj1-hermit-crab-ventral-labeled.png',
       alt:'Student-labeled ventral view of long-clawed hermit crab SSAJ1',
       caption:'Student-labeled underside',
@@ -304,7 +304,7 @@ const SHRIMPINA_SAMPLE_MORPHOLOGY = {
   ],
   SSAJ6: [
     {
-      label:'Labeled specimen',
+      label:'Labeled',
       src:'assets/shrimpina-morphology/ssaj6-hermit-crab-labeled.png',
       alt:'Student-labeled view of long-clawed hermit crab SSAJ6',
       caption:'Student-labeled specimen view',
@@ -312,7 +312,7 @@ const SHRIMPINA_SAMPLE_MORPHOLOGY = {
       callouts:[]
     },
     {
-      label:'Ruler view',
+      label:'Ruler labeled',
       src:'assets/shrimpina-morphology/ssaj6-hermit-crab-ruler.png',
       alt:'Ruler view of long-clawed hermit crab SSAJ6 with student-labeled dactylus',
       caption:'Measurement photograph',
@@ -322,7 +322,7 @@ const SHRIMPINA_SAMPLE_MORPHOLOGY = {
   ],
   SSAJ8: [
     {
-      label:'Labeled specimen',
+      label:'Lateral labeled',
       src:'assets/shrimpina-morphology/ssaj8-hermit-crab-labeled.png',
       alt:'Student-labeled view of long-clawed hermit crab SSAJ8',
       caption:'Student-labeled specimen view',
@@ -330,7 +330,7 @@ const SHRIMPINA_SAMPLE_MORPHOLOGY = {
       callouts:[]
     },
     {
-      label:'Ruler view',
+      label:'Ruler',
       src:'assets/shrimpina-morphology/ssaj8-hermit-crab-ruler.png',
       alt:'Ruler view of long-clawed hermit crab SSAJ8',
       caption:'Measurement photograph',
@@ -340,7 +340,7 @@ const SHRIMPINA_SAMPLE_MORPHOLOGY = {
   ],
   SSAJ13: [
     {
-      label:'Labeled specimen',
+      label:'Dorsal labeled',
       src:'assets/shrimpina-morphology/ssaj13-hermit-crab-labeled.png',
       alt:'Student-labeled view of long-clawed hermit crab SSAJ13',
       caption:'Student-labeled specimen view',
@@ -348,7 +348,7 @@ const SHRIMPINA_SAMPLE_MORPHOLOGY = {
       callouts:[]
     },
     {
-      label:'Ruler view',
+      label:'Ruler',
       src:'assets/shrimpina-morphology/ssaj13-hermit-crab-ruler.png',
       alt:'Ruler view of long-clawed hermit crab SSAJ13',
       caption:'Measurement photograph',
@@ -358,7 +358,7 @@ const SHRIMPINA_SAMPLE_MORPHOLOGY = {
   ],
   SSAJ14: [
     {
-      label:'Ruler view',
+      label:'Ruler labeled',
       src:'assets/shrimpina-morphology/ssaj14-grass-shrimp-ruler-labeled.png',
       alt:'Student-labeled ruler view of eastern grass shrimp SSAJ14',
       caption:'Student-labeled measurement view',
@@ -366,7 +366,7 @@ const SHRIMPINA_SAMPLE_MORPHOLOGY = {
       callouts:[]
     },
     {
-      label:'Close view',
+      label:'Ventral labeled',
       src:'assets/shrimpina-morphology/ssaj14-grass-shrimp-close-labeled.png',
       alt:'Student-labeled close view of eastern grass shrimp SSAJ14',
       caption:'Student-labeled close view',
@@ -376,7 +376,7 @@ const SHRIMPINA_SAMPLE_MORPHOLOGY = {
   ],
   SSAJ15: [
     {
-      label:'Ruler view',
+      label:'Ruler',
       src:'assets/shrimpina-morphology/ssaj15-grass-shrimp-ruler.png',
       alt:'Ruler view of grass shrimp SSAJ15',
       caption:'Measurement photograph',
@@ -384,7 +384,7 @@ const SHRIMPINA_SAMPLE_MORPHOLOGY = {
       callouts:[]
     },
     {
-      label:'Labeled specimen',
+      label:'Ventral labeled',
       src:'assets/shrimpina-morphology/ssaj15-grass-shrimp-labeled.png',
       alt:'Student-labeled anatomical view of grass shrimp SSAJ15',
       caption:'Student-labeled specimen view',
@@ -394,7 +394,7 @@ const SHRIMPINA_SAMPLE_MORPHOLOGY = {
   ],
   SSAJ16: [
     {
-      label:'Close view',
+      label:'Ventral labeled',
       src:'assets/shrimpina-morphology/ssaj16-grass-shrimp-close-labeled.png',
       alt:'Student-labeled close view of grass shrimp SSAJ16',
       caption:'Student-labeled close view',
@@ -402,7 +402,7 @@ const SHRIMPINA_SAMPLE_MORPHOLOGY = {
       callouts:[]
     },
     {
-      label:'Ruler view',
+      label:'Ruler labeled',
       src:'assets/shrimpina-morphology/ssaj16-grass-shrimp-ruler-labeled.png',
       alt:'Student-labeled ruler view of grass shrimp SSAJ16',
       caption:'Student-labeled measurement view',
@@ -412,7 +412,7 @@ const SHRIMPINA_SAMPLE_MORPHOLOGY = {
   ],
   SSAJ17: [
     {
-      label:'Ruler view',
+      label:'Ruler',
       src:'assets/shrimpina-morphology/ssaj17-grass-shrimp-ruler.png',
       alt:'Ruler view of grass shrimp SSAJ17',
       caption:'Measurement photograph',
@@ -420,7 +420,7 @@ const SHRIMPINA_SAMPLE_MORPHOLOGY = {
       callouts:[]
     },
     {
-      label:'Close view',
+      label:'Ventral labeled',
       src:'assets/shrimpina-morphology/ssaj17-grass-shrimp-close-labeled.png',
       alt:'Student-labeled close view of grass shrimp SSAJ17',
       caption:'Student-labeled specimen view',
@@ -430,14 +430,14 @@ const SHRIMPINA_SAMPLE_MORPHOLOGY = {
   ],
   SSAJ21: [
     {
-      label:'Labeled specimen',
+      label:'Dorsal labeled',
       src:'assets/shrimpina-morphology/ssaj21-marsh-fiddler-crab-labeled.png',
       alt:'Student-labeled morphology view of marsh fiddler crab SSAJ21',
       caption:'Student-labeled specimen view',
       callouts:[]
     },
     {
-      label:'Propodus detail',
+      label:'Ventral labeled',
       src:'assets/shrimpina-morphology/ssaj21-marsh-fiddler-propodus-labeled.png',
       alt:'Student-labeled propodus detail for marsh fiddler crab SSAJ21',
       caption:'Student-labeled appendage detail',
@@ -480,7 +480,7 @@ Object.entries(SHRIMPINA_SAMPLE_MORPHOLOGY).forEach(([sample, views]) => {
 
 const SHRIMPINA_SAND_FIDDLER_MORPHOLOGY = [
   {
-    label:'Dorsal view',
+    label:'Dorsal labeled',
     src:'assets/shrimpina-morphology/atlantic-sand-fiddler-dorsal-labeled.png?v=20260908-1',
     alt:'Original labeled dorsal morphology view of an Atlantic sand fiddler crab',
     caption:'Original labeled morphology plate',
@@ -490,7 +490,7 @@ const SHRIMPINA_SAND_FIDDLER_MORPHOLOGY = [
     callouts:[]
   },
   {
-    label:'Ventral view',
+    label:'Ventral labeled',
     src:'assets/shrimpina-morphology/atlantic-sand-fiddler-ventral-labeled.png?v=20260908-1',
     alt:'Original labeled ventral morphology view of an Atlantic sand fiddler crab',
     caption:'Original labeled morphology plate',
@@ -640,33 +640,33 @@ SHRIMPINA_SPECIES.push({
   },
   "morphologyViews": [
     {
-      "label": "Dorsal (labeled)",
+      "label": "Dorsal labeled",
       "src": "assets/shrimpina-photo-library/squatter-pea-crab/ssaj84/01-dorsal-labeled.png",
-      "alt": "Squatter Pea Crab SSAJ84 — dorsal (labeled) view",
+      "alt": "Squatter Pea Crab SSAJ84 — dorsal labeled view",
       "caption": "200-pixel reference bar; physical scale not calibrated.",
       "sourceSample": "SSAJ84",
       "callouts": []
     },
     {
-      "label": "Ventral (labeled)",
+      "label": "Ventral labeled",
       "src": "assets/shrimpina-photo-library/squatter-pea-crab/ssaj84/02-ventral-labeled.png",
-      "alt": "Squatter Pea Crab SSAJ84 — ventral (labeled) view",
+      "alt": "Squatter Pea Crab SSAJ84 — ventral labeled view",
       "caption": "200-pixel reference bar; physical scale not calibrated.",
       "sourceSample": "SSAJ84",
       "callouts": []
     },
     {
-      "label": "Dorsal (scale)",
+      "label": "Dorsal scale",
       "src": "assets/shrimpina-photo-library/squatter-pea-crab/ssaj84/03-dorsal-scale.png",
-      "alt": "Squatter Pea Crab SSAJ84 — dorsal (scale) view",
+      "alt": "Squatter Pea Crab SSAJ84 — dorsal scale view",
       "caption": "200-pixel reference bar; physical scale not calibrated.",
       "sourceSample": "SSAJ84",
       "callouts": []
     },
     {
-      "label": "Ventral (scale)",
+      "label": "Ventral scale",
       "src": "assets/shrimpina-photo-library/squatter-pea-crab/ssaj84/04-ventral-scale.png",
-      "alt": "Squatter Pea Crab SSAJ84 — ventral (scale) view",
+      "alt": "Squatter Pea Crab SSAJ84 — ventral scale view",
       "caption": "200-pixel reference bar; physical scale not calibrated.",
       "sourceSample": "SSAJ84",
       "callouts": []

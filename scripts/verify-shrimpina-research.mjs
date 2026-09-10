@@ -62,7 +62,7 @@ check(register.find(item => item.code === 'SSAJ77')?.collectionHidden === true, 
 check(register.filter(item => !item.collectionHidden).length === 83, 'Expected 83 specimens in the visible collection');
 const peaCrabPhotos = photoLibrary.find(entry => entry.sample === 'SSAJ84');
 check(peaCrabPhotos?.photos.length === 4, 'SSAJ84 must have four supplied photographs');
-check(peaCrabPhotos?.photos.map(photo => photo.label).join('|') === 'Dorsal (labeled)|Ventral (labeled)|Dorsal (scale)|Ventral (scale)', 'SSAJ84 photograph views must match the supplied plates');
+check(peaCrabPhotos?.photos.map(photo => photo.label).join('|') === 'Dorsal labeled|Ventral labeled|Dorsal scale|Ventral scale', 'SSAJ84 photograph views must match the supplied plates');
 check(Object.keys(research.dnaBySample).length === 14, `Expected 14 DNA entries, found ${Object.keys(research.dnaBySample).length}`);
 check(research.researchQuestion === 'How are the morphological characteristics among crab species in Little Sippewissett Marsh and Woodneck Beach results of their role and place within the community?', 'Official research question does not match the supplied wording');
 
