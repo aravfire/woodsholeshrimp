@@ -11,8 +11,8 @@
 <link rel="stylesheet" href="site-index.css?v=20260910-11">
 <link rel="stylesheet" href="shrimpina.css?v=20260907-6">
 <link rel="stylesheet" href="shrimpina-research.css?v=20260914-genetics-layout">
-<script src="shrimpina-research-data.js?v=20260914-genetics"></script>
-<script src="profile-render.js?v=20260914-genetics-layout"></script>
+<script src="shrimpina-research-data.js?v=20260914-species-notes"></script>
+<script src="profile-render.js?v=20260914-species-notes"></script>
 <script src="site-index.js?v=20260914-1" defer></script>
 </head>
 <body class="has-site-index shrimpina-site">
@@ -44,7 +44,7 @@ document.getElementById('comparisonHermit').innerHTML = comparisonCard(SHRIMPINA
 document.getElementById('comparisonInvasive').innerHTML = comparisonCard(SHRIMPINA_RESEARCH.comparisons[2]);
 
 const speciesAnchor = scientific => `species-${scientific.replace(/\W+/g,'-')}`;
-document.getElementById('speciesGuide').innerHTML = Object.entries(SHRIMPINA_RESEARCH.speciesNotes).map(([scientific,note]) => `<details class="species-source-item" id="${speciesAnchor(scientific)}"><summary><span><b>${escapeResearchText(note.common)}</b><i>${escapeResearchText(scientific)}</i></span><em>${note.comparativeOnly ? 'Comparative guide only' : 'Open species notes'}</em></summary>${note.comparativeOnly ? '' : `<p class="species-source-actions"><a href="groups/shrimpina.html?species=${encodeURIComponent(scientific)}#g-species">Browse matching specimens ↗</a></p>`}${renderResearchSpeciesSource({sci:scientific}, 'description')}${renderResearchSpeciesSource({sci:scientific}, 'ecology')}</details>`).join('');
+document.getElementById('speciesGuide').innerHTML = Object.entries(SHRIMPINA_RESEARCH.speciesNotes).map(([scientific,note]) => `<details class="species-source-item" id="${speciesAnchor(scientific)}"><summary><span><b>${escapeResearchText(note.common)}</b><i>${escapeResearchText(note.scientificLabel || scientific)}</i></span><em>${note.comparativeOnly ? 'Comparative guide only' : 'Open species notes'}</em></summary>${note.comparativeOnly ? '' : `<p class="species-source-actions"><a href="groups/shrimpina.html?species=${encodeURIComponent(scientific)}#g-species">Browse matching specimens ↗</a></p>`}${renderResearchSpeciesSource({sci:scientific}, 'description')}${renderResearchSpeciesSource({sci:scientific}, 'ecology')}</details>`).join('');
 const revealLinkedSpecies = () => { const target = document.getElementById(decodeURIComponent(location.hash.slice(1))); if (target?.matches('details')) target.open = true; };
 window.addEventListener('hashchange', revealLinkedSpecies);
 revealLinkedSpecies();

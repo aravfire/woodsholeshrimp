@@ -292,8 +292,20 @@ const SHRIMPINA_PHOTO_LIBRARY = [
     "sample": "SSAJ34",
     "photos": [
       {
-        "src": "assets/shrimpina-photo-library/european-green-crab/ssaj34/01-second-view-side.jpg",
+        "src": "assets/shrimpina-photo-library/european-green-crab/ssaj34/06-dorsal-close.jpg",
         "label": "Dorsal 1"
+      },
+      {
+        "src": "assets/shrimpina-photo-library/european-green-crab/ssaj34/07-dorsal-overview.jpg",
+        "label": "Dorsal 2"
+      },
+      {
+        "src": "assets/shrimpina-photo-library/european-green-crab/ssaj34/08-frontal-close.jpg",
+        "label": "Frontal 1"
+      },
+      {
+        "src": "assets/shrimpina-photo-library/european-green-crab/ssaj34/01-second-view-side.jpg",
+        "label": "Dorsal 3"
       },
       {
         "src": "assets/shrimpina-photo-library/european-green-crab/ssaj34/02-underside.jpg",
@@ -301,7 +313,7 @@ const SHRIMPINA_PHOTO_LIBRARY = [
       },
       {
         "src": "assets/shrimpina-photo-library/european-green-crab/ssaj34/03-dorsal.jpg",
-        "label": "Dorsal 2"
+        "label": "Dorsal 4"
       },
       {
         "src": "assets/shrimpina-photo-library/european-green-crab/ssaj34/04-underside-detail.jpg",
@@ -309,7 +321,7 @@ const SHRIMPINA_PHOTO_LIBRARY = [
       },
       {
         "src": "assets/shrimpina-photo-library/european-green-crab/ssaj34/05-side.jpg",
-        "label": "Frontal"
+        "label": "Frontal 2"
       }
     ]
   },
@@ -554,8 +566,16 @@ const SHRIMPINA_PHOTO_LIBRARY = [
     "sample": "SSAJ53",
     "photos": [
       {
+        "src": "assets/shrimpina-photo-library/longnose-spider-crab/ssaj53/02-dorsal-close.jpg",
+        "label": "Dorsal 1"
+      },
+      {
+        "src": "assets/shrimpina-photo-library/longnose-spider-crab/ssaj53/03-dorsal-overview.jpg",
+        "label": "Dorsal 2"
+      },
+      {
         "src": "assets/shrimpina-photo-library/longnose-spider-crab/ssaj53/01-face-detail-in-water.jpg",
-        "label": "Dorsal in water"
+        "label": "Dorsal 3"
       }
     ]
   },
@@ -782,6 +802,28 @@ const SHRIMPINA_PHOTO_LIBRARY = [
       {
         "src": "assets/shrimpina-photo-library/ocellate-lady-crab/ssaj74/01-measurement.png",
         "label": "Dorsal ruler"
+      }
+    ]
+  },
+  {
+    "animal": "Flat-Clawed Hermit Crab",
+    "sample": "SSAJ69",
+    "photos": [
+      {
+        "src": "assets/shrimpina-photo-library/flat-clawed-hermit-crab/ssaj69/01-frontal.jpg",
+        "label": "Frontal 1"
+      },
+      {
+        "src": "assets/shrimpina-photo-library/flat-clawed-hermit-crab/ssaj69/02-frontal-close.jpg",
+        "label": "Frontal 2"
+      },
+      {
+        "src": "assets/shrimpina-photo-library/flat-clawed-hermit-crab/ssaj69/03-shell-ruler.jpg",
+        "label": "Shell ruler 1"
+      },
+      {
+        "src": "assets/shrimpina-photo-library/flat-clawed-hermit-crab/ssaj69/04-shell-ruler.jpg",
+        "label": "Shell ruler 2"
       }
     ]
   }

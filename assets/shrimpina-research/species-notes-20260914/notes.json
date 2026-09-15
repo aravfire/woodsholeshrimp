@@ -1,0 +1,169 @@
+{
+  "source": "shrimpina-species-notes.pdf",
+  "sha256": "3168d235534f09e4baea5976bc1116da29fdbb1ed2146e1f9e37003b2e55bf24",
+  "species": {
+    "Sporobolus alterniflorus": {
+      "title": "Saltmarsh Cord Grass = Sporobolus alterniflorus",
+      "page": 1,
+      "sections": {
+        "Description": [
+          "AKA: Smooth Cordgrass / Spartina",
+          "Stem and Leaves: This is the tall grass covering most of the edge of the marsh in our picture. It grows in very thick groups with long skinny leaves coming off of straight stems. The ends of the leaves come to a point.",
+          "Coloration: Mostly green or yellow-green while it is growing and then turns more tan/brown later in the year.",
+          "Roots and Rhizomes: Under the mud it has a large system of roots and rhizomes (underground stems). New pieces of grass can grow up from the rhizomes, which is why it forms such large patches instead of growing as one plant by itself.",
+          "Salt: The leaves have small salt glands that get rid of extra salt. Making it able to live in areas that are covered by salt water over and over again."
+        ],
+        "Ecology": [
+          "Habitat: Found in the low marsh, especially along tidal creeks and muddy edges. This part of the marsh floods regularly.",
+          "Holding the Marsh Together: The roots grab onto the mud and the stems slow the water down. Sediment gets caught around the grass instead of all washing away.",
+          "Other Animals: Fiddler crabs burrow between the stems and small fish use the flooded grass for cover. Snails, mussels, and insects are also all over these areas.",
+          "After it Dies: Dead grass breaks into detritus and gets moved around by the tide. Small animals and microorganisms feed on it."
+        ]
+      }
+    },
+    "Clathria prolifera": {
+      "title": "Red Beard Sponge = Clathria prolifera",
+      "page": 2,
+      "sections": {
+        "Description": [
+          "Bright red/orange branches growing over each other. It looks kind of tangled which is probably where red beard comes from.",
+          "In our picture it is growing around a shell. Grass and other stuff got caught around it too, so it does not have one even shape.",
+          "There are lots of tiny holes in the body. Water goes in through the holes and moves through spaces inside.",
+          "It is an animal but has no head or legs. Fibers and tiny hard pieces inside hold the branches up."
+        ],
+        "Ecology": [
+          "Usually attached to something hard underwater, like oyster shells, rocks, docks, pilings or reefs.",
+          "Filter feeder. Water comes through the pores and food gets taken out.",
+          "Little shrimp, worms and crabs can hide between the branches.",
+          "If too much mud covers the holes it is harder for the sponge to keep water moving."
+        ]
+      }
+    },
+    "Diopatra cuprea": {
+      "title": "Plumed Worm = Diopatra cuprea",
+      "page": 3,
+      "sections": {
+        "Description": [
+          "AKA Decorator Worm or Tube Worm",
+          "The worm itself was mostly hidden. The part in our photo is its tube with shell pieces and beach material stuck to it.",
+          "Inside of the tube is softer and almost parchment-like. Outside has sand, shell, seaweed and plant pieces. At first it just looks like a clump in the sand.",
+          "Long segmented body down in the tube. The long parts around its head make the plumed look."
+        ],
+        "Ecology": [
+          "Lives in sand or muddy sand in the intertidal and shallow water. Most of the tube is buried straight down.",
+          "It collects whatever is close by and adds it to the top of the tube, so every tube can look a little different.",
+          "Reaches out for algae, detritus and food around the opening.",
+          "The top of the tube gives algae a place to attach and small animals can hide next to it.",
+          "Fish and rays sometimes bite the exposed part. The worm can repair the tube and regrow damaged parts."
+        ]
+      }
+    },
+    "pending:barnacles": {
+      "title": "Barnacles = Amphibalanus venustus (working identification)",
+      "page": 4,
+      "sections": {
+        "Description": [
+          "iNaturalist has them under Amphibalanus venustus. The original register only said barnacles though, so this is still a working ID.",
+          "Small cone shaped shells in a group. Several hard plates make the outside and the plates at the top open and shut.",
+          "White/cream and brown with darker stripes up the sides. Some algae and sediment is on them.",
+          "A few grew right against each other and came out uneven."
+        ],
+        "Ecology": [
+          "Attaches to rocks, shells, boats, docks and other hard surfaces that stay in the water.",
+          "When it is underwater the top opens and feathery legs called cirri catch plankton and tiny food.",
+          "At low tide the plates close. Water stays inside so the soft animal does not dry out.",
+          "Once attached it cannot move to a new spot. Barnacles, oysters, mussels and sponges can all be trying to use the same open surface."
+        ]
+      }
+    },
+    "Anomia simplex": {
+      "title": "Common Jingle = Anomia simplex",
+      "page": 5,
+      "sections": {
+        "Description": [
+          "AKA Jingle Shell / Potato Chip Shell",
+          "Very thin and rounded but the edge is not completely even. Ours is pale gold and almost see through in the ruler photo.",
+          "The upper half is curved. The bottom is flatter because it grows against whatever is under it.",
+          "A hardened byssus goes through a hole in the bottom valve and holds it down.",
+          "Only a few centimeters across in our photo and a lot thinner than the round clam."
+        ],
+        "Ecology": [
+          "Found stuck to rocks, oyster shells, wood and docks in shallow coastal water. We saw them around oysters.",
+          "Suspension feeder. It takes phytoplankton and other small particles out of the water.",
+          "Larvae swim before settling. Really small jingles can detach and move again, but the larger ones stay attached."
+        ]
+      }
+    },
+    "Mercenaria mercenaria": {
+      "title": "Round Clam (Northern Quahog) = Mercenaria mercenaria",
+      "page": 6,
+      "sections": {
+        "Description": [
+          "Also called a hard clam or quahog.",
+          "Thick heavy shell with a rounded triangle shape. The two valves are about the same size and close tight.",
+          "Curved growth lines start near the raised hinge and go across the shell. They are the first thing that stood out in our picture.",
+          "Outside was cream/tan to gray with darker marks between some lines.",
+          "It has a muscular foot for digging. The siphons stay closer to the surface so water can go in and out while the clam is buried."
+        ],
+        "Ecology": [
+          "Buried in sand, mud or both in bays and estuaries. Adults do not move much once they settle.",
+          "Filters plankton and microorganisms from water coming in through the siphons.",
+          "The thick shell and being buried help protect adults. Small clams still get eaten by crabs, fish, sea stars, snails and birds.",
+          "Eggs and sperm are released into the water. Larvae drift and later settle on the bottom and start making a shell."
+        ]
+      }
+    },
+    "Hemigrapsus sanguineus": {
+      "title": "Asian Shore Crab = Hemigrapsus sanguineus",
+      "page": 7,
+      "sections": {
+        "Ecology": [
+          "Rocky habitat: Usually in the rocky intertidal. They hide under rocks, cobbles, shells and debris at low tide, then scatter fast when the rock is lifted.",
+          "They can handle a big range of temperatures and salinity. That helps when the same spot keeps going from underwater to exposed.",
+          "Opportunistic omnivore. Eats algae, detritus, small mollusks, young crustaceans and other small organisms under rocks.",
+          "Invasive species from the western Pacific. It reached the Atlantic coast in the late 1980s and Massachusetts by the early 1990s. It is established around Cape Cod.",
+          "It overlaps with European green crabs in some places so they can compete for food and shelter."
+        ]
+      }
+    },
+    "Carcinus maenas": {
+      "title": "European Green Crab = Carcinus maenas",
+      "page": 8,
+      "sections": {
+        "Ecology": [
+          "Common in salt marshes, protected estuaries, sandy beaches, rocky shores, mudflats and shallow water. They also tolerate brackish water.",
+          "Aggressive predator and scavenger. Eats clams, mussels, oysters, snails, worms, small crustaceans and carrion. It can dig up buried shellfish.",
+          "Native to Europe and northern Africa. Introduced to eastern North America in the 1800s and now widespread in New England.",
+          "Green crabs can lower shellfish populations, dig through eelgrass and damage marsh creek banks.",
+          "More active than spider crabs. When disturbed it can move sideways fast or hold its claws up."
+        ]
+      }
+    },
+    "Pagurus pollicaris": {
+      "title": "Flat-Clawed Hermit Crab = Pagurus pollicaris",
+      "page": 9,
+      "sections": {
+        "Ecology": [
+          "Shallow coastal water, sandy bottoms, rocky areas, eelgrass and the lower part of estuaries.",
+          "Can be in some of the same places as long-clawed hermit crabs, mostly closer to the marine edge of the marsh.",
+          "The huge flat claw helps with defense. It pulls into the borrowed shell and puts the claw across the opening so predators have a harder time getting to the soft abdomen.",
+          "Scavenger and omnivore. Eats algae, detritus, carrion and small organisms it finds on the bottom.",
+          "Needs larger gastropod shells as it grows. If those shells are not there, larger crabs have fewer places they can live."
+        ]
+      }
+    },
+    "Pagurus longicarpus": {
+      "title": "Long-Clawed Hermit Crab = Pagurus longicarpus",
+      "page": 10,
+      "sections": {
+        "Ecology": [
+          "Especially common in shallow bays, salt-marsh creeks, mudflats, sandy bottoms and protected estuaries. Making them very well suited to Woodneck and Little Sippewissett.",
+          "Walks with its legs and long claw out while dragging the shell behind. If something disturbs it the whole body pulls back into the shell.",
+          "The big right claw can partly block the opening like a door.",
+          "Opportunistic omnivore and scavenger. Eats algae, detritus, dead organisms, microorganisms and other food along the bottom.",
+          "Good shells are limited. Hermit crabs inspect other shells, fight over them or switch when a better size is available."
+        ]
+      }
+    }
+  }
+}

@@ -24,17 +24,24 @@ function escapeResearchText(value) {
   return String(value).replace(/[&<>"']/g, character => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[character]));
 }
 
+function researchSpeciesKey(s) {
+  return s.sci === 'Identification pending' ? `pending:${s.common.toLowerCase()}` : s.sci;
+}
+
 function renderResearchSpeciesSource(s, section) {
   if (s.speciesSource) return `<div class="research-text-block species-source">${renderParsedSpecies(s.speciesSource, section)}</div>`;
-  const note = typeof SHRIMPINA_RESEARCH !== 'undefined' ? SHRIMPINA_RESEARCH.speciesNotes[s.sci] : null;
+  const note = typeof SHRIMPINA_RESEARCH !== 'undefined' ? SHRIMPINA_RESEARCH.speciesNotes[researchSpeciesKey(s)] : null;
   if (!note) return '';
-  if (note.source) return `<div class="research-text-block species-source">${renderParsedSpecies(note.source, section)}</div>`;
+  if (note.source) {
+    const sourceLink = note.revision && section === 'description' ? `<p class="species-source-actions"><a href="${SHRIMPINA_RESEARCH.assetUrl(note.revision.pdf)}#page=${note.revision.page}" target="_blank" rel="noopener">Updated species notes · page ${note.revision.page} ↗</a></p>` : '';
+    return `<div class="research-text-block species-source">${renderParsedSpecies(note.source, section)}${sourceLink}</div>`;
+  }
   return `<div class="research-text-block species-source" data-research-kind="species" data-research-section="${section}" data-research-pages="${note.pages.join(',')}"><p>Loading the verbatim species notes…</p></div>`;
 }
 
 function researchGuideHref(s) {
-  const note = typeof SHRIMPINA_RESEARCH !== 'undefined' ? SHRIMPINA_RESEARCH.speciesNotes[s.sci] : null;
-  return note ? `research.html#species-${s.sci.replace(/\W+/g, '-')}` : '';
+  const note = typeof SHRIMPINA_RESEARCH !== 'undefined' ? SHRIMPINA_RESEARCH.speciesNotes[researchSpeciesKey(s)] : null;
+  return note ? `research.html#species-${researchSpeciesKey(s).replace(/\W+/g, '-')}` : '';
 }
 
 async function loadResearchPages(pages) {
@@ -77,7 +84,7 @@ function parseSpeciesSource(text) {
 function renderParsedSpecies(parsed, requestedSection) {
   const wanted = requestedSection === 'description'
     ? parsed.order.filter(name => name === 'Description')
-    : parsed.order.filter(name => name !== 'Description');
+    : parsed.order.filter(name => name !== 'Description' && parsed.sections[name]?.length);
   if (!wanted.length) return requestedSection === 'description' ? '' : '<p>No additional source notes appear under this heading.</p>';
   return `${requestedSection === 'description' ? `<p class="research-source-title">${escapeResearchText(parsed.title)}</p>` : ''}${wanted.map(name => `
     <section class="research-note-section"><h4>${escapeResearchText(name)}</h4><ul>${parsed.sections[name].map(item => `<li>${escapeResearchText(item)}</li>`).join('')}</ul></section>`).join('')}`;

@@ -565,6 +565,17 @@ const SHRIMPINA_SUPPLEMENTAL_TAXA = {
   }
 };
 
+// Photos supplied for this specimen; other flat-clawed hermits keep their own media.
+const flatClawed69Photos = SHRIMPINA_PHOTO_LIBRARY.find(entry => entry.sample === 'SSAJ69').photos;
+SHRIMPINA_SPECIES.push({
+  ...SHRIMPINA_SUPPLEMENTAL_TAXA['Pagurus pollicaris'],
+  id:'ssaj69', code:'SSAJ69', sampleNumbers:[69],
+  photos:flatClawed69Photos.map(photo => photo.src),
+  photoLabels:flatClawed69Photos.map(photo => photo.label),
+  heroPhoto:flatClawed69Photos[0].src,
+  pop:[['2026',1]], refs:['Shrimpina specimen register and supplied photographs, SSAJ69, 2026.']
+});
+
 Object.entries(SHRIMPINA_SUPPLEMENTAL_TAXA).forEach(([key, taxon]) => {
   if (key.startsWith('pending:') || SHRIMPINA_SPECIES.some(species => species.sci === taxon.sci)) return;
   SHRIMPINA_SPECIES.push(taxon);
@@ -673,5 +684,19 @@ SHRIMPINA_SPECIES.push({
     }
   ]
 });
+
+// Apply the project team's revised descriptions and ecology to matching taxa.
+if (typeof SHRIMPINA_RESEARCH !== 'undefined') {
+  for (const species of [...SHRIMPINA_SPECIES, ...Object.values(SHRIMPINA_SUPPLEMENTAL_TAXA)]) {
+    const key = species.sci === 'Identification pending' ? `pending:${species.common.toLowerCase()}` : species.sci;
+    const note = SHRIMPINA_RESEARCH.speciesNotes[key];
+    if (!note?.revision) continue;
+    if (note.revision.sections.includes('Description')) species.morph = note.source.sections.Description.join(' ');
+    if (note.revision.sections.includes('Ecology')) {
+      species.ecologyReport = [...note.source.sections.Ecology];
+      species.eco = species.ecologyReport.join(' ');
+    }
+  }
+}
 
 const ALL_SPECIES = [...SPECIES.filter(base => !SHRIMPINA_SPECIES.some(species => species.id === base.id)), ...SHRIMPINA_SPECIES];
