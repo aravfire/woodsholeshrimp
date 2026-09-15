@@ -96,21 +96,51 @@ async function loadGeneticAnalysis() {
 function renderGeneticAnalysis(section) {
   const source = SHRIMPINA_RESEARCH.geneticSource;
   let figureNumber = 0;
-  const content = section.blocks.map(block => {
+  const majorHeadings = new Set(['Consensus Sequence:', 'Comparison to Other Organisms:']);
+  const detailHeadings = new Set(['Collection Details:', 'Detailed Analysis:', 'Final Conclusions:', 'Observed behaviors/miscellaneous information:', 'All of our hermit samples:']);
+  const renderText = block => {
     const text = escapeResearchText(block.text);
-    const tag = /^h[1-6]$/.test(block.tag) ? 'h3' : 'p';
-    const prose = text ? `<${tag}${block.tag === 'li' ? ' class="genetic-list-item"' : ''}>${text}</${tag}>` : '';
+    if (!text) return '';
+    if (/^h[1-6]$/.test(block.tag)) return `<h3 class="genetic-species-heading">${text}</h3>`;
+    if (majorHeadings.has(block.text)) return `<h4 class="genetic-category-heading">${text}</h4>`;
+    if (/^Analysis \d+/.test(block.text)) return `<h5 class="genetic-analysis-heading">${text}</h5>`;
+    if (detailHeadings.has(block.text)) return `<h6 class="genetic-detail-heading">${text}</h6>`;
+    const field = block.text.match(/^(Scientific Name|Location Found|Number of bp|Mismatch count|Number of mismatches):\s*(.*)$/s);
+    if (field) {
+      const value = escapeResearchText(field[2]);
+      return `<p class="genetic-field"><strong>${escapeResearchText(field[1])}:</strong> ${field[1] === 'Scientific Name' ? `<em>${value}</em>` : value}</p>`;
+    }
+    return `<p${block.tag === 'li' ? ' class="genetic-list-item"' : ''}>${text}</p>`;
+  };
+  const renderFigures = block => {
     const figures = block.images.map(figure => {
       const url = SHRIMPINA_RESEARCH.assetUrl(source.data.replace(/analysis\.json$/, '') + figure.src);
       const label = `${section.code || section.title} · source figure ${++figureNumber}`;
-      return `<figure class="genetic-source-figure" style="max-width:${figure.width}px">
+      // Expand full-width plates while keeping small cropped keys at their source size.
+      const maxWidth = figure.width >= 400 ? 900 : figure.width;
+      return `<figure class="genetic-source-figure" style="max-width:${maxWidth}px">
         <svg role="img" aria-label="${escapeResearchText(label)}" viewBox="${figure.x} ${figure.y} ${figure.width} ${figure.height}" xmlns="http://www.w3.org/2000/svg">
           <image href="${escapeResearchText(url)}" width="${figure.imageWidth}" height="${figure.imageHeight}" preserveAspectRatio="none" />
         </svg><figcaption>${escapeResearchText(label)}</figcaption></figure>`;
     }).join('');
-    return prose + (figures ? `<div class="genetic-source-figures">${figures}</div>` : '');
-  }).join('');
-  return `<p class="genetic-source-link"><a href="${source.url}" target="_blank" rel="noopener">Updated project analysis · September 14, 2026 ↗</a></p><div class="genetic-source-content">${content}</div>`;
+    return figures ? `<div class="genetic-source-figures">${figures}</div>` : '';
+  };
+  const parts = [];
+  for (let index = 0; index < section.blocks.length; index++) {
+    const block = section.blocks[index];
+    if (/^\d+\s*→/.test(block.text)) {
+      let record = renderText(block) + renderFigures(block);
+      const next = section.blocks[index + 1];
+      if (next && /^(Mismatch count|Number of mismatches):/.test(next.text)) {
+        record += renderText(next) + renderFigures(next);
+        index++;
+      }
+      parts.push(`<div class="genetic-comparison-record">${record}</div>`);
+    } else {
+      parts.push(renderText(block) + renderFigures(block));
+    }
+  }
+  return `<div class="genetic-source-content">${parts.join('')}</div><p class="genetic-source-link"><a href="${source.url}" target="_blank" rel="noopener">Updated project analysis · September 14, 2026 ↗</a></p>`;
 }
 
 async function initResearchBlocks(root) {
