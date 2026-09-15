@@ -33,4 +33,8 @@
 }
 @media(prefers-reduced-motion:reduce) { .lab-thumb { transition:none; } }
 
-.gemma-gallery .lab-thumbnails { grid-template-columns:repeat(3,minmax(0,1fr)); }
+.gemma-gallery .lab-thumbnails { display:flex; overflow-x:auto; align-items:stretch; scrollbar-color:#bd8995 #3a2730; scrollbar-width:thin; }
+.gemma-gallery .lab-thumb { flex:0 0 130px; }
+.gemma-gallery .lab-controls { margin-left:auto; }
+.lab-caption[hidden] { display:none; }
+@media(max-width:600px) { .gemma-gallery .lab-thumb { flex-basis:100px; } }

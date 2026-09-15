@@ -9,7 +9,14 @@ document.querySelectorAll('.lab-gallery').forEach(gallery => {
       slide.hidden = i !== current;
       thumbs[i].setAttribute('aria-pressed', String(i === current));
     });
+    const strip = gallery.querySelector('.lab-thumbnails');
+    if (strip.scrollWidth > strip.clientWidth) {
+      const thumb = thumbs[current];
+      const left = thumb.getBoundingClientRect().left - strip.getBoundingClientRect().left + strip.scrollLeft;
+      strip.scrollLeft = left - (strip.clientWidth - thumb.offsetWidth) / 2;
+    }
     const slide = slides[current];
+    gallery.querySelector('.lab-caption').hidden = !slide.dataset.title && !slide.dataset.caption;
     gallery.querySelector('[data-gallery-caption-title]').textContent = slide.dataset.title;
     gallery.querySelector('[data-gallery-caption-text]').textContent = slide.dataset.caption;
     gallery.querySelector('[data-gallery-kind]').textContent = slide.dataset.kind.toUpperCase();
