@@ -11,9 +11,13 @@ function renderCallouts(s) {
   }).join('');
 }
 
+function hasProjectDna(s) {
+  return typeof SHRIMPINA_RESEARCH !== 'undefined' && Boolean(SHRIMPINA_RESEARCH.dnaBySample[s.code]);
+}
+
 function renderDna(s) {
   const analysis = typeof SHRIMPINA_RESEARCH !== 'undefined' ? SHRIMPINA_RESEARCH.dnaBySample[s.code] : null;
-  if (!analysis) return `<div class="research-empty"><p>No DNA analysis appears in the supplied project document.</p><a href="lab.html">Open the Laboratory page</a></div>`;
+  if (!analysis) return '';
   return `<article class="specimen-dna-source">
     <header><div><span>Project DNA analysis</span><strong>${analysis.code}</strong></div><a href="lab.html?sample=${analysis.code}#dna-${analysis.code}">Expanded Laboratory entry →</a></header>
     <div class="research-text-block" data-research-kind="dna" data-genetic-analysis="${analysis.code}"><p>Loading the verbatim project analysis…</p></div>
@@ -308,11 +312,12 @@ function buildProfileHeader(s, opts) {
 
 function buildProfileSections(s) {
   const isShrimpina = s.groupProject === 'shrimpina';
+  const hasDna = hasProjectDna(s);
   const statusColor = STATUS_COLOR[s.status] || 'var(--color-neutral-500)';
   const showGallery = s.groupProject === 'shrimpina' ? Boolean((s.photos || []).length) : (s.photos || []).length > 1;
   return `
       ${showGallery ? `<div class="reveal-sec" id="record-photos">
-        <div class="sec-label"><span class="n">01</span><h3>Individual specimen photos</h3></div>
+        <div class="sec-label"><span class="n">01</span><h3>Individual Specimen Photos</h3></div>
         <div class="gallery-grid">${renderGallery(s)}</div>
       </div>` : ''}
 
@@ -325,19 +330,19 @@ function buildProfileSections(s) {
       </div>
 
       <div class="reveal-sec" id="record-ecology">
-        <div class="sec-label"><span class="n">03</span><h3>Ecology report</h3></div>
+        <div class="sec-label"><span class="n">03</span><h3>Ecology Report</h3></div>
         ${renderResearchSpeciesSource(s, 'ecology') || renderEcologyReport(s)}
       </div>
 
-      <div class="stitch-divider"><span>← genetic ID</span></div>
+      ${hasDna ? `<div class="stitch-divider"><span>← genetic ID</span></div>
 
       <div class="reveal-sec" id="record-dna">
-        <div class="sec-label"><span class="n">04</span><h3>DNA analysis</h3></div>
+        <div class="sec-label"><span class="n">04</span><h3>DNA Analysis</h3></div>
         ${renderDna(s)}
-      </div>
+      </div>` : ''}
 
       ${isShrimpina ? '' : `<div class="reveal-sec" id="record-counts">
-        <div class="sec-label"><span class="n">05</span><h3>Survey counts</h3></div>
+        <div class="sec-label"><span class="n">${hasDna ? '05' : '04'}</span><h3>Survey counts</h3></div>
         <table class="table pop-table">
           <thead><tr><th>Year</th>${s.pop.map(p=>`<th>${p[0]}</th>`).join('')}</tr></thead>
           <tbody><tr><td>Individuals logged</td>${s.pop.map(p=>`<td>${p[1]}</td>`).join('')}</tr></tbody>
@@ -345,12 +350,12 @@ function buildProfileSections(s) {
       </div>`}
 
       <div class="reveal-sec" id="record-status">
-        <div class="sec-label"><span class="n">${isShrimpina ? '05' : '06'}</span><h3>Conservation status</h3></div>
+        <div class="sec-label"><span class="n">${String((isShrimpina ? 5 : 6) - (hasDna ? 0 : 1)).padStart(2, '0')}</span><h3>Conservation Status</h3></div>
         <span class="status-badge blueprint" style="border-color:${statusColor}">${s.status}</span>
       </div>
 
       <div class="reveal-sec" id="record-references">
-        <div class="sec-label"><span class="n">${isShrimpina ? '06' : '07'}</span><h3>References</h3></div>
+        <div class="sec-label"><span class="n">${String((isShrimpina ? 6 : 7) - (hasDna ? 0 : 1)).padStart(2, '0')}</span><h3>References</h3></div>
         <ul class="ref-list">${s.refs.map(r=>`<li>${r}</li>`).join('')}</ul>
       </div>
   `;

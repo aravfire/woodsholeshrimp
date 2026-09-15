@@ -17,8 +17,8 @@
 <script src="shrimpina-research-data.js?v=20260914-species-notes"></script>
 <script src="shrimpina-inat-media.js?v=20260910-7"></script>
 <script src="shrimpina-photo-library.js?v=20260914-crab-photos-2"></script>
-<script src="shrimpina-species-data.js?v=20260914-species-notes"></script>
-<script src="profile-render.js?v=20260914-species-notes"></script>
+<script src="shrimpina-species-data.js?v=20260914-flat-clawed-plates"></script>
+<script src="profile-render.js?v=20260914-sample-headings"></script>
 <script src="inat.js"></script>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap');
@@ -192,8 +192,9 @@ if (!s) {
     <span class="record-current"><small>Specimen</small><b>${s.code}</b></span>
     <div class="record-sequence">${previousRecord ? `<a href="${specimenHref(previousRecord)}" aria-label="Previous specimen, ${previousRecord.code}"><span aria-hidden="true">←</span><span class="record-direction">Previous</span><small>${previousRecord.code}</small></a>` : '<i aria-hidden="true"></i>'}${nextRecord ? `<a href="${specimenHref(nextRecord)}" aria-label="Next specimen, ${nextRecord.code}"><span class="record-direction">Next</span><small>${nextRecord.code}</small><span aria-hidden="true">→</span></a>` : '<i aria-hidden="true"></i>'}</div>
   </nav>` : '';
+  const hasDna = hasProjectDna(s);
   const recordSectionNavigation = isShrimpina ? `<nav class="record-section-nav" aria-label="Specimen sections">
-    <span>On this page</span><a href="#record-views">${s.morphologyViews?.length ? 'Labeled view' : 'Images'}</a>${s.morphologyViews?.length && s.photos?.length ? '<a href="#record-photos">Specimen photos</a>' : ''}<a href="#record-morphology">Morphology</a><a href="#record-ecology">Ecology</a><a href="#record-dna">DNA analysis</a><a href="#record-observations">iNaturalist</a>
+    <span>On this page</span><a href="#record-views">${s.morphologyViews?.length ? 'Labeled view' : 'Images'}</a>${s.morphologyViews?.length && s.photos?.length ? '<a href="#record-photos">Specimen photos</a>' : ''}<a href="#record-morphology">Morphology</a><a href="#record-ecology">Ecology</a>${hasDna ? '<a href="#record-dna">DNA Analysis</a>' : ''}<a href="#record-observations">iNaturalist</a>
   </nav>` : '';
   const profileOpening = isShrimpina
     ? `<div class="profile-body profile-intro">${buildProfileHeader(s)}</div>
@@ -213,11 +214,11 @@ if (!s) {
     ${profileOpening}
       <div class="stitch-divider"><span>where it's been seen →</span></div>
       <div class="reveal-sec" id="record-location">
-        <div class="sec-label"><span class="n">${isShrimpina ? '07' : '08'}</span><h3>Location</h3></div>
+        <div class="sec-label"><span class="n">${String((isShrimpina ? 7 : 8) - (hasDna ? 0 : 1)).padStart(2, '0')}</span><h3>Location</h3></div>
         ${locationMarkup}
       </div>
       <div class="reveal-sec" id="record-observations">
-        <div class="sec-label"><span class="n">${isShrimpina ? '08' : '09'}</span><h3>iNaturalist observations</h3></div>
+        <div class="sec-label"><span class="n">${String((isShrimpina ? 8 : 9) - (hasDna ? 0 : 1)).padStart(2, '0')}</span><h3>iNaturalist Observations</h3></div>
         <div class="obs-grid" id="obsGrid"></div>
         <p class="obs-status" id="obsStatus">loading observations of ${s.sci}…</p>
       </div>

@@ -501,11 +501,31 @@ const SHRIMPINA_SAND_FIDDLER_MORPHOLOGY = [
   }
 ];
 
+const SHRIMPINA_FLAT_CLAWED_MORPHOLOGY = [
+  {
+    label:'Frontal labeled',
+    src:'assets/shrimpina-morphology/flat-clawed-hermit-frontal-labeled.png',
+    alt:'Labeled frontal close-up of a flat-clawed hermit crab showing the eyes, antennae, thoracic shield, flattened claw, and walking leg',
+    caption:'Shared species reference · head, claw, and walking leg',
+    sourceLabel:'Flat-Clawed Hermit Crab',
+    callouts:[]
+  },
+  {
+    label:'Shell labeled',
+    src:'assets/shrimpina-morphology/flat-clawed-hermit-shell-labeled.png',
+    alt:'Labeled flat-clawed hermit crab and its occupied gastropod shell, with attached barnacles, antenna, eye, claws, and walking legs',
+    caption:'Shared species reference · occupied shell and visible anatomy',
+    sourceLabel:'Flat-Clawed Hermit Crab',
+    callouts:[]
+  }
+];
+
 // A labeled slide is a species-level morphology reference. Exact labeled
 // records keep their own plate; other records of that species inherit the
 // representative plate below while retaining only their own field photos.
 const SHRIMPINA_SPECIES_MORPHOLOGY = {
   'Pagurus longicarpus': SHRIMPINA_SAMPLE_MORPHOLOGY.SSAJ1,
+  'Pagurus pollicaris': SHRIMPINA_FLAT_CLAWED_MORPHOLOGY,
   'Palaemon vulgaris': SHRIMPINA_SAMPLE_MORPHOLOGY.SSAJ14,
   'Minuca pugnax': SHRIMPINA_SAMPLE_MORPHOLOGY.SSAJ21,
   'Leptuca pugilator': SHRIMPINA_SAND_FIDDLER_MORPHOLOGY,
@@ -523,6 +543,7 @@ const SHRIMPINA_SUPPLEMENTAL_TAXA = {
     photos:[], heroPhoto:'', pop:[['2026',1]], refs:['Shrimpina specimen register, 2026.']
   },
   'Pagurus pollicaris': {
+    morphologyViews:SHRIMPINA_FLAT_CLAWED_MORPHOLOGY,
     id:'flat-clawed-hermit', code:'Species record', sampleNumbers:[], group:'crab', phylumKey:'arthropoda-crustacea', groupProject:'shrimpina',
     common:'Flat-Clawed Hermit Crab', sci:'Pagurus pollicaris', phylum:'Arthropoda', cls:'Malacostraca', order:'Decapoda', family:'Paguridae', status:'Native',
     morph:'', eco:'', ecologyReport:[], photos:[], heroPhoto:'', pop:[['2026',3]], refs:['Shrimpina specimen register, 2026.']
