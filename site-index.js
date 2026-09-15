@@ -79,14 +79,13 @@
       const path = location.pathname.toLowerCase();
       const params = new URLSearchParams(location.search);
       const isSample = path.endsWith('/species.html') && params.has('sample');
-      const isShrimpinaRoute = path.includes('/groups/shrimpina') || path.endsWith('/research.html') || path.endsWith('/journal.html') || path.endsWith('/conditions.html') || path.endsWith('/lab.html') || isSample;
+      const isShrimpinaRoute = path.includes('/groups/shrimpina') || path.endsWith('/journal.html') || path.endsWith('/conditions.html') || path.endsWith('/lab.html') || isSample;
       const current = path.endsWith('/map.html') ? 'map'
         : path.endsWith('/observations.html') ? 'observations'
         : isSample ? 'archive'
         : path.includes('/groups/shrimpina') && location.hash === '#g-species' ? 'archive'
         : path.endsWith('/journal.html') ? 'journal'
         : path.endsWith('/conditions.html') ? 'conditions'
-        : path.endsWith('/research.html') ? 'research'
         : path.endsWith('/lab.html') ? 'lab'
         : isShrimpinaRoute ? 'shrimpina'
         : path.endsWith('/species.html') ? 'map'
@@ -112,7 +111,6 @@
           ${navGroup('shrimpina', 'groups/shrimpina.html', 'Shrimpina', [
             { value:'groups/shrimpina.html', label:'Project Overview' },
             { value:'groups/shrimpina.html#g-species', label:'Specimen Archive' },
-            { value:'research.html', label:'Research Guide' },
             { value:'journal.html', label:'Field Journal' },
             { value:'conditions.html', label:'Field Conditions' },
             { value:'lab.html', label:'Laboratory' }
@@ -138,7 +136,6 @@
                 ${link('observations', 'observations.html', 'Observations')}
                 ${link('shrimpina', 'groups/shrimpina.html', 'Shrimpina project')}
                 ${link('archive', 'groups/shrimpina.html#g-species', 'Specimen Archive')}
-                ${link('research', 'research.html', 'Research Guide')}
                 ${link('journal', 'journal.html', 'Field Journal')}
                 ${link('conditions', 'conditions.html', 'Field Conditions')}
                 ${link('lab', 'lab.html', 'Laboratory')}

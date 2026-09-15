@@ -194,7 +194,6 @@ for (const mediaPath of [film?.src, film?.poster].filter(Boolean)) {
 }
 
 const overviewSource = fs.readFileSync(path.join(root, 'groups/shrimpina.html'), 'utf8');
-const guideSource = fs.readFileSync(path.join(root, 'research.html'), 'utf8');
 const labSource = fs.readFileSync(path.join(root, 'lab.html'), 'utf8');
 const relationshipSource = fs.readFileSync(path.join(root, 'relationship-tree.js'), 'utf8');
 check(!overviewSource.includes('id="g-comparisons"'), 'Overview still contains the comparison section');
@@ -213,8 +212,6 @@ check(labSource.includes('class="phylogeny-branch'), 'Laboratory is missing the 
 check(labSource.includes('class="phylogeny-leaf'), 'Laboratory is missing the linked phylogeny terminals');
 check(labSource.includes('aria-label="Scrollable final specimen phylogeny"'), 'Laboratory is missing accessible phylogeny navigation');
 check(labSource.includes('id="phylogenyTree"'), 'Laboratory is missing the final phylogeny renderer');
-check(guideSource.includes('SHRIMPINA_RESEARCH.comparisons[0]') && guideSource.includes('SHRIMPINA_RESEARCH.comparisons[2]'), 'Research Guide does not render all comparison groups');
-check(guideSource.includes("scientific.replace(/\\W+/g,'-')"), 'Research Guide is missing scientific-name anchors');
 for (const lineage of ['Animalia','Deuterostomia','Protostomia','Lophotrochozoa','Ecdysozoa','Arthropoda','Pancrustacea','Malacostraca','Decapoda']) {
   check(relationshipSource.includes(`label:'${lineage}'`), `Overview evolutionary context is missing ${lineage}`);
 }
@@ -286,12 +283,14 @@ for (const leaf of phylogenyLeaves.filter(leaf => leaf.code)) check(Boolean(rese
 check(phylogenyLeaves.at(-1)?.common === 'Marsh Grass Shrimp' && phylogenyLeaves.at(-1)?.outgroup, 'Final phylogeny is missing the Marsh Grass Shrimp outgroup');
 for (const code of expectedPhylogenyCodes) check(register.some(sample => sample.code === code), `Final phylogeny references missing register specimen ${code}`);
 
-for (const filename of ['groups/shrimpina.html','journal.html','conditions.html','lab.html']) {
+for (const filename of ['index.html','groups/shrimpina.html','journal.html','conditions.html','lab.html','site-index.js']) {
   const source = fs.readFileSync(path.join(root, filename), 'utf8');
-  check(source.includes('research.html') && source.includes('Research Guide'), `${filename}: missing Research Guide navigation`);
+  check(!source.includes('research.html') && !source.includes('Research Guide'), `${filename}: still links to the removed Research Guide`);
 }
 const profileSource = fs.readFileSync(path.join(root, 'profile-render.js'), 'utf8');
-check(profileSource.includes('researchGuideHref(s)'), 'Specimen morphology is missing its Research Guide link');
+check(!profileSource.includes('research.html') && !profileSource.includes('researchGuideHref'), 'Specimens still link to the removed Research Guide');
+check(profileSource.includes('function renderResearchSpeciesSource(s, section)'), 'Specimens lost their species notes renderer');
+check(!fs.existsSync(path.join(root, 'research.html')), 'Removed Research Guide page still exists');
 const specimenPageSource = fs.readFileSync(path.join(root, 'species.html'), 'utf8');
 check(!specimenPageSource.includes(': (s.photos || [])'), 'Specimen profiles can still inherit another record’s species-level photographs');
 check(specimenPageSource.includes("heroPhoto:photos[0] || ''"), 'Specimen profiles can still inherit another record’s hero photograph');

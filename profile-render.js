@@ -43,11 +43,6 @@ function renderResearchSpeciesSource(s, section) {
   return `<div class="research-text-block species-source" data-research-kind="species" data-research-section="${section}" data-research-pages="${note.pages.join(',')}"><p>Loading the verbatim species notes…</p></div>`;
 }
 
-function researchGuideHref(s) {
-  const note = typeof SHRIMPINA_RESEARCH !== 'undefined' ? SHRIMPINA_RESEARCH.speciesNotes[researchSpeciesKey(s)] : null;
-  return note ? `research.html#species-${researchSpeciesKey(s).replace(/\W+/g, '-')}` : '';
-}
-
 async function loadResearchPages(pages) {
   return Promise.all(pages.map(async page => {
     const path = `assets/shrimpina-research/text/page-${String(page).padStart(3, '0')}.txt`;
@@ -326,7 +321,6 @@ function buildProfileSections(s) {
       <div class="reveal-sec" id="record-morphology">
         <div class="sec-label"><span class="n">02</span><h3>Morphology</h3></div>
         ${renderResearchSpeciesSource(s, 'description') || `<p class="desc-text">${s.morph}</p>${renderExtendedMorphology(s)}`}
-        ${researchGuideHref(s) ? `<p class="research-guide-link"><a href="${researchGuideHref(s)}">Open this species in the Research Guide <span aria-hidden="true">→</span></a></p>` : ''}
       </div>
 
       <div class="reveal-sec" id="record-ecology">
