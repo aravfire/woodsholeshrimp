@@ -150,7 +150,7 @@
 
   const markers = [];
   if (window.L) {
-    const normalizedSite = site => /wood\s*neck/i.test(site || '') ? 'Wood Neck Beach' : site;
+    const normalizedSite = site => /wood\s*neck/i.test(site || '') ? 'Woodneck Beach' : site;
     const groupFor = sample => {
       const text = `${sample.common} ${sample.sci}`.toLowerCase();
       if (/crab|hermit|horseshoe/.test(text)) return 'crab';
@@ -167,7 +167,7 @@
     L.tileLayer('https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer/tile/{z}/{y}/{x}', {
       maxNativeZoom: 16, maxZoom: 19, attribution: 'USGS The National Map'
     }).addTo(map);
-    ['Little Sippewissett Marsh', 'Wood Neck Beach'].forEach(name => {
+    ['Little Sippewissett Marsh', 'Woodneck Beach'].forEach(name => {
       const records = observations.filter(sample => sample.site === name);
       if (!records.length) return;
       const lat = records.reduce((sum, sample) => sum + sample.lat, 0) / records.length;

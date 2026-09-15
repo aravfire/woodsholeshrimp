@@ -12,13 +12,13 @@
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha384-cxOPjt7s7Iz04uaHJceBmS+qpjv2JkIHNVcuOrM+YHwZOmJGBXI00mdUXEq65HTH" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
-<script src="../species-data.js?v=20260902-4"></script>
-<script src="../shrimpina-sample-register.js?v=20260910-7"></script>
+<script src="../species-data.js?v=20260914-1"></script>
+<script src="../shrimpina-sample-register.js?v=20260914-2"></script>
 <script src="../shrimpina-research-data.js?v=20260910-7"></script>
-<script src="../shrimpina-observation-locations.js?v=20260910-7"></script>
+<script src="../shrimpina-observation-locations.js?v=20260914-1"></script>
 <script src="../shrimpina-inat-media.js?v=20260910-7"></script>
-<script src="../shrimpina-photo-library.js?v=20260910-4"></script>
-<script src="../shrimpina-species-data.js?v=20260910-4"></script>
+<script src="../shrimpina-photo-library.js?v=20260914-1"></script>
+<script src="../shrimpina-species-data.js?v=20260914-1"></script>
 <script src="../profile-render.js?v=20260910-5"></script>
 <script src="../relationship-tree.js?v=20260910-12" data-root=".." defer></script>
 <script src="../specimen-view.js?v=20260902-5" data-root=".." defer></script>
@@ -132,7 +132,7 @@
 <link rel="stylesheet" href="../shrimpina.css?v=20260908-6">
 <link rel="stylesheet" href="../shrimpina-research.css?v=20260910-7">
 <link rel="stylesheet" href="../relationship-tree.css?v=20260910-1">
-<script src="../site-index.js?v=20260910-11" defer></script>
+<script src="../site-index.js?v=20260914-1" defer></script>
 <link rel="stylesheet" href="../specimen-view.css?v=20260902-5">
 </head>
 <body class="has-site-index shrimpina-site">
@@ -149,17 +149,17 @@
 <div class="layout">
   <nav class="toc" id="toc">
     <p class="toc-title">Project index</p>
-    <a href="#g-question" class="active"><span class="num">01</span><span><b>Question</b><small>Main facing question</small></span></a>
-    <a href="#g-family"><span class="num">02</span><span><b>Evolutionary Tree</b><small>Evolution → collection</small></span></a>
-    <a href="#g-map"><span class="num">03</span><span><b>Collection sites</b><small>Map and key</small></span></a>
-    <a href="#g-species"><span class="num">04</span><span><b>Specimens</b><small>Photos, morphology, ecology</small></span></a>
-    <a href="#g-genes"><span class="num">05</span><span><b>DNA</b><small>14 analyzed specimens</small></span></a>
-    <a href="#g-takeaways"><span class="num">06</span><span><b>Takeaways</b><small>Community roles</small></span></a>
+    <a href="#g-question" class="active"><span class="num">01</span><span><b>Question</b><small>Main Facing Question</small></span></a>
+    <a href="#g-family"><span class="num">02</span><span><b>Evolutionary Tree</b><small>Evolution → Collection</small></span></a>
+    <a href="#g-map"><span class="num">03</span><span><b>Collection sites</b><small>Map and Key</small></span></a>
+    <a href="#g-species"><span class="num">04</span><span><b>Specimens</b><small>Photos, Morphology, and Ecology</small></span></a>
+    <a href="#g-genes"><span class="num">05</span><span><b>DNA</b><small>14 Analyzed Specimens</small></span></a>
+    <a href="#g-takeaways"><span class="num">06</span><span><b>Takeaways</b><small>Community Roles</small></span></a>
   </nav>
 
   <div class="content">
     <section class="g-sec research-question-sec" id="g-question">
-      <span class="research-eyebrow">OFFICIAL QUESTION.</span><h2 id="officialQuestion"></h2>
+      <span class="research-eyebrow">Our Research Question</span><h2 id="officialQuestion"></h2>
     </section>
     <section class="g-sec overview-tree-feature" id="g-family">
       <div class="lab-tree-atlas overview-relationship-tree" aria-labelledby="overview-tree-title">
@@ -175,7 +175,7 @@
     <section class="g-sec" id="g-map">
       <div id="marshFilm"></div>
       <div class="collection-map-heading">
-        <div><p class="map-kicker">The 2026 field register</p><h2>Shrimpina collection map</h2><p>Verified public locations from the iNaturalist observations linked in our specimen spreadsheet.</p></div>
+        <div><p class="map-kicker">The 2026 field register</p><h2>Shrimpina Collection Map</h2><p>Verified public locations from the iNaturalist observations linked in our specimen spreadsheet.</p></div>
         <dl><div><dt id="gCatalogCount">83</dt><dd>catalogued</dd></div><div><dt id="gMappedCount">48</dt><dd>mapped</dd></div></dl>
       </div>
       <div class="shrimpina-map-shell">
@@ -184,7 +184,7 @@
           <span>Show</span>
           <button type="button" class="active" data-map-site="all">All records</button>
           <button type="button" data-map-site="Little Sippewissett Marsh">Marsh</button>
-          <button type="button" data-map-site="Wood Neck Beach">Beach</button>
+          <button type="button" data-map-site="Woodneck Beach">Woodneck Beach</button>
         </div>
         <div class="shrimpina-map-summary"><strong id="gMapCount">48</strong><span>verified observations shown</span><a href="#g-species">Browse all 83 samples ↓</a></div>
       </div>
@@ -192,10 +192,10 @@
     </section>
 
     <section class="g-sec" id="g-species">
-      <h2>Specimen archive</h2>
+      <h2>Specimen Archive</h2>
       <div class="specimen-intro">
-        <p>Specimens collected at Little Sippewissett Marsh and Woodneck Beach, including Squatter Pea Crab SSAJ84.</p>
-        <a href="../assets/shrimpina-resources/specimen-log-2026.pdf" target="_blank" rel="noopener">Open the current specimen log</a>
+        <p>Specimens collected at Little Sippewissett Marsh and Woodneck Beach.</p>
+        <a href="https://docs.google.com/spreadsheets/d/13OTouG3k01O-EM6-ofV0rnsVjz5oE5HNobwWU7P8AIY/edit?usp=sharing" target="_blank" rel="noopener">Open the current specimen log</a>
       </div>
       <section class="specimen-archive" aria-labelledby="sample-register-title">
         <header class="archive-header">
@@ -245,7 +245,7 @@
 </div>
 
 <section class="site-footer">
-  <div>Woods Hole Shrimpina Project: student field survey, 2026.</div>
+  <div>Woods Hole Shrimpina Project: Student Field Survey, 2026.</div>
   <div><a href="shrimpina.html">Shrimpina Home</a> · <a href="../index.html">MBL Home</a></div>
 </section>
 
@@ -258,7 +258,7 @@ document.getElementById('officialQuestion').textContent = SHRIMPINA_RESEARCH.res
 const marshFilm = SHRIMPINA_RESEARCH.researchMedia?.marshFilm;
 if (marshFilm) {
   document.getElementById('marshFilm').innerHTML = `<figure class="marsh-film">
-    <figcaption><span class="research-eyebrow">Field-site film</span><h2>${escapeResearchText(marshFilm.title)}</h2><p>Little Sippewissett Marsh and the nearby beach where the project team collected and observed specimens.</p></figcaption>
+    <figcaption><span class="research-eyebrow">Field-site film</span><h2>${escapeResearchText(marshFilm.title)}</h2><p>Little Sippewissett Marsh and Woodneck Beach where the project team collected and observed specimens.</p></figcaption>
     <div class="marsh-film-frame"><video controls playsinline preload="metadata" poster="${SHRIMPINA_RESEARCH.assetUrl(marshFilm.poster)}" aria-label="${escapeResearchText(marshFilm.title)} field-site film"><source src="${SHRIMPINA_RESEARCH.assetUrl(marshFilm.src)}" type="video/mp4">Your browser cannot play this video. <a href="${SHRIMPINA_RESEARCH.assetUrl(marshFilm.src)}">Open the MP4 file.</a></video></div>
   </figure>`;
 }
@@ -274,7 +274,7 @@ const originalSpecimenRecords = [
   },
   {
     id: 'ssaj14', sampleNumbers: [14],
-    code: 'SSAJ14', type: 'Shrimp', common: 'Eastern Grass Shrimp', sci: 'Palaemon paludosus',
+    code: 'SSAJ14', type: 'Shrimp', common: 'Marsh Grass Shrimp', sci: 'Palaemon vulgaris',
     date: '25 Aug 2026', site: 'Little Sippewissett Marsh',
     photo: '../assets/shrimpina-specimens/ssaj14-eastern-grass-shrimp.jpg', photoNote: 'Measurement view',
     record: 'https://www.inaturalist.org/observations/395311731'
@@ -392,7 +392,7 @@ const canonicalArchiveNames = new Map([
   ['Leptuca pugilator', 'Atlantic Sand Fiddler Crab'],
   ['Libinia dubia', 'Longnose Spider Crab'],
   ['Pagurus longicarpus', 'Long-clawed Hermit Crab'],
-  ['Pagurus pollicaris', 'Flat-clawed Hermit Crab'],
+  ['Pagurus pollicaris', 'Flat-Clawed Hermit Crab'],
   ['Carcinus maenas', 'European Green Crab'],
   ['Hemigrapsus sanguineus', 'Asian Shore Crab']
 ]);
@@ -495,7 +495,7 @@ if (location.hash) {
   }, 80);
 }
 
-const normalizeMapSite = site => /wood\s*neck/i.test(site || '') ? 'Wood Neck Beach' : site;
+const normalizeMapSite = site => /wood\s*neck/i.test(site || '') ? 'Woodneck Beach' : site;
 const mapGroup = sample => {
   const text = `${sample.common} ${sample.sci}`.toLowerCase();
   if (/crab|hermit|horseshoe/.test(text)) return 'crab';
@@ -549,7 +549,7 @@ const mapMarkers = mappedSamples.map(sample => {
 });
 
 const siteLabels = [];
-['Little Sippewissett Marsh','Wood Neck Beach'].forEach(name => {
+['Little Sippewissett Marsh','Woodneck Beach'].forEach(name => {
   const records = mappedSamples.filter(sample => sample.site === name);
   if (!records.length) return;
   const lat = records.reduce((sum,sample)=>sum+sample.lat,0)/records.length;

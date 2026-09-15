@@ -16,11 +16,11 @@
   <link rel="stylesheet" href="map.css?v=20260908-1">
   <link rel="stylesheet" href="specimen-view.css?v=20260902-4">
   <link rel="stylesheet" href="site-index.css?v=20260910-11">
-  <script src="site-index.js?v=20260910-11" defer></script>
+  <script src="site-index.js?v=20260914-1" defer></script>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin="anonymous"></script>
-  <script src="species-data.js?v=20260902-4"></script>
-  <script src="shrimpina-sample-register.js?v=20260910-7"></script>
-  <script src="shrimpina-observation-locations.js?v=20260910-7"></script>
+  <script src="species-data.js?v=20260914-1"></script>
+  <script src="shrimpina-sample-register.js?v=20260914-2"></script>
+  <script src="shrimpina-observation-locations.js?v=20260914-1"></script>
   <script src="specimen-view.js?v=20260902-4" data-root="." defer></script>
 </head>
 <body class="has-site-index cursor-map">
@@ -38,7 +38,7 @@
         <label class="search-field"><span>Search</span><input id="searchFilter" type="search" placeholder="Name, code, or taxonomy"></label>
         <label><span>Species</span><select id="speciesFilter"><option value="">All species</option></select></label>
         <label><span>Survey group</span><select id="groupFilter"><option value="">All groups</option></select></label>
-        <label><span>Collection site</span><select id="siteFilter"><option value="">Both sites</option><option>Little Sippewissett Marsh</option><option>Wood Neck Beach</option></select></label>
+        <label><span>Collection site</span><select id="siteFilter"><option value="">Both sites</option><option>Little Sippewissett Marsh</option><option>Woodneck Beach</option></select></label>
         <p class="location-source" id="locationSource">Loading spreadsheet-linked coordinates…</p>
       </aside>
 
@@ -56,7 +56,7 @@
       </div>
 
       <section class="results-panel" aria-labelledby="resultsHeading">
-        <header><div><p class="eyebrow">Spreadsheet-linked locations</p><h2 id="resultsHeading"><span id="resultCount">0</span> observations</h2></div><label><span>Sort</span><select id="sortControl"><option value="code">Specimen code</option><option value="common">Common name</option><option value="scientific">Scientific name</option><option value="group">Survey group</option><option value="site">Collection site</option></select></label></header>
+        <header><div><p class="eyebrow">Spreadsheet-linked locations</p><h2 id="resultsHeading"><span id="resultCount">0</span> Observations</h2></div><label><span>Sort</span><select id="sortControl"><option value="code">Specimen code</option><option value="common">Common name</option><option value="scientific">Scientific name</option><option value="group">Survey group</option><option value="site">Collection site</option></select></label></header>
         <div id="activeFilters" class="active-filters" aria-live="polite"></div>
         <div id="resultList" class="result-list"></div>
         <p id="emptyState" class="empty-state" hidden>No records match these filters.</p>
@@ -69,6 +69,6 @@
     <nav aria-label="Continue to another page"><a href="index.html">MBL Home</a><a href="observations.html">Observations</a><a href="groups/shrimpina.html">Shrimpina</a></nav>
   </footer>
 
-  <script src="map.js?v=20260908-1"></script>
+  <script src="map.js?v=20260914-1"></script>
 </body>
 </html>

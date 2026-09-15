@@ -96,7 +96,7 @@ const SPECIES = [
   },
   {
     id: 'shrimp-01', code: 'SH-01', group: 'shrimp', phylumKey: 'arthropoda-crustacea', groupProject: null,
-    common: 'Marsh Grass Shrimp', sci: 'Palaemonetes vulgaris',
+    common: 'Marsh Grass Shrimp', sci: 'Palaemon vulgaris',
     phylum: 'Arthropoda', cls: 'Malacostraca', order: 'Decapoda', family: 'Palaemonidae',
     status: 'Native', lat: 41.5889, lng: -70.6449,
     morph: 'A slender, near-transparent body 3–5 cm long with a long, toothed rostrum projecting forward and long, whip-like antennae: built for hiding in plain sight among eelgrass blades.',
@@ -111,7 +111,7 @@ const SPECIES = [
     ],
     photos: [], heroPhoto: null,
     pop: [ ['2023', 12], ['2024', 15], ['2025', 11], ['2026', 16] ],
-    refs: ['Woods Hole Biodiversity Survey field log, 2026.', 'World Register of Marine Species: Palaemonetes vulgaris.', 'Marine Biological Laboratory field identification materials.']
+    refs: ['Woods Hole Biodiversity Survey field log, 2026.', 'World Register of Marine Species: Palaemon vulgaris.', 'Marine Biological Laboratory field identification materials.']
   },
   {
     id: 'shrimp-02', code: 'SH-02', group: 'shrimp', phylumKey: 'arthropoda-crustacea', groupProject: null,

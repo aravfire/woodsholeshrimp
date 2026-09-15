@@ -11,7 +11,7 @@
     if (/lettuce|cord ?grass/.test(text)) return 'algae';
     return 'other';
   };
-  const normalizedSite = site => /wood\s*neck/i.test(site || '') ? 'Wood Neck Beach' : site;
+  const normalizedSite = site => /wood\s*neck/i.test(site || '') ? 'Woodneck Beach' : site;
   const linked = SHRIMPINA_SAMPLE_REGISTER.map(sample => {
     const location = SHRIMPINA_OBSERVATION_LOCATIONS[sample.code];
     return location ? { ...sample, ...location, site:normalizedSite(sample.site), id:sample.code, group:groupFor(sample) } : null;
@@ -54,7 +54,7 @@
       const icon=L.divIcon({className:'explorer-pin',html:`<span style="--pin:${colors[s.group]}">${s.code.replace('SSAJ','')}</span>`,iconSize:[38,38],iconAnchor:[19,19]});
       const marker=L.marker([s.lat,s.lng],{icon,title:`Open ${s.code}: ${s.common}`}).addTo(map).on('click',()=>location.assign(specimenProfileUrl(s.code))); markers.set(s.id,marker);
     });
-    ['Little Sippewissett Marsh','Wood Neck Beach'].forEach(name => {
+    ['Little Sippewissett Marsh','Woodneck Beach'].forEach(name => {
       const records = data.filter(sample => sample.site === name);
       if (!records.length) return;
       const lat = records.reduce((sum, sample) => sum + sample.lat, 0) / records.length;

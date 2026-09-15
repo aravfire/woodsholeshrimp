@@ -154,7 +154,7 @@ const SHRIMPINA_PHOTO_LIBRARY = [
     ]
   },
   {
-    "animal": "Eastern Grass Shrimp",
+    "animal": "Marsh Grass Shrimp",
     "sample": "SSAJ14",
     "photos": [
       {
@@ -172,7 +172,7 @@ const SHRIMPINA_PHOTO_LIBRARY = [
     ]
   },
   {
-    "animal": "Eastern Grass Shrimp",
+    "animal": "Marsh Grass Shrimp",
     "sample": "SSAJ15",
     "photos": [
       {
@@ -186,7 +186,7 @@ const SHRIMPINA_PHOTO_LIBRARY = [
     ]
   },
   {
-    "animal": "Eastern Grass Shrimp",
+    "animal": "Marsh Grass Shrimp",
     "sample": "SSAJ16",
     "photos": [
       {
@@ -200,7 +200,7 @@ const SHRIMPINA_PHOTO_LIBRARY = [
     ]
   },
   {
-    "animal": "Eastern Grass Shrimp",
+    "animal": "Marsh Grass Shrimp",
     "sample": "SSAJ17",
     "photos": [
       {
@@ -218,7 +218,7 @@ const SHRIMPINA_PHOTO_LIBRARY = [
     ]
   },
   {
-    "animal": "Eastern Grass Shrimp",
+    "animal": "Marsh Grass Shrimp",
     "sample": "SSAJ18",
     "photos": [
       {
@@ -244,7 +244,7 @@ const SHRIMPINA_PHOTO_LIBRARY = [
     ]
   },
   {
-    "animal": "Eastern Grass Shrimp",
+    "animal": "Marsh Grass Shrimp",
     "sample": "SSAJ19",
     "photos": [
       {

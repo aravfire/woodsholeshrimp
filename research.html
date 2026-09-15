@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="shrimpina-research.css?v=20260910-7">
 <script src="shrimpina-research-data.js?v=20260910-7"></script>
 <script src="profile-render.js?v=20260910-5"></script>
-<script src="site-index.js?v=20260910-11" defer></script>
+<script src="site-index.js?v=20260914-1" defer></script>
 </head>
 <body class="has-site-index shrimpina-site">
 <site-index data-root="." data-current="research" data-brand="shrimpina"></site-index>
@@ -35,7 +35,7 @@
   <section class="research-guide-section species-source-guide" id="species-notes"><header><div><span class="research-eyebrow">Species research</span><h2>Species Notes</h2></div><p>Select a species to read the project text.</p></header><div id="speciesGuide"></div></section>
 </main>
 
-<footer class="site-footer research-guide-footer"><div>Woods Hole Shrimpina Project: student field survey, 2026.</div><div><a href="groups/shrimpina.html">Overview</a> · <a href="groups/shrimpina.html#g-species">Specimens</a> · <a href="lab.html">Laboratory</a></div></footer>
+<footer class="site-footer research-guide-footer"><div>Woods Hole Shrimpina Project: Student Field Survey, 2026.</div><div><a href="groups/shrimpina.html">Overview</a> · <a href="groups/shrimpina.html#g-species">Specimens</a> · <a href="lab.html">Laboratory</a></div></footer>
 
 <script>
 const comparisonCard = comparison => `<article class="comparison-card"><h3>${escapeResearchText(comparison.title)}</h3><div><table><thead><tr>${comparison.columns.map(column => `<th scope="col">${escapeResearchText(column)}</th>`).join('')}</tr></thead><tbody>${comparison.rows.map(row => `<tr>${row.map((cell,index) => index === 0 ? `<th scope="row">${escapeResearchText(cell)}</th>` : `<td>${escapeResearchText(cell)}</td>`).join('')}</tr>`).join('')}</tbody></table></div></article>`;

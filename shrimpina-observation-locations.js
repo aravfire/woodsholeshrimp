@@ -35,7 +35,7 @@ const SHRIMPINA_OBSERVATION_LOCATIONS = {
   SSAJ66:{"observation":396677179,"observed":"2026-08-31","lat":41.5755606656,"lng":-70.6418095786,"accuracy":11,"place":"Falmouth, MA, USA"},
   SSAJ67:{"observation":396672137,"observed":"2026-08-27","lat":41.5761191718,"lng":-70.6374821259,"accuracy":7,"place":"Falmouth, MA, US"},
   SSAJ68:{"observation":396426374,"observed":"2026-08-31","lat":41.5752444444,"lng":-70.6425472222,"accuracy":12,"place":"Falmouth, MA, USA"},
-  SSAJ69:{"observation":396667720,"observed":"2026-08-31","lat":41.575227,"lng":-70.642427,"accuracy":24,"place":"Woodneck beach"},
+  SSAJ69:{"observation":396667720,"observed":"2026-08-31","lat":41.575227,"lng":-70.642427,"accuracy":24,"place":"Woodneck Beach"},
   SSAJ70:{"observation":396737961,"observed":"2026-08-31","lat":41.5789855467,"lng":-70.6421305608,"accuracy":13,"place":"West Falmouth, Falmouth, MA, USA"},
   SSAJ71:{"observation":396737962,"observed":"2026-08-31","lat":41.5790799804,"lng":-70.6422494651,"accuracy":8,"place":"West Falmouth, Falmouth, MA, USA"},
   SSAJ72:{"observation":396737964,"observed":"2026-08-31","lat":41.5789871609,"lng":-70.6422500114,"accuracy":2,"place":"West Falmouth, Falmouth, MA, USA"},

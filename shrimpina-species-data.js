@@ -8,10 +8,10 @@ const SHRIMPINA_REPORTS = {
     'Fish, birds, and larger crabs eat them. Their constant use and exchange of empty shells connects them closely to local snail populations.'
   ],
   grassShrimp: [
-    'The eastern grass shrimp is a small, nearly transparent decapod in the family Palaemonidae. Its long rostrum, stalked eyes, and clear segmented body are visible in the SSAJ14 measurement photograph.',
-    'It is native to the eastern United States. Although often associated with freshwater and low-salinity habitat, it also occurs in tidal coastal systems.',
+    'The marsh grass shrimp is a small, nearly transparent decapod in the family Palaemonidae. Its long rostrum, stalked eyes, and clear segmented body are visible in the SSAJ14 measurement photograph.',
+    'It lives in shallow coastal estuaries among eelgrass, algae, oyster beds, and salt-marsh edges.',
     'It shelters among submerged plants, marsh edges, roots, and other shallow structure where its transparent body provides camouflage.',
-    'Eastern grass shrimp eat algae, detritus, zooplankton, and small invertebrates. They also scavenge organic material.',
+    'Marsh grass shrimp eat algae, detritus, zooplankton, and small invertebrates. They also scavenge organic material.',
     'Females carry eggs beneath the abdomen during the breeding season. Larvae hatch into the water before developing into bottom-dwelling juveniles.',
     'Small fish and larger crustaceans feed on grass shrimp. They transfer energy from plant material and detritus to predators higher in the food web.'
   ],
@@ -82,9 +82,9 @@ const SHRIMPINA_SPECIES = [
   },
   {
     id: 'ssaj14', code: 'SSAJ14', sampleNumbers: [14], group: 'shrimp', phylumKey: 'arthropoda-crustacea', groupProject: 'shrimpina',
-    common: 'Eastern Grass Shrimp', sci: 'Palaemon paludosus', phylum: 'Arthropoda', cls: 'Malacostraca', order: 'Decapoda', family: 'Palaemonidae', status: 'Native', lat: 41.5958, lng: -70.6438,
+    common: 'Marsh Grass Shrimp', sci: 'Palaemon vulgaris', phylum: 'Arthropoda', cls: 'Malacostraca', order: 'Decapoda', family: 'Palaemonidae', status: 'Native', lat: 41.5958, lng: -70.6438,
     morph: 'A small, nearly transparent shrimp with a laterally compressed body, long antennae, stalked eyes, and a toothed rostrum. The SSAJ14 photograph records the body beside a metric ruler.', eco: SHRIMPINA_REPORTS.grassShrimp[2], ecologyReport: SHRIMPINA_REPORTS.grassShrimp,
-    photos: ['assets/shrimpina-specimens/ssaj14-eastern-grass-shrimp.jpg'], heroPhoto: 'assets/shrimpina-specimens/ssaj14-eastern-grass-shrimp.jpg', pop: [['2026',6]], refs: ['Shrimpina specimen log, SSAJ14-19, 2026.', 'World Register of Marine Species: Palaemon paludosus.']
+    photos: ['assets/shrimpina-specimens/ssaj14-eastern-grass-shrimp.jpg'], heroPhoto: 'assets/shrimpina-specimens/ssaj14-eastern-grass-shrimp.jpg', pop: [['2026',6]], refs: ['Shrimpina specimen log, SSAJ14-19, 2026.', 'World Register of Marine Species: Palaemon vulgaris.']
   },
   SHRIMPINA_SAND_FIDDLER,
   {...SHRIMPINA_MARSH_FIDDLER, id:'ssaj20', code:'SSAJ20', sampleNumbers:[20], callouts:undefined, photos:['assets/shrimpina-specimens/ssaj20-marsh-fiddler-crab.jpg'], heroPhoto:'assets/shrimpina-specimens/ssaj20-marsh-fiddler-crab.jpg'},
@@ -151,7 +151,7 @@ const SHRIMPINA_EXTRA_REPORTS = {
 
 const SHRIMPINA_PHOTO_TEMPLATES = {
   'Long-Clawed Hermit': SHRIMPINA_SPECIES.find(species => species.id === 'ssaj-hermit-series'),
-  'Eastern Grass Shrimp': SHRIMPINA_SPECIES.find(species => species.id === 'ssaj14'),
+  'Marsh Grass Shrimp': SHRIMPINA_SPECIES.find(species => species.id === 'ssaj14'),
   'Marsh Fiddler Crab': SHRIMPINA_SPECIES.find(species => species.id === 'ssaj20'),
   'Atlantic Sand Fiddler Crab': SHRIMPINA_SPECIES.find(species => species.id === 'ssaj-sand-fiddler-series'),
   'Asian Shore Crab': SHRIMPINA_SPECIES.find(species => species.id === 'ssaj27'),
@@ -360,7 +360,7 @@ const SHRIMPINA_SAMPLE_MORPHOLOGY = {
     {
       label:'Ruler labeled',
       src:'assets/shrimpina-morphology/ssaj14-grass-shrimp-ruler-labeled.png',
-      alt:'Student-labeled ruler view of eastern grass shrimp SSAJ14',
+      alt:'Student-labeled ruler view of marsh grass shrimp SSAJ14',
       caption:'Student-labeled measurement view',
       measurement:'Approx. 2.7 cm body length · antennae excluded',
       callouts:[]
@@ -368,7 +368,7 @@ const SHRIMPINA_SAMPLE_MORPHOLOGY = {
     {
       label:'Ventral labeled',
       src:'assets/shrimpina-morphology/ssaj14-grass-shrimp-close-labeled.png',
-      alt:'Student-labeled close view of eastern grass shrimp SSAJ14',
+      alt:'Student-labeled close view of marsh grass shrimp SSAJ14',
       caption:'Student-labeled close view',
       measurement:'Approx. 2.7 cm body length · read from ruler',
       callouts:[]
@@ -506,7 +506,7 @@ const SHRIMPINA_SAND_FIDDLER_MORPHOLOGY = [
 // representative plate below while retaining only their own field photos.
 const SHRIMPINA_SPECIES_MORPHOLOGY = {
   'Pagurus longicarpus': SHRIMPINA_SAMPLE_MORPHOLOGY.SSAJ1,
-  'Palaemon paludosus': SHRIMPINA_SAMPLE_MORPHOLOGY.SSAJ14,
+  'Palaemon vulgaris': SHRIMPINA_SAMPLE_MORPHOLOGY.SSAJ14,
   'Minuca pugnax': SHRIMPINA_SAMPLE_MORPHOLOGY.SSAJ21,
   'Leptuca pugilator': SHRIMPINA_SAND_FIDDLER_MORPHOLOGY,
   'Hemigrapsus sanguineus': SHRIMPINA_SAMPLE_MORPHOLOGY.SSAJ27,

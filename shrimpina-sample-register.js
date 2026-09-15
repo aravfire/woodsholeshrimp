@@ -119,8 +119,8 @@ const SHRIMPINA_SAMPLE_REGISTER = [
   {
     "number": 14,
     "code": "SSAJ14",
-    "common": "Eastern Grass Shrimp",
-    "sci": "Palaemon paludosus",
+    "common": "Marsh Grass Shrimp",
+    "sci": "Palaemon vulgaris",
     "date": "25 Aug 2026",
     "site": "Little Sippewissett Marsh",
     "record": "https://www.inaturalist.org/observations/395311731"
@@ -128,8 +128,8 @@ const SHRIMPINA_SAMPLE_REGISTER = [
   {
     "number": 15,
     "code": "SSAJ15",
-    "common": "Eastern Grass Shrimp",
-    "sci": "Palaemon paludosus",
+    "common": "Marsh Grass Shrimp",
+    "sci": "Palaemon vulgaris",
     "date": "25 Aug 2026",
     "site": "Little Sippewissett Marsh",
     "record": "https://www.inaturalist.org/observations/396666075"
@@ -137,8 +137,8 @@ const SHRIMPINA_SAMPLE_REGISTER = [
   {
     "number": 16,
     "code": "SSAJ16",
-    "common": "Eastern Grass Shrimp",
-    "sci": "Palaemon paludosus",
+    "common": "Marsh Grass Shrimp",
+    "sci": "Palaemon vulgaris",
     "date": "27 Aug 2026",
     "site": "Little Sippewissett Marsh",
     "record": "https://www.inaturalist.org/observations/396666787",
@@ -147,8 +147,8 @@ const SHRIMPINA_SAMPLE_REGISTER = [
   {
     "number": 17,
     "code": "SSAJ17",
-    "common": "Eastern Grass Shrimp",
-    "sci": "Palaemon paludosus",
+    "common": "Marsh Grass Shrimp",
+    "sci": "Palaemon vulgaris",
     "date": "27 Aug 2026",
     "site": "Little Sippewissett Marsh",
     "record": "https://www.inaturalist.org/observations/396667263",
@@ -157,8 +157,8 @@ const SHRIMPINA_SAMPLE_REGISTER = [
   {
     "number": 18,
     "code": "SSAJ18",
-    "common": "Eastern Grass Shrimp",
-    "sci": "Palaemon paludosus",
+    "common": "Marsh Grass Shrimp",
+    "sci": "Palaemon vulgaris",
     "date": "27 Aug 2026",
     "site": "Little Sippewissett Marsh",
     "record": "https://www.inaturalist.org/observations/396668052",
@@ -167,8 +167,8 @@ const SHRIMPINA_SAMPLE_REGISTER = [
   {
     "number": 19,
     "code": "SSAJ19",
-    "common": "Eastern Grass Shrimp",
-    "sci": "Palaemon paludosus",
+    "common": "Marsh Grass Shrimp",
+    "sci": "Palaemon vulgaris",
     "date": "27 Aug 2026",
     "site": "Little Sippewissett Marsh",
     "record": "https://www.inaturalist.org/observations/396668645",
@@ -177,7 +177,7 @@ const SHRIMPINA_SAMPLE_REGISTER = [
   {
     "number": 20,
     "code": "SSAJ20",
-    "common": "Marsh Fiddler Crab (L)",
+    "common": "Marsh Fiddler Crab",
     "sci": "Minuca pugnax",
     "date": "25 Aug 2026",
     "site": "Little Sippewissett Marsh",
@@ -186,7 +186,7 @@ const SHRIMPINA_SAMPLE_REGISTER = [
   {
     "number": 21,
     "code": "SSAJ21",
-    "common": "Marsh Fiddler Crab (R)",
+    "common": "Marsh Fiddler Crab",
     "sci": "Minuca pugnax",
     "date": "25 Aug 2026",
     "site": "Little Sippewissett Marsh",
@@ -195,7 +195,7 @@ const SHRIMPINA_SAMPLE_REGISTER = [
   {
     "number": 22,
     "code": "SSAJ22",
-    "common": "Marsh Fiddler Crab (L)",
+    "common": "Marsh Fiddler Crab",
     "sci": "Minuca pugnax",
     "date": "25 Aug 2026",
     "site": "Little Sippewissett Marsh",
@@ -204,7 +204,7 @@ const SHRIMPINA_SAMPLE_REGISTER = [
   {
     "number": 23,
     "code": "SSAJ23",
-    "common": "Marsh Fiddler Crab (R)",
+    "common": "Marsh Fiddler Crab",
     "sci": "Minuca pugnax",
     "date": "25 Aug 2026",
     "site": "Little Sippewissett Marsh",
@@ -213,7 +213,7 @@ const SHRIMPINA_SAMPLE_REGISTER = [
   {
     "number": 24,
     "code": "SSAJ24",
-    "common": "Marsh Fiddler Crab (R)",
+    "common": "Marsh Fiddler Crab",
     "sci": "Minuca pugnax",
     "date": "25 Aug 2026",
     "site": "Little Sippewissett Marsh",
@@ -222,7 +222,7 @@ const SHRIMPINA_SAMPLE_REGISTER = [
   {
     "number": 25,
     "code": "SSAJ25",
-    "common": "Marsh Fiddler Crab (R)",
+    "common": "Marsh Fiddler Crab",
     "sci": "Minuca pugnax",
     "date": "25 Aug 2026",
     "site": "Little Sippewissett Marsh",
@@ -231,7 +231,7 @@ const SHRIMPINA_SAMPLE_REGISTER = [
   {
     "number": 26,
     "code": "SSAJ26",
-    "common": "Marsh Fiddler Crab (R)",
+    "common": "Marsh Fiddler Crab",
     "sci": "Minuca pugnax",
     "date": "25 Aug 2026",
     "site": "Little Sippewissett Marsh",
@@ -285,7 +285,7 @@ const SHRIMPINA_SAMPLE_REGISTER = [
   {
     "number": 32,
     "code": "SSAJ32",
-    "common": "Asian Shore Crab - Baby",
+    "common": "Asian Shore Crab",
     "sci": "Hemigrapsus sanguineus",
     "date": "24 Aug 2026",
     "site": "Woodneck Beach",
@@ -465,7 +465,7 @@ const SHRIMPINA_SAMPLE_REGISTER = [
   {
     "number": 52,
     "code": "SSAJ52",
-    "common": "Longnose Spider Crab (tiny)",
+    "common": "Longnose Spider Crab",
     "sci": "Libinia dubia",
     "date": "27 Aug 2026",
     "site": "Woodneck Beach",
@@ -474,7 +474,7 @@ const SHRIMPINA_SAMPLE_REGISTER = [
   {
     "number": 53,
     "code": "SSAJ53",
-    "common": "Longnose Spider Crab (big)",
+    "common": "Longnose Spider Crab",
     "sci": "Libinia dubia",
     "date": "27 Aug 2026",
     "site": "Little Sippewissett Marsh",
@@ -519,7 +519,7 @@ const SHRIMPINA_SAMPLE_REGISTER = [
   {
     "number": 58,
     "code": "SSAJ58",
-    "common": "Longnose Spider Crab (dead)",
+    "common": "Longnose Spider Crab",
     "sci": "Libinia dubia",
     "date": "27 Aug 2026",
     "site": "Woodneck Beach",
@@ -528,7 +528,7 @@ const SHRIMPINA_SAMPLE_REGISTER = [
   {
     "number": 59,
     "code": "SSAJ59",
-    "common": "Longnose Spider Crab (dead)",
+    "common": "Longnose Spider Crab",
     "sci": "Libinia dubia",
     "date": "27 Aug 2026",
     "site": "Woodneck Beach",
@@ -537,7 +537,7 @@ const SHRIMPINA_SAMPLE_REGISTER = [
   {
     "number": 60,
     "code": "SSAJ60",
-    "common": "Longnose Spider Crab (dead)",
+    "common": "Longnose Spider Crab",
     "sci": "Libinia dubia",
     "date": "27 Aug 2026",
     "site": "Woodneck Beach",
@@ -573,7 +573,7 @@ const SHRIMPINA_SAMPLE_REGISTER = [
   {
     "number": 64,
     "code": "SSAJ64",
-    "common": "Round Clam (Northern Quahog)",
+    "common": "Northern Quahog",
     "sci": "Mercenaria mercenaria",
     "date": "31 Aug 2026",
     "site": "Little Sippewissett Marsh",
@@ -712,7 +712,7 @@ const SHRIMPINA_SAMPLE_REGISTER = [
   {
     "number": 79,
     "code": "SSAJ79",
-    "common": "Plumed Worm 1",
+    "common": "Plumed Worm",
     "sci": "Diopatra cuprea",
     "date": "2 Sep 2026",
     "site": "Woodneck Beach",
@@ -721,7 +721,7 @@ const SHRIMPINA_SAMPLE_REGISTER = [
   {
     "number": 80,
     "code": "SSAJ80",
-    "common": "Plumed Worm 2",
+    "common": "Plumed Worm",
     "sci": "Diopatra cuprea",
     "date": "2 Sep 2026",
     "site": "Woodneck Beach",
@@ -748,7 +748,7 @@ const SHRIMPINA_SAMPLE_REGISTER = [
   {
     "number": 83,
     "code": "SSAJ83",
-    "common": "Dead Flat-Clawed Hermit Crab",
+    "common": "Flat-Clawed Hermit Crab",
     "sci": "Pagurus pollicaris",
     "date": "31 Aug 2026",
     "site": "Woodneck Beach",

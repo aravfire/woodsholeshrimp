@@ -99,21 +99,22 @@
       </div>`;
       const primaryNavigation = `${navGroup('home', 'index.html', 'MBL', [
             { value:'index.html#about-mbl', label:'What is the MBL?' },
-            { value:'index.html#field-map', label:'Course collection' }
+            { value:'index.html#field-map', label:'Course Collection' }
           ])}
           ${navGroup('map', 'map.html', 'Collection Map', [
-            { value:'map.html#explorerMap', label:'Interactive map' },
-            { value:'map.html#resultsHeading', label:'Specimen list' }
+            { value:'map.html#explorerMap', label:'Interactive Map' },
+            { value:'map.html#resultsHeading', label:'Specimen List' }
           ])}
           ${navGroup('observations', 'observations.html', 'Observations', [
-            { value:'observations.html#obsGrid', label:'Browse observations' },
+            { value:'observations.html#obsGrid', label:'Browse Observations' },
             { value:'https://www.inaturalist.org/projects/bios-27723-woods-hole-biodiversity', label:'Open in iNaturalist', external:true }
           ])}
           ${navGroup('shrimpina', 'groups/shrimpina.html', 'Shrimpina', [
-            { value:'groups/shrimpina.html', label:'Project overview' },
-            { value:'groups/shrimpina.html#g-species', label:'Specimen archive' },
-            { value:'journal.html', label:'Field journal' },
-            { value:'conditions.html', label:'Field conditions' },
+            { value:'groups/shrimpina.html', label:'Project Overview' },
+            { value:'groups/shrimpina.html#g-species', label:'Specimen Archive' },
+            { value:'research.html', label:'Research Guide' },
+            { value:'journal.html', label:'Field Journal' },
+            { value:'conditions.html', label:'Field Conditions' },
             { value:'lab.html', label:'Laboratory' }
           ])}`;
 
@@ -136,9 +137,10 @@
                 ${link('map', 'map.html', 'Collection map')}
                 ${link('observations', 'observations.html', 'Observations')}
                 ${link('shrimpina', 'groups/shrimpina.html', 'Shrimpina project')}
-                ${link('archive', 'groups/shrimpina.html#g-species', 'Specimen archive')}
-                ${link('journal', 'journal.html', 'Field journal')}
-                ${link('conditions', 'conditions.html', 'Field conditions')}
+                ${link('archive', 'groups/shrimpina.html#g-species', 'Specimen Archive')}
+                ${link('research', 'research.html', 'Research Guide')}
+                ${link('journal', 'journal.html', 'Field Journal')}
+                ${link('conditions', 'conditions.html', 'Field Conditions')}
                 ${link('lab', 'lab.html', 'Laboratory')}
               </nav>
               <small>Marine Biological Laboratory · 2026</small>
