@@ -104,3 +104,8 @@
 @media(max-width:900px){.research-guide-header{grid-template-columns:1fr}.research-guide-nav{top:74px}.shrimpina-site .taxonomy-tree{margin-top:28px}.shrimpina-site #g-map .marsh-film{margin-bottom:48px}.shrimpina-site .phylogeny-scroll svg{width:980px;min-width:980px}.shrimpina-site .phylogeny-figure figcaption{align-items:flex-start;flex-direction:column;gap:5px}}
 @media(max-width:600px){.research-guide{padding-inline:18px}.research-guide-header{gap:20px}.research-guide-section>header{align-items:flex-start;flex-direction:column}}
 @media(max-width:560px){.taxonomy-deck{align-items:flex-start;flex-direction:column;gap:8px}}
+
+/* Updated Google Doc genetics, preserving source figure crops and reading order. */
+.genetic-source-link{margin:0 0 24px;font:600 11px/1.5 'DM Mono',monospace}
+.genetic-source-content{max-width:900px}.genetic-source-content p{margin:10px 0;font:400 16px/1.6 Georgia,serif;white-space:pre-wrap;overflow-wrap:anywhere}.genetic-source-content h3{margin:32px 0 16px;font:600 24px/1.2 'Newsreader',Georgia,serif}.genetic-source-content h3:first-child{margin-top:0}.genetic-list-item{padding-left:20px}.genetic-list-item::before{content:'• ';margin-left:-14px}
+.genetic-source-figures{display:flex;flex-wrap:wrap;align-items:flex-start;gap:16px;margin:20px 0 28px}.genetic-source-figure{width:100%;min-width:0;margin:0;background:#fff}.genetic-source-figure svg{display:block;width:100%;height:auto;overflow:hidden}.genetic-source-figure figcaption{padding:10px;color:#684853;font:500 10px/1.4 'DM Mono',monospace}

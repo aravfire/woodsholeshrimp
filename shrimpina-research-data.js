@@ -7,14 +7,7 @@ const SHRIMPINA_RESEARCH = (() => {
   const moduleBase = new URL('.', document.currentScript.src);
   const pageRange = (start, end) => Array.from({ length: end - start + 1 }, (_, index) => start + index);
   const pageFile = page => `assets/shrimpina-research/text/page-${String(page).padStart(3, '0')}.txt`;
-  const figureCounts = {39:2,40:1,41:1,42:3,43:2,44:3,45:2,46:4,47:2,48:2,49:1,50:3,51:2,52:1,53:3,54:1,55:4,56:1,57:3,58:2,59:1,60:2,61:2,62:1,63:2,64:2,65:2,66:3,67:1,68:1,69:2,70:2,71:2,72:3,73:4,74:3,75:1,76:2,77:2,78:1,79:2,80:2,81:4,82:3,83:3,84:2,85:1,86:2,87:2,88:2,89:2,90:2,91:2};
-  const figuresForPages = pages => pages.flatMap(page => Array.from({ length: figureCounts[page] || 0 }, (_, index) =>
-    `assets/shrimpina-research/dna/page-${String(page).padStart(3, '0')}-${String(index).padStart(3, '0')}.png`
-  ));
-  const dna = (code, common, start, end) => {
-    const pages = pageRange(start, end);
-    return { code, common, pages, textFiles: pages.map(pageFile), figures: figuresForPages(pages) };
-  };
+  const dna = (code, common, consensusBp) => ({ code, common, consensusBp });
 
   const speciesNotes = {
     'Callinectes sapidus': { common:'Atlantic blue crab', pages:[8,9] },
@@ -322,27 +315,27 @@ const SHRIMPINA_RESEARCH = (() => {
         ]
       }
     },
+    geneticSource: {"title": "Updated Project Genetic Analysis", "url": "https://docs.google.com/document/d/1ACkk_uQ7eIpqDTffv_BCSUpoui6p8xZwNfPKI2WzvXs/edit", "updated": "2026-09-14", "data": "assets/shrimpina-research/genetics-20260914/analysis.json"},
     dnaBySample: {
-      SSAJ13:dna('SSAJ13','Long-Clawed Hermit Crab',39,42),
-      SSAJ20:dna('SSAJ20','Atlantic Marsh Fiddler Crab',43,45),
-      SSAJ27:dna('SSAJ27','Asian Shore Crab',46,49),
-      SSAJ39:dna('SSAJ39','Long-Clawed Hermit Crab',50,52),
-      SSAJ43:dna('SSAJ43','Long-Clawed Hermit Crab',53,57),
-      SSAJ48:dna('SSAJ48','Long-Clawed Hermit Crab',58,59),
-      SSAJ51:dna('SSAJ51','Long-Clawed Hermit Crab',60,62),
-      SSAJ52:dna('SSAJ52','Longnose Spider Crab',63,68),
-      SSAJ53:dna('SSAJ53','Longnose Spider Crab',69,73),
-      SSAJ54:dna('SSAJ54','Atlantic Sand Fiddler Crab',74,75),
-      SSAJ55:dna('SSAJ55','Atlantic Sand Fiddler Crab',76,78),
-      SSAJ65:dna('SSAJ65','Common Periwinkle',79,80),
-      SSAJ66:dna('SSAJ66','Common Periwinkle',81,82),
-      SSAJ67:dna('SSAJ67','Atlantic Sand Fiddler Crab',83,85)
-    },
-    dnaConclusions: {
-      pages:[86,87,88], textFiles:[86,87,88].map(pageFile), figures:figuresForPages([86,87,88])
-    },
-    comparisonFigures: {
-      pages:[89,90,91], textFiles:[89,90,91].map(pageFile), figures:figuresForPages([89,90,91])
+      SSAJ13:dna('SSAJ13',"Long-Clawed Hermit Crab",532),
+      SSAJ20:dna('SSAJ20',"Atlantic Marsh Fiddler Crab",614),
+      SSAJ21:dna('SSAJ21',"Atlantic Marsh Fiddler Crab",628),
+      SSAJ27:dna('SSAJ27',"Asian Shore Crab",438),
+      SSAJ33:dna('SSAJ33',"Lady Crab",546),
+      SSAJ36:dna('SSAJ36',"Long-Clawed Hermit Crab",612),
+      SSAJ39:dna('SSAJ39',"Long-Clawed Hermit Crab",580),
+      SSAJ43:dna('SSAJ43',"Long-Clawed Hermit Crab",579),
+      SSAJ48:dna('SSAJ48',"Long-Clawed Hermit Crab",590),
+      SSAJ51:dna('SSAJ51',"Long-Clawed Hermit Crab",590),
+      SSAJ52:dna('SSAJ52',"Longnose Spider Crab",631),
+      SSAJ53:dna('SSAJ53',"Longnose Spider Crab",604),
+      SSAJ54:dna('SSAJ54',"Atlantic Sand Fiddler Crab",614),
+      SSAJ55:dna('SSAJ55',"Atlantic Sand Fiddler Crab",618),
+      SSAJ65:dna('SSAJ65',"Common Periwinkle",578),
+      SSAJ66:dna('SSAJ66',"Common Periwinkle",592),
+      SSAJ67:dna('SSAJ67',"Atlantic Sand Fiddler Crab",624),
+      SSAJ74:dna('SSAJ74',"Lady Crab",532),
+      SSAJ84:dna('SSAJ84',"Squatter Pea Crab",574)
     }
   };
 })();

@@ -14,12 +14,12 @@
 <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 <script src="../species-data.js?v=20260914-1"></script>
 <script src="../shrimpina-sample-register.js?v=20260914-2"></script>
-<script src="../shrimpina-research-data.js?v=20260910-7"></script>
+<script src="../shrimpina-research-data.js?v=20260914-genetics"></script>
 <script src="../shrimpina-observation-locations.js?v=20260914-1"></script>
 <script src="../shrimpina-inat-media.js?v=20260910-7"></script>
 <script src="../shrimpina-photo-library.js?v=20260914-1"></script>
 <script src="../shrimpina-species-data.js?v=20260914-1"></script>
-<script src="../profile-render.js?v=20260910-5"></script>
+<script src="../profile-render.js?v=20260914-genetics"></script>
 <script src="../relationship-tree.js?v=20260910-12" data-root=".." defer></script>
 <script src="../specimen-view.js?v=20260902-5" data-root=".." defer></script>
 <script src="../inat.js"></script>
@@ -130,7 +130,7 @@
 </style>
 <link rel="stylesheet" href="../site-index.css?v=20260910-11">
 <link rel="stylesheet" href="../shrimpina.css?v=20260908-6">
-<link rel="stylesheet" href="../shrimpina-research.css?v=20260910-7">
+<link rel="stylesheet" href="../shrimpina-research.css?v=20260914-genetics">
 <link rel="stylesheet" href="../relationship-tree.css?v=20260910-1">
 <script src="../site-index.js?v=20260914-1" defer></script>
 <link rel="stylesheet" href="../specimen-view.css?v=20260902-5">
@@ -153,7 +153,7 @@
     <a href="#g-family"><span class="num">02</span><span><b>Evolutionary Tree</b><small>Evolution → Collection</small></span></a>
     <a href="#g-map"><span class="num">03</span><span><b>Collection sites</b><small>Map and Key</small></span></a>
     <a href="#g-species"><span class="num">04</span><span><b>Specimens</b><small>Photos, Morphology, and Ecology</small></span></a>
-    <a href="#g-genes"><span class="num">05</span><span><b>DNA</b><small>14 Analyzed Specimens</small></span></a>
+    <a href="#g-genes"><span class="num">05</span><span><b>DNA</b><small>19 Analyzed Specimens</small></span></a>
     <a href="#g-takeaways"><span class="num">06</span><span><b>Takeaways</b><small>Community Roles</small></span></a>
   </nav>
 
@@ -213,7 +213,7 @@
 
     <section class="g-sec" id="g-genes">
       <span class="research-eyebrow">Project DNA analysis</span><h2>DNA Analysis</h2>
-      <p class="genes-intro">Fourteen specimens have analyses in the supplied project document. Each entry opens the original consensus length, comparisons, collection details, mismatch notes, analysis text, and figures.</p>
+      <p class="genes-intro">Nineteen specimens have analyses in the supplied project document. Each entry opens the original consensus length, comparisons, collection details, mismatch notes, analysis text, and figures.</p>
       <div class="genes-grid" id="genesGrid"></div>
       <p class="genes-more"><a href="../lab.html">Open all analyses, conclusions, alignments &amp; phylogenetic trees →</a></p>
     </section>
@@ -575,7 +575,7 @@ renderShrimpinaMap();
 setTimeout(() => gmap.invalidateSize(), 200);
 
 const genesGrid = document.getElementById('genesGrid');
-genesGrid.innerHTML = Object.values(SHRIMPINA_RESEARCH.dnaBySample).map(item => `<a class="gene-card research-gene-card" href="../lab.html?sample=${item.code}#dna-${item.code}"><span>${item.code}</span><h4>${item.common}</h4><small>PDF pages ${item.pages[0]}–${item.pages.at(-1)}</small></a>`).join('');
+genesGrid.innerHTML = Object.values(SHRIMPINA_RESEARCH.dnaBySample).map(item => `<a class="gene-card research-gene-card" href="../lab.html?sample=${item.code}#dna-${item.code}"><span>${item.code}</span><h4>${item.common}</h4><small>${item.consensusBp} bp consensus</small></a>`).join('');
 initResearchBlocks(document);
 
 const tocLinks = document.querySelectorAll('.toc a');

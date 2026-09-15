@@ -1,0 +1,43 @@
+{
+  "source": {
+    "title": "Updated Project Genetic Analysis",
+    "url": "https://docs.google.com/document/d/1ACkk_uQ7eIpqDTffv_BCSUpoui6p8xZwNfPKI2WzvXs/edit",
+    "updated": "2026-09-14",
+    "data": "assets/shrimpina-research/genetics-20260914/analysis.json"
+  },
+  "replaces": "Original 91-page Crabies PDF genetics, pages 39\u201391",
+  "samples": 19,
+  "addedSamples": [
+    "SSAJ21",
+    "SSAJ33",
+    "SSAJ36",
+    "SSAJ74",
+    "SSAJ84"
+  ],
+  "updatedExistingSamples": [
+    "SSAJ13",
+    "SSAJ20",
+    "SSAJ27",
+    "SSAJ39",
+    "SSAJ43",
+    "SSAJ48",
+    "SSAJ51",
+    "SSAJ52",
+    "SSAJ53",
+    "SSAJ54",
+    "SSAJ55",
+    "SSAJ65",
+    "SSAJ66",
+    "SSAJ67"
+  ],
+  "sourceBlocksImported": 667,
+  "figureOccurrences": 123,
+  "uniqueImages": 122,
+  "changes": [
+    "Imported all current sample prose and figures in source order, preserving the document image crops.",
+    "Added Lady Crab final conclusions and alignment, including the SSAJ33 redo discussion.",
+    "Updated within-species conclusions and cross-species comparisons.",
+    "Existing separately supplied phylogeny remains: this document supplies alignments, not a replacement for that tree."
+  ],
+  "sourceTextSha256": "9e114ab2418834ee17a4f8b196b4c6a75fa1872f697f5f56893f9ad9428449f6"
+}

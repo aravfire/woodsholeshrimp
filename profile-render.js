@@ -16,7 +16,7 @@ function renderDna(s) {
   if (!analysis) return `<div class="research-empty"><p>No DNA analysis appears in the supplied project document.</p><a href="lab.html">Open the Laboratory page</a></div>`;
   return `<article class="specimen-dna-source">
     <header><div><span>Project DNA analysis</span><strong>${analysis.code}</strong></div><a href="lab.html?sample=${analysis.code}#dna-${analysis.code}">Expanded Laboratory entry →</a></header>
-    <div class="research-text-block" data-research-kind="dna" data-research-pages="${analysis.pages.join(',')}"><p>Loading the verbatim project analysis…</p></div>
+    <div class="research-text-block" data-research-kind="dna" data-genetic-analysis="${analysis.code}"><p>Loading the verbatim project analysis…</p></div>
   </article>`;
 }
 
@@ -83,17 +83,48 @@ function renderParsedSpecies(parsed, requestedSection) {
     <section class="research-note-section"><h4>${escapeResearchText(name)}</h4><ul>${parsed.sections[name].map(item => `<li>${escapeResearchText(item)}</li>`).join('')}</ul></section>`).join('')}`;
 }
 
-function figuresForResearchPages(pages) {
-  const all = [
-    ...Object.values(SHRIMPINA_RESEARCH.dnaBySample),
-    SHRIMPINA_RESEARCH.dnaConclusions,
-    SHRIMPINA_RESEARCH.comparisonFigures
-  ];
-  return all.flatMap(entry => entry.figures || []).filter(src => pages.some(page => src.includes(`page-${String(page).padStart(3, '0')}-`)));
+let geneticAnalysisPromise;
+async function loadGeneticAnalysis() {
+  if (!geneticAnalysisPromise) {
+    geneticAnalysisPromise = fetch(SHRIMPINA_RESEARCH.assetUrl(SHRIMPINA_RESEARCH.geneticSource.data))
+      .then(response => { if (!response.ok) throw new Error('Unable to load genetic analysis'); return response.json(); })
+      .catch(error => { geneticAnalysisPromise = null; throw error; });
+  }
+  return geneticAnalysisPromise;
+}
+
+function renderGeneticAnalysis(section) {
+  const source = SHRIMPINA_RESEARCH.geneticSource;
+  let figureNumber = 0;
+  const content = section.blocks.map(block => {
+    const text = escapeResearchText(block.text);
+    const tag = /^h[1-6]$/.test(block.tag) ? 'h3' : 'p';
+    const prose = text ? `<${tag}${block.tag === 'li' ? ' class="genetic-list-item"' : ''}>${text}</${tag}>` : '';
+    const figures = block.images.map(figure => {
+      const url = SHRIMPINA_RESEARCH.assetUrl(source.data.replace(/analysis\.json$/, '') + figure.src);
+      const label = `${section.code || section.title} · source figure ${++figureNumber}`;
+      return `<figure class="genetic-source-figure" style="max-width:${figure.width}px">
+        <svg role="img" aria-label="${escapeResearchText(label)}" viewBox="${figure.x} ${figure.y} ${figure.width} ${figure.height}" xmlns="http://www.w3.org/2000/svg">
+          <image href="${escapeResearchText(url)}" width="${figure.imageWidth}" height="${figure.imageHeight}" preserveAspectRatio="none" />
+        </svg><figcaption>${escapeResearchText(label)}</figcaption></figure>`;
+    }).join('');
+    return prose + (figures ? `<div class="genetic-source-figures">${figures}</div>` : '');
+  }).join('');
+  return `<p class="genetic-source-link"><a href="${source.url}" target="_blank" rel="noopener">Updated project analysis · September 14, 2026 ↗</a></p><div class="genetic-source-content">${content}</div>`;
 }
 
 async function initResearchBlocks(root) {
   if (typeof SHRIMPINA_RESEARCH === 'undefined') return;
+  await Promise.all([...root.querySelectorAll('[data-genetic-analysis]')].map(async block => {
+    try {
+      const data = await loadGeneticAnalysis();
+      const section = data.sections[block.dataset.geneticAnalysis];
+      if (!section) throw new Error('Missing genetic analysis section');
+      block.innerHTML = renderGeneticAnalysis(section);
+    } catch (error) {
+      block.innerHTML = `<p>Analysis could not be loaded. <a href="${SHRIMPINA_RESEARCH.geneticSource.url}">Open the updated project document</a>.</p>`;
+    }
+  }));
   const blocks = [...root.querySelectorAll('.research-text-block[data-research-pages]')];
   await Promise.all(blocks.map(async block => {
     const pages = block.dataset.researchPages.split(',').map(Number);
@@ -102,10 +133,7 @@ async function initResearchBlocks(root) {
       if (block.dataset.researchKind === 'species') {
         const parsed = parseSpeciesSource(sourcePages.map(item => item.text).join('\n'));
         block.innerHTML = renderParsedSpecies(parsed, block.dataset.researchSection);
-      } else {
-        const figures = figuresForResearchPages(pages);
-        block.innerHTML = `<div class="dna-source-pages">${sourcePages.map(item => `<section><span>PDF page ${item.page}</span><pre>${escapeResearchText(item.text)}</pre></section>`).join('')}</div>
-          <div class="dna-figure-grid">${figures.map((src, index) => `<figure><img src="${SHRIMPINA_RESEARCH.assetUrl(src)}" alt="Original genetic analysis figure ${index + 1} for PDF pages ${pages.join('–')}" loading="lazy"><figcaption>Original project figure · PDF page ${src.match(/page-(\d+)/)?.[1].replace(/^0+/, '')}</figcaption></figure>`).join('')}</div>`;
+
       }
     } catch (error) {
       block.innerHTML = `<p>Source text could not be loaded. <a href="${SHRIMPINA_RESEARCH.assetUrl(SHRIMPINA_RESEARCH.source.manifest)}">Open the extraction manifest</a>.</p>`;

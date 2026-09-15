@@ -44,14 +44,19 @@ const research = loadConst('shrimpina-research-data.js', 'SHRIMPINA_RESEARCH', {
 });
 
 const expectedDna = {
-  SSAJ13:['Pagurus longicarpus',39,42], SSAJ20:['Minuca pugnax',43,45],
-  SSAJ27:['Hemigrapsus sanguineus',46,49], SSAJ39:['Pagurus longicarpus',50,52],
-  SSAJ43:['Pagurus longicarpus',53,57], SSAJ48:['Pagurus longicarpus',58,59],
-  SSAJ51:['Pagurus longicarpus',60,62], SSAJ52:['Libinia dubia',63,68],
-  SSAJ53:['Libinia dubia',69,73], SSAJ54:['Leptuca pugilator',74,75],
-  SSAJ55:['Leptuca pugilator',76,78], SSAJ65:['Littorina littorea',79,80],
-  SSAJ66:['Littorina littorea',81,82], SSAJ67:['Leptuca pugilator',83,85]
+  SSAJ13:['Pagurus longicarpus',532], SSAJ20:['Minuca pugnax',614],
+  SSAJ21:['Minuca pugnax',628], SSAJ27:['Hemigrapsus sanguineus',438],
+  SSAJ33:['Ovalipes ocellatus',546], SSAJ36:['Pagurus longicarpus',612],
+  SSAJ39:['Pagurus longicarpus',580], SSAJ43:['Pagurus longicarpus',579],
+  SSAJ48:['Pagurus longicarpus',590], SSAJ51:['Pagurus longicarpus',590],
+  SSAJ52:['Libinia dubia',631], SSAJ53:['Libinia dubia',604],
+  SSAJ54:['Leptuca pugilator',614], SSAJ55:['Leptuca pugilator',618],
+  SSAJ65:['Littorina littorea',578], SSAJ66:['Littorina littorea',592],
+  SSAJ67:['Leptuca pugilator',624], SSAJ74:['Ovalipes ocellatus',532],
+  SSAJ84:['Tumidotheres maculatus',574]
 };
+const genetics = JSON.parse(fs.readFileSync(path.join(root, research.geneticSource.data), 'utf8'));
+
 
 check(register.length === 84, `Expected 84 register records, found ${register.length}`);
 const peaCrab84 = register.find(item => item.code === 'SSAJ84');
@@ -63,7 +68,7 @@ check(register.filter(item => !item.collectionHidden).length === 83, 'Expected 8
 const peaCrabPhotos = photoLibrary.find(entry => entry.sample === 'SSAJ84');
 check(peaCrabPhotos?.photos.length === 4, 'SSAJ84 must have four supplied photographs');
 check(peaCrabPhotos?.photos.map(photo => photo.label).join('|') === 'Dorsal labeled|Ventral labeled|Dorsal scale|Ventral scale', 'SSAJ84 photograph views must match the supplied plates');
-check(Object.keys(research.dnaBySample).length === 14, `Expected 14 DNA entries, found ${Object.keys(research.dnaBySample).length}`);
+check(Object.keys(research.dnaBySample).length === 19, `Expected 19 DNA entries, found ${Object.keys(research.dnaBySample).length}`);
 check(research.researchQuestion === 'How are the morphological characteristics among crab species in Little Sippewissett Marsh and Woodneck Beach results of their role and place within the community?', 'Official research question does not match the supplied wording');
 
 check(Object.keys(observationLocations).length === 48, `Expected 48 public iNaturalist locations, found ${Object.keys(observationLocations).length}`);
@@ -82,22 +87,29 @@ for (const [code, location] of Object.entries(observationLocations)) {
 }
 check(!observationLocations.SSAJ74, 'SSAJ74 must remain unmapped while its linked iNaturalist observation is unavailable');
 
-for (const [code, [scientific, start, end]] of Object.entries(expectedDna)) {
+for (const [code, [scientific, consensusBp]] of Object.entries(expectedDna)) {
   const dna = research.dnaBySample[code];
   const specimen = register.find(item => item.code === code);
-  check(Boolean(dna), `${code}: missing from DNA data`);
-  check(Boolean(specimen), `${code}: missing from specimen register`);
-  if (!dna || !specimen) continue;
-  check(dna.pages[0] === start && dna.pages.at(-1) === end, `${code}: expected PDF pages ${start}-${end}`);
-  check(normalize(specimen.sci) === normalize(scientific), `${code}: register species is ${specimen.sci}, expected ${scientific}`);
-  const startText = fs.readFileSync(path.join(root, dna.textFiles[0]), 'utf8');
-  check(normalize(startText).includes(normalize(code)), `${code}: starting page does not contain its SSAJ code`);
-  check(normalize(startText).includes(normalize(scientific)), `${code}: starting page does not contain ${scientific}`);
-  for (const figure of dna.figures) {
-    const filepath = path.join(root, figure);
-    check(fs.existsSync(filepath) && fs.statSync(filepath).size > 0, `${code}: missing or empty figure ${figure}`);
-  }
+  const section = genetics.sections[code];
+  check(Boolean(dna && specimen && section), `${code}: missing DNA source or specimen`);
+  if (!dna || !specimen || !section) continue;
+  check(dna.consensusBp === consensusBp && section.consensusBp === consensusBp, `${code}: incorrect consensus length`);
+  check(normalize(specimen.sci) === normalize(scientific), `${code}: incorrect register species`);
+  check(normalize(section.blocks[0].text).startsWith(normalize(code)), `${code}: source starts with a different specimen`);
+  check(normalize(section.scientific) === normalize(scientific), `${code}: source species mismatch`);
 }
+const sourceBlocks = Object.values(genetics.sections).flatMap(section => section.blocks);
+const figures = sourceBlocks.flatMap(block => block.images);
+check(sourceBlocks.length === 667, 'Updated genetics must preserve all 667 source content blocks');
+check(figures.length === 123, 'Updated genetics must preserve all 123 source figure occurrences');
+check(new Set(figures.map(figure => figure.src)).size === 122, 'Updated genetics must contain 122 unique source images');
+for (const figure of figures) {
+  const filepath = path.join(root, path.dirname(research.geneticSource.data), figure.src);
+  check(fs.existsSync(filepath) && fs.statSync(filepath).size > 0, `Missing source figure ${figure.src}`);
+  check(figure.width > 0 && figure.height > 0 && figure.imageWidth > 0 && figure.imageHeight > 0, `${figure.src}: invalid source crop`);
+}
+check(genetics.sections.conclusions.blocks.some(block => block.text.includes('including the redo of SSAJ33')), 'Missing updated Lady Crab discussion');
+check(genetics.sections.comparisons.blocks.flatMap(block => block.images).length === 4, 'Cross-species comparisons must retain all four source figure crops');
 
 for (const code of ['SSAJ54','SSAJ55']) {
   const specimen = register.find(item => item.code === code);

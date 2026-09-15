@@ -1,0 +1,4732 @@
+{
+  "source": {
+    "title": "Updated Project Genetic Analysis",
+    "url": "https://docs.google.com/document/d/1ACkk_uQ7eIpqDTffv_BCSUpoui6p8xZwNfPKI2WzvXs/edit",
+    "updated": "2026-09-14",
+    "data": "assets/shrimpina-research/genetics-20260914/analysis.json"
+  },
+  "sections": {
+    "SSAJ13": {
+      "code": "SSAJ13",
+      "common": "Long-Clawed Hermit Crab",
+      "blocks": [
+        {
+          "tag": "h3",
+          "text": "SSAJ13: Long-Clawed Hermit Crab",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Scientific Name: Pagurus longicarpus",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Location Found: Little Sippewissett Marsh, Falmouth, MA, USA",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Consensus Sequence:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Number of bp: 532",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image56.png",
+              "width": 624.0,
+              "height": 199.22,
+              "imageWidth": 624.0,
+              "imageHeight": 221.23,
+              "x": -0.0,
+              "y": 11.23
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "Comparison to Other Organisms:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Analysis 1:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image38.png",
+              "width": 624.0,
+              "height": 138.67,
+              "imageWidth": 624.0,
+              "imageHeight": 138.67,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "Collection Details:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "1 → July 24, 2008, Canada",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 0",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "2 → June 29, 2016, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 0",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "3 → November 29, 2021, Germany",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 0",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "4 → August 27, 2026, Little Sippewissett Marsh",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "5 → August 31, 2016, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 1 (T switch to C at position 83)",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Detailed Analysis:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "We can see a single nucleotide change at position 83, T → C, for one of the specimens that our sample is being compared to. The other 3 have no mismatches at this particular locus.",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image22.png",
+              "width": 655.5,
+              "height": 672.94,
+              "imageWidth": 674.97,
+              "imageHeight": 682.0,
+              "x": 9.74,
+              "y": 9.06
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "Analysis 2:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image3.png",
+              "width": 618.0,
+              "height": 246.0,
+              "imageWidth": 624.0,
+              "imageHeight": 269.0,
+              "x": -0.0,
+              "y": 15.92
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "Collection Details:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "1 → June 29, 2016, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 2",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "2 → 1997-1998, Nova Scotia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 2",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "3 → August 27, 2016, Maine",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 1",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "4 → August 31, 2016, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 1",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "5 → June 29, 2016, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 0",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "6 → August 27, 2026, Little Sippewissett Marsh",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "7 → June 29, 2016, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 2",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "8 → June 29, 2016, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 2",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "9 → August 5, 2007, Canada",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 1",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Detailed Analysis:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 166 → Switch from G to A seen, our sample doesn’t have this mutation",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 193 → Switch from T to C seen, our sample doesn’t have this mutation",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 358 → Switch from A to G seen, our sample doesn’t have this mutation",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 367 → Switch from G to A seen, our sample doesn’t have this mutation",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 445 → Switch from G to A seen, our sample doesn’t have this mutation",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 598 → Switch from A to C seen, our sample doesn’t have this mutation",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image113.png",
+              "width": 624.0,
+              "height": 583.0,
+              "imageWidth": 624.0,
+              "imageHeight": 589.0,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        }
+      ],
+      "scientific": "Pagurus longicarpus",
+      "consensusBp": 532
+    },
+    "SSAJ20": {
+      "code": "SSAJ20",
+      "common": "Atlantic Marsh Fiddler Crab",
+      "blocks": [
+        {
+          "tag": "h3",
+          "text": "SSAJ 20: Atlantic Marsh Fiddler Crab",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Scientific Name: Minuca pugnax",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Location Found: Little Sippewissett Marsh, Falmouth, MA, USA",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Consensus Sequence:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Number of bp: 614",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image63.png",
+              "width": 624.0,
+              "height": 236.0,
+              "imageWidth": 624.0,
+              "imageHeight": 236.0,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "Comparison to Other Organisms:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image80.png",
+              "width": 624.0,
+              "height": 154.67,
+              "imageWidth": 624.0,
+              "imageHeight": 154.67,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "Collection Details:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "1 → June 4, 2013, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 2 (Switch G → A at position 72 and A → G at position 499)",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "2 → June 4, 2013, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 1 (Switch A → G at position 487)",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "3 → May 30, 2000, Maryland",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 0",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "4 → August 25, 2026, Little Sippewissett Marsh",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Detailed Analysis:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "We can see a single nucleotide change at position 72, G → A, for one of the specimens that our sample is being compared to. The other 3 have no mismatches at this particular locus. We can see a single nucleotide change at position 487, A → G, for one of the specimens that our sample is being compared to. The other 3 have no mismatches at this particular locus. We can see a single nucleotide change at position 499, A → G, for one of the specimens that our sample is being compared to. The other 3 have no mismatches at this particular locus.",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image74.png",
+              "width": 624.0,
+              "height": 78.67,
+              "imageWidth": 624.0,
+              "imageHeight": 78.67,
+              "x": -0.0,
+              "y": -0.0
+            },
+            {
+              "src": "images/image82.png",
+              "width": 624.0,
+              "height": 81.33,
+              "imageWidth": 624.0,
+              "imageHeight": 81.33,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        }
+      ],
+      "scientific": "Minuca pugnax",
+      "consensusBp": 614
+    },
+    "SSAJ21": {
+      "code": "SSAJ21",
+      "common": "Atlantic Marsh Fiddler Crab",
+      "blocks": [
+        {
+          "tag": "h3",
+          "text": "SSAJ 21: Atlantic Marsh Fiddler Crab",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Scientific Name: Minuca pugnax",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Location Found: Little Sippewissett Marsh, Falmouth, MA, USA",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Consensus Sequence:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Number of bp: 628",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image84.png",
+              "width": 624.0,
+              "height": 237.33,
+              "imageWidth": 624.0,
+              "imageHeight": 237.33,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "Comparison to Other Organisms:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image120.png",
+              "width": 624.0,
+              "height": 205.33,
+              "imageWidth": 624.0,
+              "imageHeight": 205.33,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "Collection Details:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "1 → June 4, 2013, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 2 (Switch G → A at position and A → G at position)",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "2 → February 2, 2009, Georgia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 1",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "3 → February 2, 2009, Georgia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 1",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "4 → May 30, 2000, Maryland",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 0",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "5 → August 25, 2026, Little Sippewissett Marsh",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "6 → June 4, 2013, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 1 (Switch A → G at position)",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Detailed Analysis:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image7.png",
+              "width": 624.0,
+              "height": 102.67,
+              "imageWidth": 624.0,
+              "imageHeight": 102.67,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image85.png",
+              "width": 624.0,
+              "height": 108.0,
+              "imageWidth": 624.0,
+              "imageHeight": 108.0,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image5.png",
+              "width": 624.0,
+              "height": 106.67,
+              "imageWidth": 624.0,
+              "imageHeight": 106.67,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        }
+      ],
+      "scientific": "Minuca pugnax",
+      "consensusBp": 628
+    },
+    "SSAJ27": {
+      "code": "SSAJ27",
+      "common": "Asian Shore Crab",
+      "blocks": [
+        {
+          "tag": "h3",
+          "text": "SSAJ 27: Asian Shore Crab",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Scientific Name: Hemigrapsus sanguineus",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Location Found: Woodneck Beach, Falmouth, MA, USA",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Consensus Sequence:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Number of bp: 438",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image37.png",
+              "width": 624.0,
+              "height": 188.0,
+              "imageWidth": 624.0,
+              "imageHeight": 188.0,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "Comparison to Other Organisms:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image40.png",
+              "width": 624.0,
+              "height": 194.67,
+              "imageWidth": 624.0,
+              "imageHeight": 194.67,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "Collection Details:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "1 → July 23, 2018, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 1, G to A at position 542",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "2 → July 7, 2011, Helgoland (German archipelago)",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 1, N at position 419",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "3 → July 7, 2011, Helgoland",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 1, A to G at position 416",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "4 → August 24, 2026, Woodneck Beach",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 1, A to G at position 416",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "5 → March 30, 2015, Maine",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 0",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Detailed Analysis:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image119.png",
+              "width": 624.0,
+              "height": 177.33,
+              "imageWidth": 624.0,
+              "imageHeight": 177.33,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image69.png",
+              "width": 624.0,
+              "height": 96.0,
+              "imageWidth": 624.0,
+              "imageHeight": 96.0,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        }
+      ],
+      "scientific": "Hemigrapsus sanguineus",
+      "consensusBp": 438
+    },
+    "SSAJ33": {
+      "code": "SSAJ33",
+      "common": "Lady Crab",
+      "blocks": [
+        {
+          "tag": "h3",
+          "text": "SSAJ 33: Lady Crab",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Scientific Name: Ovalipes ocellatus",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Location Found: Little Sippewissett Marsh, Falmouth, MA, USA",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Consensus Sequence:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Number of bp: 546",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image102.png",
+              "width": 624.0,
+              "height": 202.67,
+              "imageWidth": 624.0,
+              "imageHeight": 202.67,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "Comparison to Other Organisms:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image25.png",
+              "width": 624.0,
+              "height": 213.33,
+              "imageWidth": 624.0,
+              "imageHeight": 213.33,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "Collection Details:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "1 → August 31, 2026, Little Sippewissett Marsh",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "2 → August 24, 2026, Little Sippewissett Marsh",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "3 → August 24, 2026, Little Sippewissett Marsh",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "4 → October 1, 2013, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "5 → October 1, 2013, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "6 → August 20, 2013, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "7 → August 20, 2013, Virginia",
+          "images": []
+        }
+      ],
+      "scientific": "Ovalipes ocellatus",
+      "consensusBp": 546
+    },
+    "SSAJ36": {
+      "code": "SSAJ36",
+      "common": "Long-Clawed Hermit Crab",
+      "blocks": [
+        {
+          "tag": "h3",
+          "text": "SSAJ 36: Long-Clawed Hermit Crab",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Scientific Name: Pagurus longicarpus",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Location Found: Woodneck Beach, Falmouth, MA, USA",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Consensus Sequence:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Number of bp: 612",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image47.png",
+              "width": 610.0,
+              "height": 226.0,
+              "imageWidth": 624.0,
+              "imageHeight": 240.96,
+              "x": 14.0,
+              "y": 14.96
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "Comparison to Other Organisms:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image30.png",
+              "width": 599.0,
+              "height": 261.0,
+              "imageWidth": 624.0,
+              "imageHeight": 261.0,
+              "x": 25.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "Collection Details:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "1 → June 29, 2016, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 2, G to A at position 111, A to C at position 513",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "2 → 1997-1998, Nova Scotia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 2, G to A at position 111, G to A at position 312",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "3 → August 27, 2016, Maine",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 1, G to A at position 111",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "4 → August 31, 2016, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 1, T to C at position 137",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "5 → August 27, 2026, Woodneck Beach",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 1 (At position 583, A to T shift)",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "6 → June 29, 2016, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 0",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "7 → June 29, 2016, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 2, G to A at position 390, A to C at position 543",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "8 → June 29, 2016, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 2, A to G at position 303, A to C at position 543",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "9 → August 5, 2007, Canada",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 1, A to C at position 543",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Detailed Analysis:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 111 → G to A",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 137 → T to C",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 303 → A to G",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 312 → G to A",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 390 → G to A",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 543 → A to C",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 583 → A to T",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image10.png",
+              "width": 624.0,
+              "height": 600.0,
+              "imageWidth": 624.0,
+              "imageHeight": 600.0,
+              "x": -0.0,
+              "y": -0.0
+            },
+            {
+              "src": "images/image4.png",
+              "width": 624.0,
+              "height": 186.67,
+              "imageWidth": 624.0,
+              "imageHeight": 186.67,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        }
+      ],
+      "scientific": "Pagurus longicarpus",
+      "consensusBp": 612
+    },
+    "SSAJ39": {
+      "code": "SSAJ39",
+      "common": "Long-Clawed Hermit Crab",
+      "blocks": [
+        {
+          "tag": "h3",
+          "text": "SSAJ 39: Long-Clawed Hermit Crab",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Scientific Name: Pagurus longicarpus",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Location Found: Woodneck Beach, Falmouth, MA, USA",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Consensus Sequence:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Number of bp: 580",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image66.png",
+              "width": 624.0,
+              "height": 222.67,
+              "imageWidth": 624.0,
+              "imageHeight": 222.67,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "Comparison to Other Organisms:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image96.png",
+              "width": 624.0,
+              "height": 257.33,
+              "imageWidth": 624.0,
+              "imageHeight": 257.33,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "Collection Details:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "1 → June 29, 2016, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 1, G to A at position 166",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "2 → 1997-1998, Nova Scotia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 3, G to A at position 166, G to A at position 367, C to A at position 598",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "3 → August 27, 2016, Maine",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 2, G to A at position 166, C to A at position 598",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "4 → August 31, 2016, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 2, T to C at position 193, C to A at position 598",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "5 → June 29, 2016, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 1, C to A at position 598",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "6 → June 29, 2016, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 1, G to A at position 445",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "7 → June 29, 2016, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 1, A to G at position 358",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "8 → August 5, 2007, Canada",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 0",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "9 → August 27, 2026, Woodneck Beach",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 1 (At position 583, A to T shift)",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Detailed Analysis:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 166 → G to A",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 193 → T to C",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 358 →A to G",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 367 → G to A",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 445 → G to A",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 598 → C to A",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image11.png",
+              "width": 624.0,
+              "height": 146.67,
+              "imageWidth": 624.0,
+              "imageHeight": 146.67,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image79.png",
+              "width": 624.0,
+              "height": 289.33,
+              "imageWidth": 624.0,
+              "imageHeight": 289.33,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "h3",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image23.png",
+              "width": 624.0,
+              "height": 144.0,
+              "imageWidth": 624.0,
+              "imageHeight": 144.0,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        }
+      ],
+      "scientific": "Pagurus longicarpus",
+      "consensusBp": 580
+    },
+    "SSAJ43": {
+      "code": "SSAJ43",
+      "common": "Long-Clawed Hermit Crab",
+      "blocks": [
+        {
+          "tag": "h3",
+          "text": "SSAJ 43: Long-Clawed Hermit Crab",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Scientific Name: Pagurus longicarpus",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Location Found: Woodneck Beach, Falmouth, MA, USA",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Consensus Sequence:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Number of bp: 579",
+          "images": [
+            {
+              "src": "images/image58.png",
+              "width": 624.0,
+              "height": 221.33,
+              "imageWidth": 624.0,
+              "imageHeight": 221.33,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "Comparison to Other Organisms:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Analysis 1",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image89.png",
+              "width": 624.0,
+              "height": 208.0,
+              "imageWidth": 624.0,
+              "imageHeight": 208.0,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "Collection Details:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "1 → August 31, 2016, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 1, T to C at position 138",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "2 → June 29, 2016, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 0",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "3 → November 29, 2021, Germany",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 0",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "4 → August 5, 2007, Canada",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 1, A to C at position 542",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "5 → June 29, 2016, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 2, G to A at position 111, A to C at position 542",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "6 → August 27, 2026, Woodneck Beach",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 1, T and C flip at position 51 (unclear what was the change)",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "7 → 1997-1998, Nova Scotia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 3, T and C flip at position 51 (unclear what was the change), G to A at position 111, G to A at position 312",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "8 → August 27, 2016, Maine",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 1, G to A at position 111",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Detailed Analysis:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 111 → G to A",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 138 → T to C",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 312 → G to A",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 542 → A to C",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image14.png",
+              "width": 624.0,
+              "height": 133.33,
+              "imageWidth": 624.0,
+              "imageHeight": 133.33,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image105.png",
+              "width": 624.0,
+              "height": 133.33,
+              "imageWidth": 624.0,
+              "imageHeight": 133.33,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image8.png",
+              "width": 624.0,
+              "height": 130.67,
+              "imageWidth": 624.0,
+              "imageHeight": 130.67,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image71.png",
+              "width": 624.0,
+              "height": 132.0,
+              "imageWidth": 624.0,
+              "imageHeight": 132.0,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "Analysis 2",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image97.png",
+              "width": 624.0,
+              "height": 260.0,
+              "imageWidth": 624.0,
+              "imageHeight": 260.0,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "Collection Details:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "1 → June 29, 2016, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 2, G to A at position 166 and A to C at position 598",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "2 → August 27, 2026, Woodneck Beach",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 1, G to A at position 166",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "3 → 1997-1998, Nova Scotia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 2, G to A at position 166 and G to A at position 367",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "4 → August 27, 2016, Maine",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 1, G to A at position 166",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "5 → August 31, 2016, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 1, T to C at position 193",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "6 → June 29, 2016, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 0",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "7 → June 29, 2016, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 2, G to A at position 445 and A to C at position 598",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "8 → June 29, 2016, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 2, A to G at position 358 and A to C at position 598",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "9 → August 5, 2007, Canada",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 0",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Detailed Analysis:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 166 → G to A",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 193 → T to C",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 358 → A to G",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 367 → G to A",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 445 → G to A",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 598 → A to C",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image87.png",
+              "width": 624.0,
+              "height": 146.67,
+              "imageWidth": 624.0,
+              "imageHeight": 146.67,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "h3",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image104.png",
+              "width": 624.0,
+              "height": 290.67,
+              "imageWidth": 624.0,
+              "imageHeight": 290.67,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "h3",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image46.png",
+              "width": 624.0,
+              "height": 149.33,
+              "imageWidth": 624.0,
+              "imageHeight": 149.33,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        }
+      ],
+      "scientific": "Pagurus longicarpus",
+      "consensusBp": 579
+    },
+    "SSAJ48": {
+      "code": "SSAJ48",
+      "common": "Long-Clawed Hermit Crab",
+      "blocks": [
+        {
+          "tag": "h3",
+          "text": "SSAJ 48: Long-Clawed Hermit Crab",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Scientific Name: Pagurus longicarpus",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Location Found: Woodneck Beach, Falmouth, MA, USA",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Consensus Sequence:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Number of bp: 590",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image2.png",
+              "width": 624.0,
+              "height": 220.0,
+              "imageWidth": 624.0,
+              "imageHeight": 220.0,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "Comparison to Other Organisms:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image49.png",
+              "width": 624.0,
+              "height": 249.33,
+              "imageWidth": 624.0,
+              "imageHeight": 249.33,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "Collection Details:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "1 → June 29, 2016, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 2, G to A at position 166, A to C at position 598",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "2 → 1997-1998, Nova Scotia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 2, G to A at position 166, G to A at position 367",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "3 → August 27, 2016, Maine",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 1, G to A at position 166",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "4 → August 31, 2016, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 1, T to C at position 193",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "5 → June 29, 2016, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 0",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "6 → August 27, 2026, Woodneck Beach",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 0",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "7 → June 29, 2016, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 2, G to A at position 445, A to C at position 598",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "8 → June 29, 2016, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 2, A to G at position 358, A to C at position 598",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "9 → August 5, 2007, Canada",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 1, A to C at position 598",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Detailed Analysis:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 166 → G to A",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 193 → T to C",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 358 → A to G",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 367 → G to A",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 445 → G to A",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 598 → A to C",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image76.png",
+              "width": 624.0,
+              "height": 144.0,
+              "imageWidth": 624.0,
+              "imageHeight": 144.0,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image117.png",
+              "width": 624.0,
+              "height": 288.0,
+              "imageWidth": 624.0,
+              "imageHeight": 288.0,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "h3",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image92.png",
+              "width": 624.0,
+              "height": 144.0,
+              "imageWidth": 624.0,
+              "imageHeight": 144.0,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        }
+      ],
+      "scientific": "Pagurus longicarpus",
+      "consensusBp": 590
+    },
+    "SSAJ51": {
+      "code": "SSAJ51",
+      "common": "Long-Clawed Hermit Crab",
+      "blocks": [
+        {
+          "tag": "h3",
+          "text": "SSAJ 51: Long-Clawed Hermit Crab",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Scientific Name: Pagurus longicarpus",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Location Found: Woodneck Beach, Falmouth, MA, USA",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Consensus Sequence:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Number of bp: 590",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image91.png",
+              "width": 624.0,
+              "height": 220.0,
+              "imageWidth": 624.0,
+              "imageHeight": 220.0,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "Comparison to Other Organisms:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image93.png",
+              "width": 624.0,
+              "height": 254.67,
+              "imageWidth": 624.0,
+              "imageHeight": 254.67,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "Collection Details:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "1 → June 29, 2016, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 1, G to A at position 166",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "2 → 1997-1998, Nova Scotia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 3, G to A at position 358, G to A at position 367, A to C at position 598",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "3 → August 27, 2016, Maine",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 2, G to A at position 166, A to C at position 598",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "4 → August 31, 2016, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 2, T to C at position 193, A to C at position 598",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "5 → June 29, 2016, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 1, A to C at position 598",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "6 → June 29, 2016, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 1, G to A at position 445",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "7 → June 29, 2016, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 1, A to G at position 358",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "8 → August 5, 2007, Canada",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 0",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "9 → August 27, 2026, Woodneck Beach",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 0",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Detailed Analysis:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 166 → G to A",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 193 → T to C",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 358 → A to G",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 367 → G to A",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 445 → G to A",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 598 → A to C",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image21.png",
+              "width": 624.0,
+              "height": 145.33,
+              "imageWidth": 624.0,
+              "imageHeight": 145.33,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image20.png",
+              "width": 624.0,
+              "height": 288.0,
+              "imageWidth": 624.0,
+              "imageHeight": 288.0,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image121.png",
+              "width": 624.0,
+              "height": 146.67,
+              "imageWidth": 624.0,
+              "imageHeight": 146.67,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        }
+      ],
+      "scientific": "Pagurus longicarpus",
+      "consensusBp": 590
+    },
+    "SSAJ52": {
+      "code": "SSAJ52",
+      "common": "Longnose Spider Crab",
+      "blocks": [
+        {
+          "tag": "h3",
+          "text": "SSAJ 52: Longnose Spider Crab",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Scientific Name: Libinia dubia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Location Found: Woodneck Beach, Falmouth, MA, USA",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Consensus Sequence:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Number of bp: 631",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image62.png",
+              "width": 624.0,
+              "height": 234.67,
+              "imageWidth": 624.0,
+              "imageHeight": 234.67,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "Comparison to Other Organisms:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Analysis 1: Using only same species",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image44.png",
+              "width": 624.0,
+              "height": 192.0,
+              "imageWidth": 624.0,
+              "imageHeight": 192.0,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "Collection Details:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "1 → November 30, 2012, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 5, C to A at position 44, C to T at position 110, T to C at position 131, T to C at position 258",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "2 → December 2, 2014, Maryland",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 6, C to A at position 44, C to T at position 110, C to T at position 131, T to C at position 258, G to A at position 442",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "3 → No clear information available about origin",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 5, C to G at position 44, C to T at position 104, A to G at position 479, C to T at position 611",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "4 → June 5, 2013, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 3, G to A at position 50, A to G at position 203",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "5 → June 5, 2013, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 2, G to A at position 50",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "6 → August 27, 2026, Woodneck Beach",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 1, G to A at position 50",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Detailed Analysis:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 44 → C to A",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 50 → G to A",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 104 → C to T",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 110 → C to T",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 131 → T to C",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 203 → A to G",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 258 → T to C",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 479 → A to G",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 442 → G to A",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 611 → C to T",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image18.png",
+              "width": 624.0,
+              "height": 113.33,
+              "imageWidth": 624.0,
+              "imageHeight": 113.33,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image55.png",
+              "width": 624.0,
+              "height": 106.67,
+              "imageWidth": 624.0,
+              "imageHeight": 106.67,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image35.png",
+              "width": 624.0,
+              "height": 205.33,
+              "imageWidth": 624.0,
+              "imageHeight": 205.33,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image34.png",
+              "width": 624.0,
+              "height": 206.67,
+              "imageWidth": 624.0,
+              "imageHeight": 206.67,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image115.png",
+              "width": 624.0,
+              "height": 104.0,
+              "imageWidth": 624.0,
+              "imageHeight": 104.0,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "Analysis 2: Using other species",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Libinia emarginata → Portly spider crab",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Libinia ferreira → Ferreira’s spider crab",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Libinia erinacea → Seagrass spider crab",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Libinia spinosa → Spiny sea spider crab",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image70.png",
+              "width": 624.0,
+              "height": 185.33,
+              "imageWidth": 624.0,
+              "imageHeight": 185.33,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "Collection Details:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "1 → September 15, 2012, Brazil",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "2 → June 5, 2013, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "3 → August 27, 2026, Woodneck Beach",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "4 →August 29, 2011, Brazil",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "5 → July 21, 2013, unclear",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "6 → August 16, 2013, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Detailed Analysis:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image54.png",
+              "width": 624.0,
+              "height": 614.67,
+              "imageWidth": 624.0,
+              "imageHeight": 614.67,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image15.png",
+              "width": 624.0,
+              "height": 616.0,
+              "imageWidth": 624.0,
+              "imageHeight": 616.0,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image116.png",
+              "width": 624.0,
+              "height": 112.0,
+              "imageWidth": 624.0,
+              "imageHeight": 112.0,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        }
+      ],
+      "scientific": "Libinia dubia",
+      "consensusBp": 631
+    },
+    "SSAJ53": {
+      "code": "SSAJ53",
+      "common": "Longnose Spider Crab",
+      "blocks": [
+        {
+          "tag": "h3",
+          "text": "SSAJ 53: Longnose Spider Crab",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Scientific Name: Libinia dubia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Location Found: Little Sippewissett Marsh, Falmouth, MA, USA",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Consensus Sequence:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Number of bp: 604",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image99.png",
+              "width": 624.0,
+              "height": 265.33,
+              "imageWidth": 624.0,
+              "imageHeight": 265.33,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "Comparison to Other Organisms:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image107.png",
+              "width": 624.0,
+              "height": 190.67,
+              "imageWidth": 624.0,
+              "imageHeight": 190.67,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "Collection Details:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "1 → November 30, 2012, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 4, C to A at position 71, C to T at position 137, T to C at position 158, T to C at position 285",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "2 → December 2, 2014, Maryland",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 5, C to A at position 71, C to T at position 137, T to C at position 158, T to C at position 285",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "3 → No clear information available about origin",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 4, C to G at position 71, C to T at position 131, A to G at position 506, C to T at position 638",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "4 → June 5, 2013, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 2, G to A at position 77, A to G at position 230",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "5 → June 5, 2013, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 1, G to A at position 77",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "6 → August 27, 2026, Woodneck Beach",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 1, G to A at position 77",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Detailed Analysis:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 71 → C to A",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 71 → C to G",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 77 → G to A",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 131 → C to T",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 137 → C to T",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 158 → T to C",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 230 → A to G",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 285 → T to C",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 506 → A to G",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 569 → G to A",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 638 → C to T",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image114.png",
+              "width": 624.0,
+              "height": 116.0,
+              "imageWidth": 624.0,
+              "imageHeight": 116.0,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image100.png",
+              "width": 624.0,
+              "height": 109.33,
+              "imageWidth": 624.0,
+              "imageHeight": 109.33,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image9.png",
+              "width": 624.0,
+              "height": 208.0,
+              "imageWidth": 624.0,
+              "imageHeight": 208.0,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image52.png",
+              "width": 624.0,
+              "height": 206.67,
+              "imageWidth": 624.0,
+              "imageHeight": 206.67,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image59.png",
+              "width": 624.0,
+              "height": 144.0,
+              "imageWidth": 624.0,
+              "imageHeight": 144.0,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "Analysis 2: with both SSAJ52 and SSAJ53",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "No differences between mutations in the two samples",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image61.png",
+              "width": 624.0,
+              "height": 208.0,
+              "imageWidth": 624.0,
+              "imageHeight": 208.0,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image28.png",
+              "width": 624.0,
+              "height": 126.67,
+              "imageWidth": 624.0,
+              "imageHeight": 126.67,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image112.png",
+              "width": 624.0,
+              "height": 117.33,
+              "imageWidth": 624.0,
+              "imageHeight": 117.33,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image17.png",
+              "width": 624.0,
+              "height": 237.33,
+              "imageWidth": 624.0,
+              "imageHeight": 237.33,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image90.png",
+              "width": 624.0,
+              "height": 229.33,
+              "imageWidth": 624.0,
+              "imageHeight": 229.33,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image41.png",
+              "width": 624.0,
+              "height": 121.33,
+              "imageWidth": 624.0,
+              "imageHeight": 121.33,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        }
+      ],
+      "scientific": "Libinia dubia",
+      "consensusBp": 604
+    },
+    "SSAJ54": {
+      "code": "SSAJ54",
+      "common": "Atlantic Sand Fiddler Crab",
+      "blocks": [
+        {
+          "tag": "h3",
+          "text": "SSAJ 54: Atlantic Sand Fiddler Crab",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Scientific Name: Leptuca pugilator",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Location Found: Little Sippewissett Marsh, Falmouth, MA, USA",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Consensus Sequence:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Number of bp: 614",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image98.png",
+              "width": 624.0,
+              "height": 237.33,
+              "imageWidth": 624.0,
+              "imageHeight": 237.33,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "Comparison to Other Organisms:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image57.png",
+              "width": 624.0,
+              "height": 161.33,
+              "imageWidth": 624.0,
+              "imageHeight": 161.33,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "Collection Details:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "1 → 2009, Maine",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 0",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "2 → June 28, 2016, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 0",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "3 → 2009, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 10",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "4 → August 27, 2026, Little Sippewissett Marsh",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 9",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Detailed Analysis:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 150 → G to A",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 210 → G to A",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 225 → T to C",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 255 → C to T",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 282 → G to A",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 444 → A to G",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 507 → G to A",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 561 → C to T",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 616 → C to T",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image110.png",
+              "width": 624.0,
+              "height": 370.67,
+              "imageWidth": 624.0,
+              "imageHeight": 370.67,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image108.png",
+              "width": 624.0,
+              "height": 305.33,
+              "imageWidth": 624.0,
+              "imageHeight": 305.33,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        }
+      ],
+      "scientific": "Leptuca pugilator",
+      "consensusBp": 614
+    },
+    "SSAJ55": {
+      "code": "SSAJ55",
+      "common": "Atlantic Sand Fiddler Crab",
+      "blocks": [
+        {
+          "tag": "h3",
+          "text": "SSAJ 55: Atlantic Sand Fiddler Crab",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Scientific Name: Leptuca pugilator",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Location Found: Little Sippewissett Marsh, Falmouth, MA, USA",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Consensus Sequence:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Number of bp: 618",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image109.png",
+              "width": 624.0,
+              "height": 238.67,
+              "imageWidth": 624.0,
+              "imageHeight": 238.67,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "Comparison to Other Organisms:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image67.png",
+              "width": 624.0,
+              "height": 198.67,
+              "imageWidth": 624.0,
+              "imageHeight": 198.67,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "Collection Details:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "1 → 2009, Maine",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 7",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "2 → June 28, 2016, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 7",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "3 → 2009, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 3",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "4 → 2009, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 3",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "5 → 2009, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 2",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "6 → August 27, 2026, Little Sippewissett Marsh",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 1",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Detailed Analysis:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 108 → G to A",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 150 → G to A",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 210 → A to G",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 225 → C to T",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 255 → T to C",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 282 → A to G",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 306 → T to C",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 444 → G to A",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 507 → G to A",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 534 → A to G",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 561 → T to C",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 616 → T to C",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image19.png",
+              "width": 624.0,
+              "height": 412.0,
+              "imageWidth": 624.0,
+              "imageHeight": 412.0,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image27.png",
+              "width": 624.0,
+              "height": 109.33,
+              "imageWidth": 624.0,
+              "imageHeight": 109.33,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image26.png",
+              "width": 624.0,
+              "height": 410.67,
+              "imageWidth": 624.0,
+              "imageHeight": 410.67,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        }
+      ],
+      "scientific": "Leptuca pugilator",
+      "consensusBp": 618
+    },
+    "SSAJ65": {
+      "code": "SSAJ65",
+      "common": "Common Periwinkle",
+      "blocks": [
+        {
+          "tag": "h3",
+          "text": "SSAJ 65: Common Periwinkle",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Scientific Name: Littorina littorea",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Location Found: Little Sippewissett Marsh, Falmouth, MA, USA",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Consensus Sequence:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Number of bp: 578",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image88.png",
+              "width": 624.0,
+              "height": 212.0,
+              "imageWidth": 624.0,
+              "imageHeight": 212.0,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "Comparison to Other Organisms:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image103.png",
+              "width": 624.0,
+              "height": 157.33,
+              "imageWidth": 624.0,
+              "imageHeight": 157.33,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "Collection Details:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "1 → May 31, 2012, Canada",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 2",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "2 → October 5, 2009, Canada",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 0",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "3 → August 31, 2026, Little Sippewissett Marsh",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 0",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "4 → July 10, 2011, Canada",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 1",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Detailed Analysis:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 138 → C to T",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 433 → G to A",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Position 576 → C to T",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image94.png",
+              "width": 624.0,
+              "height": 77.33,
+              "imageWidth": 624.0,
+              "imageHeight": 77.33,
+              "x": -0.0,
+              "y": -0.0
+            },
+            {
+              "src": "images/image75.png",
+              "width": 624.0,
+              "height": 70.67,
+              "imageWidth": 624.0,
+              "imageHeight": 70.67,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image83.png",
+              "width": 624.0,
+              "height": 78.67,
+              "imageWidth": 624.0,
+              "imageHeight": 78.67,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        }
+      ],
+      "scientific": "Littorina littorea",
+      "consensusBp": 578
+    },
+    "SSAJ66": {
+      "code": "SSAJ66",
+      "common": "Common Periwinkle",
+      "blocks": [
+        {
+          "tag": "h3",
+          "text": "SSAJ 66: Common Periwinkle",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Scientific Name: Littorina littorea",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Location Found: Woodneck Beach, Falmouth, MA, USA",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Consensus Sequence:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Number of bp: 592",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image33.png",
+              "width": 624.0,
+              "height": 222.67,
+              "imageWidth": 624.0,
+              "imageHeight": 222.67,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "Comparison to Other Organisms:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image106.png",
+              "width": 624.0,
+              "height": 172.0,
+              "imageWidth": 624.0,
+              "imageHeight": 172.0,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "Collection Details:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "1 → 2016, Canada",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch number: 2",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "2 → August 31, 2026, Woodneck Beach",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch number: 2",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "3 → May 31, 2012, Canada",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch number: 1",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "4 → October 5, 2009, Canada",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch number: 1",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "5 → July 10, 2011, Canada",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch number: 2",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Detailed Analysis:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image53.png",
+              "width": 624.0,
+              "height": 92.0,
+              "imageWidth": 624.0,
+              "imageHeight": 92.0,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image12.png",
+              "width": 624.0,
+              "height": 96.0,
+              "imageWidth": 624.0,
+              "imageHeight": 96.0,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image42.png",
+              "width": 624.0,
+              "height": 93.33,
+              "imageWidth": 624.0,
+              "imageHeight": 93.33,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        }
+      ],
+      "scientific": "Littorina littorea",
+      "consensusBp": 592
+    },
+    "SSAJ67": {
+      "code": "SSAJ67",
+      "common": "Atlantic Sand Fiddler Crab",
+      "blocks": [
+        {
+          "tag": "h3",
+          "text": "SSAJ 67: Atlantic Sand Fiddler Crab",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Scientific Name: Leptuca pugilator",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Location Found: Little Sippewissett Marsh, Falmouth, MA, USA",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Consensus Sequence:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Number of bp: 624",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image101.png",
+              "width": 624.0,
+              "height": 237.33,
+              "imageWidth": 624.0,
+              "imageHeight": 237.33,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "Comparison to Other Organisms:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image122.png",
+              "width": 624.0,
+              "height": 193.33,
+              "imageWidth": 624.0,
+              "imageHeight": 193.33,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "Collection Details:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "1 → 2009, Maine",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 7",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "2 → June 28, 2016, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 7",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "3 → 2009, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 3",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "4 → 2009, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 3",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "5 → August 31, 2026, Little Sippewissett Marsh",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 3",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "6 → 2009, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Mismatch count: 2",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Detailed Analysis:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "At position 492, our specimen has a shift from C to T. This is a mutation that has not previously been seen in published literature.",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image72.png",
+              "width": 624.0,
+              "height": 416.0,
+              "imageWidth": 624.0,
+              "imageHeight": 416.0,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image95.png",
+              "width": 624.0,
+              "height": 105.33,
+              "imageWidth": 624.0,
+              "imageHeight": 105.33,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image39.png",
+              "width": 624.0,
+              "height": 408.0,
+              "imageWidth": 624.0,
+              "imageHeight": 408.0,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        }
+      ],
+      "scientific": "Leptuca pugilator",
+      "consensusBp": 624
+    },
+    "SSAJ74": {
+      "code": "SSAJ74",
+      "common": "Lady Crab",
+      "blocks": [
+        {
+          "tag": "h3",
+          "text": "SSAJ 74: Lady Crab",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Scientific Name: Ovalipes ocellatus",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Location Found: Woodneck Beach, Falmouth, MA, USA",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Consensus Sequence:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Number of bp: 532",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image51.png",
+              "width": 624.0,
+              "height": 200.0,
+              "imageWidth": 624.0,
+              "imageHeight": 200.0,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "Comparison to Other Organisms:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image81.png",
+              "width": 624.0,
+              "height": 192.0,
+              "imageWidth": 624.0,
+              "imageHeight": 192.0,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "Collection Details:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "1 → September 2017, China",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "2 → October 5, 2009, New Zealand",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "3 → November 2013, Australia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "4 → October 1, 2013, Virginia",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "5 → August 31, 2026, Little Sippewissett Marsh",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "6 → August 24, 2026, Little Sippewissett Marsh",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "7 → August 24, 2026, Little Sippewissett Marsh",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Detailed Analysis:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image1.png",
+              "width": 624.0,
+              "height": 349.33,
+              "imageWidth": 624.0,
+              "imageHeight": 349.33,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image29.png",
+              "width": 624.0,
+              "height": 348.0,
+              "imageWidth": 624.0,
+              "imageHeight": 348.0,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image32.png",
+              "width": 624.0,
+              "height": 349.33,
+              "imageWidth": 624.0,
+              "imageHeight": 349.33,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image13.png",
+              "width": 624.0,
+              "height": 348.0,
+              "imageWidth": 624.0,
+              "imageHeight": 348.0,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        }
+      ],
+      "scientific": "Ovalipes ocellatus",
+      "consensusBp": 532
+    },
+    "SSAJ84": {
+      "code": "SSAJ84",
+      "common": "Squatter Pea Crab",
+      "blocks": [
+        {
+          "tag": "h3",
+          "text": "SSAJ 84: Squatter Pea Crab",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Scientific Name: Tumidotheres maculatus",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Location Found: Little Sippewissett Marsh, Falmouth, MA, USA",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Consensus Sequence:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Number of bp: 574",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image6.png",
+              "width": 624.0,
+              "height": 216.0,
+              "imageWidth": 624.0,
+              "imageHeight": 216.0,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "Comparison to Other Organisms:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image50.png",
+              "width": 624.0,
+              "height": 198.67,
+              "imageWidth": 624.0,
+              "imageHeight": 198.67,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "Collection Details:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "1 → June 28, 2017, Rhode Island",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Number of mismatches: 6",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "2 → September 2, 2026, Little Sippewisset Marsh",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Number of mismatches: 6",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "3 → 2018, Louisiana",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Number of mismatches: 7",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "4 → 2018, Louisiana",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Number of mismatches: 0",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "5 → 2018, Louisiana",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Number of mismatches: 3",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "6 → 2018, Louisiana",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Number of mismatches: 3",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "7 → 2018, Louisiana",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Number of mismatches: 4",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Detailed Analysis:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Lots of diversity seen! Nothing unique mutation wise for our specimen, everything has been reported",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image64.png",
+              "width": 624.0,
+              "height": 120.0,
+              "imageWidth": 624.0,
+              "imageHeight": 120.0,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image77.png",
+              "width": 624.0,
+              "height": 120.0,
+              "imageWidth": 624.0,
+              "imageHeight": 120.0,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image45.png",
+              "width": 624.0,
+              "height": 346.67,
+              "imageWidth": 624.0,
+              "imageHeight": 346.67,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image24.png",
+              "width": 624.0,
+              "height": 120.0,
+              "imageWidth": 624.0,
+              "imageHeight": 120.0,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image65.png",
+              "width": 624.0,
+              "height": 118.67,
+              "imageWidth": 624.0,
+              "imageHeight": 118.67,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        }
+      ],
+      "scientific": "Tumidotheres maculatus",
+      "consensusBp": 574
+    },
+    "conclusions": {
+      "title": "Across the Samples",
+      "blocks": [
+        {
+          "tag": "h2",
+          "text": "Long-clawed Hermit Crabs:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Final Conclusions:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image36.png",
+              "width": 601.62,
+              "height": 323.95,
+              "imageWidth": 601.62,
+              "imageHeight": 323.95,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "SSAJ36 has a mutation that has previously not been reported!",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image16.png",
+              "width": 624.0,
+              "height": 249.33,
+              "imageWidth": 624.0,
+              "imageHeight": 249.33,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "Observed behaviors/miscellaneous information:",
+          "images": []
+        },
+        {
+          "tag": "li",
+          "text": "An abundance of hermit crabs as a whole throughout the marsh and beach, they tend to look quite similar physically, with most variation simply being seen within their shells",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "All of our hermit samples:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image73.png",
+              "width": 624.0,
+              "height": 233.33,
+              "imageWidth": 624.0,
+              "imageHeight": 233.33,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "h2",
+          "text": "Atlantic Marsh Fiddler Crabs:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Final Conclusions:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image86.png",
+              "width": 624.0,
+              "height": 216.0,
+              "imageWidth": 624.0,
+              "imageHeight": 216.0,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "No genetic diversity seen between our samples",
+          "images": []
+        },
+        {
+          "tag": "h2",
+          "text": "Atlantic Sand Fiddler Crabs:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Final Conclusions:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image68.png",
+              "width": 624.0,
+              "height": 202.67,
+              "imageWidth": 624.0,
+              "imageHeight": 202.67,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "Genetic variation seen between the two specimens, even within the mutations that are shown. However, these mutations are not unique in never being seen in previously published literature.",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Updates! New specimen collection on August 31st…",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image43.png",
+              "width": 624.0,
+              "height": 225.33,
+              "imageWidth": 624.0,
+              "imageHeight": 225.33,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "SSAJ67 has a mutation that has not been previously published in the literature.",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image48.png",
+              "width": 617.0,
+              "height": 191.0,
+              "imageWidth": 624.0,
+              "imageHeight": 191.0,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "h2",
+          "text": "Common Periwinkles:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Final Conclusions:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image60.png",
+              "width": 624.0,
+              "height": 193.33,
+              "imageWidth": 624.0,
+              "imageHeight": 193.33,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "Genetic variation seen between the two specimens, even within the mutations that are shown. However, these mutations are not unique in never being seen in previously published literature.",
+          "images": []
+        },
+        {
+          "tag": "h2",
+          "text": "Lady Crabs:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "Final Conclusions:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "When comparing our lady crab samples (including the redo of SSAJ33), we found there to be a clear divide between the ocellatus species that is commonly found in Woods Hole, and our samples’ sequence alignment. This points towards two possible hypotheses as to why this consistency within the sequences in our samples is seen across the board: 1) these samples are from a completely different species altogether or 2) this is a pseudogene, or a copy of the COI gene that has accumulated mutations over time and was better selected for by the primers during our PCR. The first hypothesis is less likely due to the morphological similarities observed within our specimens and the ocellate lady crab.",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image118.png",
+              "width": 624.0,
+              "height": 212.0,
+              "imageWidth": 624.0,
+              "imageHeight": 212.0,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        }
+      ]
+    },
+    "comparisons": {
+      "title": "Alignments and Phylogenetic Trees",
+      "blocks": [
+        {
+          "tag": "h2",
+          "text": "Across Species Comparisons + Phylogenies:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "When exploring differences between sand and marsh fiddlers, it was found that both species are extremely different from one another:",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image111.png",
+              "width": 624.0,
+              "height": 192.0,
+              "imageWidth": 624.0,
+              "imageHeight": 192.0,
+              "x": -0.0,
+              "y": -0.0
+            },
+            {
+              "src": "images/image78.png",
+              "width": 124.5,
+              "height": 57.2,
+              "imageWidth": 124.5,
+              "imageHeight": 57.2,
+              "x": -0.0,
+              "y": -0.0
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "text": "In the context of all the various crab samples however, they appear to be much more similar. It is very evident that you can bunch up the samples into specific species categories.",
+          "images": []
+        },
+        {
+          "tag": "p",
+          "text": "",
+          "images": [
+            {
+              "src": "images/image31.png",
+              "width": 415.0,
+              "height": 263.11,
+              "imageWidth": 624.0,
+              "imageHeight": 275.11,
+              "x": 5.0,
+              "y": 5.89
+            },
+            {
+              "src": "images/image31.png",
+              "width": 146.0,
+              "height": 108.0,
+              "imageWidth": 624.0,
+              "imageHeight": 275.0,
+              "x": 449.0,
+              "y": 6.0
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
