@@ -501,6 +501,25 @@ const SHRIMPINA_SAND_FIDDLER_MORPHOLOGY = [
   }
 ];
 
+const SHRIMPINA_SPIDER_CRAB_MORPHOLOGY = [
+  {
+    label:'Dorsal labeled',
+    src:'assets/shrimpina-morphology/longnose-spider-crab-dorsal-labeled.png',
+    alt:'Labeled dorsal view of a longnose spider crab showing the carapace, eye, rostrum, claw, and walking legs alongside a ruler',
+    caption:'Shared species reference · dorsal anatomy and ruler',
+    sourceLabel:'Longnose Spider Crab',
+    callouts:[]
+  },
+  {
+    label:'Ventral labeled',
+    src:'assets/shrimpina-morphology/longnose-spider-crab-ventral-labeled.png',
+    alt:'Labeled ventral view of a longnose spider crab showing the thoracic sternum, partly obscured abdominal region, folded claw, and walking legs',
+    caption:'Shared species reference · underside and visible anatomy',
+    sourceLabel:'Longnose Spider Crab',
+    callouts:[]
+  }
+];
+
 const SHRIMPINA_FLAT_CLAWED_MORPHOLOGY = [
   {
     label:'Frontal labeled',
@@ -526,6 +545,7 @@ const SHRIMPINA_FLAT_CLAWED_MORPHOLOGY = [
 const SHRIMPINA_SPECIES_MORPHOLOGY = {
   'Pagurus longicarpus': SHRIMPINA_SAMPLE_MORPHOLOGY.SSAJ1,
   'Pagurus pollicaris': SHRIMPINA_FLAT_CLAWED_MORPHOLOGY,
+  'Libinia dubia': SHRIMPINA_SPIDER_CRAB_MORPHOLOGY,
   'Palaemon vulgaris': SHRIMPINA_SAMPLE_MORPHOLOGY.SSAJ14,
   'Minuca pugnax': SHRIMPINA_SAMPLE_MORPHOLOGY.SSAJ21,
   'Leptuca pugilator': SHRIMPINA_SAND_FIDDLER_MORPHOLOGY,
@@ -534,6 +554,10 @@ const SHRIMPINA_SPECIES_MORPHOLOGY = {
   'Carcinus maenas': SHRIMPINA_SAMPLE_MORPHOLOGY.SSAJ34,
   'Callinectes sapidus': SHRIMPINA_SAMPLE_MORPHOLOGY.SSAJ35
 };
+
+SHRIMPINA_SPECIES.filter(species => species.sci === 'Libinia dubia').forEach(species => {
+  species.morphologyViews = SHRIMPINA_SPIDER_CRAB_MORPHOLOGY;
+});
 
 const SHRIMPINA_SUPPLEMENTAL_TAXA = {
   'Mercenaria mercenaria': {

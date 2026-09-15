@@ -100,6 +100,8 @@
 </style>
 <link rel="stylesheet" href="site-index.css?v=20260910-11">
 <link rel="stylesheet" href="shrimpina.css?v=20260907-6">
+<link rel="stylesheet" href="journal-gallery.css?v=20260915-gemma">
+<script src="journal-gallery.js?v=20260915-gemma" defer></script>
 <script src="site-index.js?v=20260914-1" defer></script>
 </head>
 <body class="has-site-index shrimpina-site">
@@ -109,7 +111,57 @@
 
 <section class="j-hero">
   <img class="shrimpina-hero-bug" src="assets/shrimpina-mascot-cape-cod-large-text.png" alt="Shrimpina mascot wearing a pink Cape Cod shirt">
-  <div><span class="n-tag">The Field Journal</span><h1 class="hand-title">Notes from the Marsh</h1><p>Field notes, collection sites, and working photographs.</p></div>
+  <div><span class="n-tag">The Field Journal</span><h1 class="hand-title">Notes from the Marsh</h1><p>Field notes, collection sites, and moments from the lab.</p><nav class="journal-jumps" aria-label="Journal sections"><a href="#open-lab">Open Lab ↗</a><a href="#gemma">Gemma ↗</a><a href="#field-media">Field Records ↓</a></nav></div>
+</section>
+
+<section class="field-media-section open-lab-section" id="open-lab" aria-labelledby="open-lab-title">
+  <header class="field-media-header">
+    <div><span class="n-tag">Behind the Scenes</span><h2 id="open-lab-title">Open Lab</h2></div>
+    <p>A little look inside.<br>Two photos, two videos — all from the open lab.</p>
+  </header>
+  <div class="lab-gallery" role="region" aria-roledescription="carousel" aria-label="Open lab photos and videos" tabindex="0">
+    <div class="lab-gallery-top"><span>SHRIMPINA / OPEN LAB</span><span id="lab-kind" data-gallery-kind>PHOTO</span></div>
+    <div class="lab-viewer" id="open-lab-video">
+<figure class="lab-slide" id="lab-slide-0" role="group" aria-roledescription="slide" aria-label="1 of 4: Welcome to Open Lab" data-title="Welcome to Open Lab" data-caption="The Biodiversity & Genomics welcome board, decorated with drawings of marine life." data-kind="photo"><img src="assets/shrimpina-field-media/photos/IMG_1718.jpg" alt="The Biodiversity & Genomics welcome board, decorated with drawings of marine life." decoding="async"></figure>
+<figure class="lab-slide" id="lab-slide-1" role="group" aria-roledescription="slide" aria-label="2 of 4: Shrimpina on Display" data-title="Shrimpina on Display" data-caption="The Shrimpina website and aquarium displayed together on the open-lab bench." data-kind="photo" hidden><img src="assets/shrimpina-field-media/photos/IMG_1720.jpg" alt="The Shrimpina website and aquarium displayed together on the open-lab bench." decoding="async"></figure>
+<figure class="lab-slide" id="lab-slide-2" role="group" aria-roledescription="slide" aria-label="3 of 4: Around the Lab" data-title="Around the Lab" data-caption="From the open lab." data-kind="video" hidden><video controls muted playsinline preload="metadata" aria-label="Around the Lab" poster="assets/shrimpina-field-media/videos/IMG_1722-poster.jpg"><source src="assets/shrimpina-field-media/videos/IMG_1722.mp4" type="video/mp4"></video></figure>
+<figure class="lab-slide" id="lab-slide-3" role="group" aria-roledescription="slide" aria-label="4 of 4: Another Look Inside" data-title="Another Look Inside" data-caption="From the open lab." data-kind="video" hidden><video controls muted playsinline preload="metadata" aria-label="Another Look Inside" poster="assets/shrimpina-field-media/videos/IMG_1726-poster.jpg"><source src="assets/shrimpina-field-media/videos/IMG_1726.mp4" type="video/mp4"></video></figure>
+    </div>
+    <div class="lab-gallery-bottom">
+      <div class="lab-caption" aria-live="polite" aria-atomic="true"><h3 id="lab-caption-title" data-gallery-caption-title>Welcome to Open Lab</h3><p id="lab-caption-text" data-gallery-caption-text>The Biodiversity &amp; Genomics welcome board, decorated with drawings of marine life.</p></div>
+      <div class="lab-controls"><button type="button" id="lab-prev" data-gallery-prev aria-label="Previous open-lab item">←</button><span id="lab-count" data-gallery-count>01 / 04</span><button type="button" id="lab-next" data-gallery-next aria-label="Next open-lab item">→</button></div>
+    </div>
+    <div class="lab-thumbnails" aria-label="Choose a photo or video">
+<button type="button" class="lab-thumb" data-slide="0" aria-label="Show photo: Welcome to Open Lab" aria-controls="lab-slide-0" aria-pressed="true"><img src="assets/shrimpina-field-media/photos/IMG_1718.jpg" alt="" loading="lazy"><span>Photo</span><strong>Welcome to Open Lab</strong></button>
+<button type="button" class="lab-thumb" data-slide="1" aria-label="Show photo: Shrimpina on Display" aria-controls="lab-slide-1" aria-pressed="false"><img src="assets/shrimpina-field-media/photos/IMG_1720.jpg" alt="" loading="lazy"><span>Photo</span><strong>Shrimpina on Display</strong></button>
+<button type="button" class="lab-thumb" data-slide="2" aria-label="Show video: Around the Lab" aria-controls="lab-slide-2" aria-pressed="false"><img src="assets/shrimpina-field-media/videos/IMG_1722-poster.jpg" alt="" loading="lazy"><span>▶ Video</span><strong>Around the Lab</strong></button>
+<button type="button" class="lab-thumb" data-slide="3" aria-label="Show video: Another Look Inside" aria-controls="lab-slide-3" aria-pressed="false"><img src="assets/shrimpina-field-media/videos/IMG_1726-poster.jpg" alt="" loading="lazy"><span>▶ Video</span><strong>Another Look Inside</strong></button>
+    </div>
+  </div>
+</section>
+
+<section class="field-media-section open-lab-section" id="gemma" aria-labelledby="gemma-title">
+  <header class="field-media-header">
+    <div><span class="n-tag">More from the Journal</span><h2 id="gemma-title">From the Gemma</h2></div>
+    <p>One photo and two videos.</p>
+  </header>
+  <div class="lab-gallery gemma-gallery" role="region" aria-roledescription="carousel" aria-label="Gemma photos and videos" tabindex="0">
+    <div class="lab-gallery-top"><span>SHRIMPINA / GEMMA</span><span data-gallery-kind>PHOTO</span></div>
+    <div class="lab-viewer">
+<figure class="lab-slide" id="gemma-slide-0" role="group" aria-roledescription="slide" aria-label="1 of 3: Sea Star" data-title="Sea Star" data-caption="From the Gemma" data-kind="photo"><img src="assets/shrimpina-field-media/photos/IMG_9743.png" alt="A sea star resting on an open palm." loading="lazy" decoding="async"></figure>
+<figure class="lab-slide" id="gemma-slide-1" role="group" aria-roledescription="slide" aria-label="2 of 3: Gemma Video 1" data-title="Gemma Video 1" data-caption="From the Gemma" data-kind="video" hidden><video controls muted playsinline preload="metadata" aria-label="Gemma Video 1" poster="assets/shrimpina-field-media/videos/IMG_1649-poster.jpg"><source src="assets/shrimpina-field-media/videos/IMG_1649.mp4" type="video/mp4"></video></figure>
+<figure class="lab-slide" id="gemma-slide-2" role="group" aria-roledescription="slide" aria-label="3 of 3: Gemma Video 2" data-title="Gemma Video 2" data-caption="From the Gemma" data-kind="video" hidden><video controls muted playsinline preload="metadata" aria-label="Gemma Video 2" poster="assets/shrimpina-field-media/videos/IMG_9737-poster.jpg"><source src="assets/shrimpina-field-media/videos/IMG_9737.mp4" type="video/mp4"></video></figure>
+    </div>
+    <div class="lab-gallery-bottom">
+      <div class="lab-caption" aria-live="polite" aria-atomic="true"><h3 data-gallery-caption-title>Sea Star</h3><p data-gallery-caption-text>From the Gemma</p></div>
+      <div class="lab-controls"><button type="button" data-gallery-prev aria-label="Previous Gemma item">←</button><span data-gallery-count>01 / 03</span><button type="button" data-gallery-next aria-label="Next Gemma item">→</button></div>
+    </div>
+    <div class="lab-thumbnails" aria-label="Choose a photo or video">
+<button type="button" class="lab-thumb" data-slide="0" aria-label="Show photo: Sea Star" aria-controls="gemma-slide-0" aria-pressed="true"><img src="assets/shrimpina-field-media/photos/IMG_9743.png" alt="" loading="lazy"><span>Photo</span><strong>Sea Star</strong></button>
+<button type="button" class="lab-thumb" data-slide="1" aria-label="Show video: Gemma Video 1" aria-controls="gemma-slide-1" aria-pressed="false"><img src="assets/shrimpina-field-media/videos/IMG_1649-poster.jpg" alt="" loading="lazy"><span>▶ Video</span><strong>Gemma Video 1</strong></button>
+<button type="button" class="lab-thumb" data-slide="2" aria-label="Show video: Gemma Video 2" aria-controls="gemma-slide-2" aria-pressed="false"><img src="assets/shrimpina-field-media/videos/IMG_9737-poster.jpg" alt="" loading="lazy"><span>▶ Video</span><strong>Gemma Video 2</strong></button>
+    </div>
+  </div>
 </section>
 
 <section class="field-media-section" id="field-media" aria-labelledby="field-media-title">
